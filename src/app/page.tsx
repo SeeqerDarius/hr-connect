@@ -1,114 +1,81 @@
-import Header from "./components/header";
-
 export default function Home() {
   return (
-    <>
-      <Header />
-      <main className="bg-gray-50">
-  <section className="flex flex-col items-center justify-center text-center py-24 px-4">
-    <h2 className="text-5xl font-extrabold text-blue-700 mb-6">Welcome to HR Connect 2025</h2>
-    <p className="text-xl max-w-2xl mb-8">
-      Discover the latest trends in HR, connect with top professionals, and shape the future of work.
-    </p>
-    <a
-      href="#"
-      className="bg-blue-600 text-white px-8 py-3 rounded-md text-lg font-medium hover:bg-blue-700 transition"
-    >
-      Register Now
-    </a>
-  </section>
-  <section id="agenda" className="bg-white py-20 px-4">
-  <div className="max-w-4xl mx-auto text-center">
-    <h3 className="text-3xl font-bold text-gray-800 mb-6">Conference Agenda</h3>
-    <ul className="space-y-4 text-left">
-      <li className="border-b pb-4">
-        <span className="font-semibold">09:00 AM -</span> Registration & Welcome Coffee
-      </li>
-      <li className="border-b pb-4">
-        <span className="font-semibold">10:00 AM -</span> Opening Keynote: The Future of HR
-      </li>
-      <li className="border-b pb-4">
-        <span className="font-semibold">11:30 AM -</span> Panel Discussion: Diversity & Inclusion
-      </li>
-      <li className="border-b pb-4">
-        <span className="font-semibold">01:00 PM -</span> Networking Lunch
-      </li>
-      <li className="border-b pb-4">
-        <span className="font-semibold">02:00 PM -</span> Workshops & Breakout Sessions
-      </li>
-      <li>
-        <span className="font-semibold">04:00 PM -</span> Closing Remarks & Farewell
-      </li>
-    </ul>
-  </div>
-</section>
-<section id="speakers" className="bg-gray-100 py-20 px-4">
-  <div className="max-w-6xl mx-auto text-center">
-    <h3 className="text-3xl font-bold text-gray-800 mb-10">Featured Speakers</h3>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      <div className="bg-white p-6 shadow rounded">
-        <img src="https://via.placeholder.com/150" alt="Jane Doe" className="mx-auto rounded-full mb-4" />
-        <h4 className="text-xl font-semibold">Jane Doe</h4>
-        <p className="text-gray-600">Chief HR Officer, TechCorp</p>
-      </div>
-      <div className="bg-white p-6 shadow rounded">
-        <img src="https://via.placeholder.com/150" alt="John Smith" className="mx-auto rounded-full mb-4" />
-        <h4 className="text-xl font-semibold">John Smith</h4>
-        <p className="text-gray-600">Founder, PeopleFirst</p>
-      </div>
-      <div className="bg-white p-6 shadow rounded">
-        <img src="https://via.placeholder.com/150" alt="Lisa Brown" className="mx-auto rounded-full mb-4" />
-        <h4 className="text-xl font-semibold">Lisa Brown</h4>
-        <p className="text-gray-600">HR Innovation Lead, WorkX</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="register" className="bg-white py-20 px-4">
-  <div className="max-w-xl mx-auto text-center">
-    <h3 className="text-3xl font-bold text-gray-800 mb-6">Register for HR Connect 2025</h3>
-    <form className="space-y-6 text-left">
-      <div>
-        <label className="block mb-1 font-medium">Full Name</label>
-        <input
-          type="text"
-          className="w-full border border-gray-300 px-4 py-2 rounded"
-          placeholder="Your name"
-          required
-        />
-      </div>
-      <div>
-        <label className="block mb-1 font-medium">Email Address</label>
-        <input
-          type="email"
-          className="w-full border border-gray-300 px-4 py-2 rounded"
-          placeholder="you@example.com"
-          required
-        />
-      </div>
-      <button
-        type="submit"
-        className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
-      >
-        Submit Registration
-      </button>
-    </form>
-  </div>
-</section>
-<section id="contact" className="bg-gray-100 py-20 px-4">
-  <div className="max-w-xl mx-auto text-center">
-    <h3 className="text-3xl font-bold text-gray-800 mb-6">Contact Us</h3>
-    <p className="mb-4">Have questions or need more info? Reach out to our team:</p>
-    <p className="text-blue-600 font-medium">info@hrconnectconf.com</p>
-    <p className="text-gray-600 mt-2">Phone: +1 (555) 123-4567</p>
-  </div>
-</section>
+    <main className="bg-[#0A1C63] text-white">
 
+      {/* Hero Section */}
+      <section className="text-center py-20 px-4 sm:px-6 md:px-10">
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-[#FF8C00] mb-4">HR CONNECT CONFERENCE</h1>
+        <p className="italic text-lg text-gray-200 mb-2">Theme</p>
+        <h2 className="text-xl sm:text-2xl font-bold mb-4">EMPOWERING HR EXCELLENCE</h2>
+        <p className="max-w-2xl mx-auto text-base sm:text-lg mb-6">
+          Leveraging data, resilience, and wellness for a thriving workplace.
+        </p>
+        <p className="text-base sm:text-lg font-semibold text-[#FF8C00]">8th August, 2025 @ Movenpick Hotel, Accra</p>
 
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+          <span className="bg-[#D63384] text-white px-6 py-2 rounded font-bold text-sm sm:text-base">FEE GHS 1,500</span>
+          <span className="bg-[#1DA1A3] text-white px-6 py-2 rounded font-bold text-sm sm:text-base">EARLY BIRD GHS 1,250</span>
+          <span className="bg-[#F39C12] text-black px-6 py-2 rounded font-bold text-sm sm:text-base">ONLINE GHS 1,000</span>
+        </div>
+      </section>
 
+      {/* Agenda Section */}
+      <section className="bg-[#08174B] py-20 px-4 sm:px-6 md:px-10">
+        <div className="max-w-4xl mx-auto text-white text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-[#FF8C00]">Conference Agenda</h2>
+          <ul className="text-left space-y-4 text-sm sm:text-base">
+            <li><strong>09:00 AM -</strong> Registration & Welcome Coffee</li>
+            <li><strong>10:00 AM -</strong> Opening Keynote</li>
+            <li><strong>11:30 AM -</strong> Diversity & Inclusion Panel</li>
+            <li><strong>01:00 PM -</strong> Networking Lunch</li>
+            <li><strong>02:00 PM -</strong> Workshops</li>
+            <li><strong>04:00 PM -</strong> Closing Remarks</li>
+          </ul>
+        </div>
+      </section>
 
-</main>
+      {/* Speakers Section */}
+      <section className="bg-[#0A1C63] py-20 px-4 sm:px-6 md:px-10">
+        <div className="text-center max-w-6xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-[#FF8C00]">Meet the Speakers</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="bg-[#08174B] p-6 text-center rounded shadow">
+                <img src="https://via.placeholder.com/150" alt="" className="rounded-full mx-auto mb-4" />
+                <h3 className="text-xl font-semibold">Speaker {i}</h3>
+                <p className="text-gray-300">Job Title</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-    </>
+      {/* Testimonials Section */}
+      <section className="bg-[#0A1C63] py-20 px-4 sm:px-6 md:px-10">
+        <div className="max-w-4xl mx-auto text-center text-white">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-[#FF8C00]">What People Are Saying</h2>
+          <div className="space-y-6">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="bg-[#08174B] p-6 rounded shadow">
+                <p className="italic mb-2">“Fantastic event. Practical sessions and top-tier networking.”</p>
+                <p className="font-semibold text-orange-300">– Attendee {i}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Sponsors Section */}
+      <section className="bg-[#0A1C63] py-20 px-4 sm:px-6 md:px-10">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-[#FF8C00]">Our Sponsors</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center">
+            {[1, 2, 3, 4].map(i => (
+              <img key={i} src={`https://via.placeholder.com/120x60?text=Logo+${i}`} alt={`Sponsor ${i}`} className="mx-auto" />
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
