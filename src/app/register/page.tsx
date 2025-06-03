@@ -13,7 +13,6 @@ export default function RegisterPage() {
           className="space-y-6 text-left"
         >
           <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="https://hr-connect-inky.vercel.app/thank-you" />
 
           <div>
             <label className="block mb-1 font-medium">Full Name</label>
