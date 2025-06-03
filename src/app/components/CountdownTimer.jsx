@@ -1,56 +1,53 @@
 'use client';
+
 import { useEffect, useState } from 'react';
 
 export default function CountdownTimer() {
-  const targetDate = new Date('2025-10-15T09:00:00');
-
-  const calculateTimeLeft = () => {
-    const now = new Date();
-    const difference = targetDate - now;
-
-    let timeLeft = {};
-
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-      };
-    }
-
-    return timeLeft;
-  };
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
+    function updateCountdown() {
+      const eventDate = new Date('2025-08-08T09:00:00');
+      const now = new Date();
+      const diff = eventDate.getTime() - now.getTime();
 
+      const days = Math.max(Math.floor(diff / (1000 * 60 * 60 * 24)), 0);
+      const hours = Math.max(Math.floor((diff / (1000 * 60 * 60)) % 24), 0);
+      const minutes = Math.max(Math.floor((diff / 1000 / 60) % 60), 0);
+      const seconds = Math.max(Math.floor((diff / 1000) % 60), 0);
+
+      setTimeLeft({ days, hours, minutes, seconds });
+    }
+
+    updateCountdown(); // initial
+    const timer = setInterval(updateCountdown, 1000);
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <div className="text-center p-6 bg-white rounded-2xl shadow-lg w-fit mx-auto">
-      <h2 className="text-2xl font-bold mb-4">Countdown to HR Connect 2025</h2>
-      <div className="flex gap-4 justify-center text-xl font-mono">
+    <div className="text-center my-10 bg-white text-black max-w-md mx-auto p-6 rounded-lg shadow">
+      <h2 className="text-2xl font-bold text-[#FF8C00] mb-6">Countdown to HR Connect 2025</h2>
+      <div className="flex justify-center gap-6 text-lg font-semibold">
         <div>
-          <span className="block text-3xl font-bold">{timeLeft.days ?? '0'}</span>
-          Days
+          <p className="text-4xl">{timeLeft.days}</p>
+          <span>Days</span>
         </div>
         <div>
-          <span className="block text-3xl font-bold">{timeLeft.hours ?? '0'}</span>
-          Hours
+          <p className="text-4xl">{timeLeft.hours}</p>
+          <span>Hours</span>
         </div>
         <div>
-          <span className="block text-3xl font-bold">{timeLeft.minutes ?? '0'}</span>
-          Minutes
+          <p className="text-4xl">{timeLeft.minutes}</p>
+          <span>Minutes</span>
         </div>
         <div>
-          <span className="block text-3xl font-bold">{timeLeft.seconds ?? '0'}</span>
-          Seconds
+          <p className="text-4xl">{timeLeft.seconds}</p>
+          <span>Seconds</span>
         </div>
       </div>
     </div>
