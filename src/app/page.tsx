@@ -66,8 +66,33 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Countdown Section */}
+      {/* Countdown */}
       <CountdownTimer />
+
+      {/* Become a Partner CTA */}
+      <section className="bg-[#08174B] py-20 px-6 text-white text-center">
+        <h2 className="text-3xl font-bold mb-6 text-[#FF8C00]">Become a Partner</h2>
+        <p className="max-w-2xl mx-auto mb-6">
+          Join us in shaping the future of HR. Become a strategic partner or sponsor and showcase your brand to top HR leaders.
+        </p>
+        <a
+          href="/register"
+          className="inline-block bg-[#FF8C00] text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-orange-600 transition"
+        >
+          Partner With Us
+        </a>
+      </section>
+
+      {/* Floating Register Button */}
+      <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">
+        <a
+          href="/register"
+          className="bg-white text-[#FF8C00] hover:bg-[#FF8C00] hover:text-white px-6 py-3 rounded-full font-extrabold text-base sm:text-lg shadow-2xl transition-all duration-300"
+        >
+          Register Now
+        </a>
+      </div>
+
     </main>
   );
 }
