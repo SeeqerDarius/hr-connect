@@ -22,7 +22,7 @@ export default function Header() {
     { label: 'Gallery', href: '/gallery' },
     { label: 'Past Events', href: '/past-events' },
     { label: 'Sponsors', href: '/sponsors' },
-    { label: 'Register', href: '/register' },
+    //{ label: 'Register', href: '/register' },
     { label: 'FAQ', href: '/faq' },
   ];
 

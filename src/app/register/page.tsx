@@ -1,66 +1,56 @@
 'use client';
 
+import { useSearchParams } from 'next/navigation';
+
 export default function RegisterPage() {
+  const searchParams = useSearchParams();
+  const ticketType = searchParams.get('type');
+
+  const ticketMap: Record<string, string> = {
+    standard: 'FEE GHS 1,500',
+    earlybird: 'EARLY BIRD GHS 1,250',
+    online: 'ONLINE GHS 1,000',
+  };
+
+  const ticketValue = ticketMap[ticketType || ''] || '';
+
   return (
-    <main className="min-h-screen bg-[#0A1C63] text-white px-6 py-20">
-      <div className="max-w-xl mx-auto text-center">
-        <h1 className="text-4xl font-bold mb-6 text-[#FF8C00]">Register for HR Connect 2025</h1>
-        <p className="mb-6 text-lg">Fill in your details to secure your seat.</p>
+    <main className="bg-[#08174B] text-white py-20 px-6 min-h-screen text-center">
+      <h1 className="text-4xl font-bold text-[#FF8C00] mb-6">Register</h1>
+      <form
+        action="https://formspree.io/f/mwpbkyyw"
+        method="POST"
+        className="bg-[#0A1C63] max-w-xl mx-auto p-6 rounded shadow space-y-4 text-left"
+      >
+        <label className="block">
+          <span className="text-[#FF8C00]">Full Name</span>
+          <input type="text" name="name" required className="w-full px-3 py-2 mt-1 rounded bg-white text-black" />
+        </label>
 
-        <form
-          action="https://formspree.io/f/mwpbkyyw"
-          method="POST"
-          className="space-y-6 text-left"
+        <label className="block">
+          <span className="text-[#FF8C00]">Email</span>
+          <input type="email" name="email" required className="w-full px-3 py-2 mt-1 rounded bg-white text-black" />
+        </label>
+
+        <label className="block">
+          <span className="text-[#FF8C00]">Ticket Type</span>
+          <input
+            type="text"
+            name="ticket"
+            value={ticketValue}
+            readOnly
+            required
+            className="w-full px-3 py-2 mt-1 rounded bg-gray-300 text-black cursor-not-allowed"
+          />
+        </label>
+
+        <button
+          type="submit"
+          className="w-full bg-[#FF8C00] hover:bg-orange-600 text-white font-bold py-3 px-6 rounded transition"
         >
-          <input type="hidden" name="_captcha" value="false" />
-
-          <div>
-            <label className="block mb-1 font-medium">Full Name</label>
-            <input
-              type="text"
-              name="name"
-              required
-              className="w-full px-4 py-2 rounded bg-white text-black"
-            />
-          </div>
-
-          <div>
-            <label className="block mb-1 font-medium">Email Address</label>
-            <input
-              type="email"
-              name="email"
-              required
-              className="w-full px-4 py-2 rounded bg-white text-black"
-            />
-          </div>
-
-          <div>
-            <label className="block mb-1 font-medium">Phone Number</label>
-            <input
-              type="tel"
-              name="phone"
-              required
-              className="w-full px-4 py-2 rounded bg-white text-black"
-            />
-          </div>
-
-          <div>
-            <label className="block mb-1 font-medium">Organization</label>
-            <input
-              type="text"
-              name="organization"
-              className="w-full px-4 py-2 rounded bg-white text-black"
-            />
-          </div>
-
-          <button
-            type="submit"
-            className="w-full bg-[#FF8C00] text-white py-2 rounded font-bold hover:bg-orange-600 transition"
-          >
-            Submit Registration
-          </button>
-        </form>
-      </div>
+          Submit Registration
+        </button>
+      </form>
     </main>
   );
 }

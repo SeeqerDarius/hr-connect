@@ -55,15 +55,31 @@ export default function Home() {
         </motion.p>
 
         <motion.div
-          className="flex flex-col sm:flex-row justify-center gap-4 mt-10"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
+        className="flex flex-col sm:flex-row justify-center gap-4 mt-10"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.8 }}
+      >
+        <a
+          href="/register?type=standard"
+          className="bg-white text-[#FF8C00] hover:bg-[#FF8C00] hover:text-white px-6 py-3 rounded-full font-extrabold text-base sm:text-lg shadow-2xl transition-all duration-300"
         >
-          <span className="bg-[#D63384] text-white px-6 py-2 rounded font-bold text-sm sm:text-base">FEE GHS 1,500</span>
-          <span className="bg-[#1DA1A3] text-white px-6 py-2 rounded font-bold text-sm sm:text-base">EARLY BIRD GHS 1,250</span>
-          <span className="bg-[#F39C12] text-black px-6 py-2 rounded font-bold text-sm sm:text-base">ONLINE GHS 1,000</span>
-        </motion.div>
+          FEE GHS 1,500
+        </a>
+        <a
+          href="/register?type=earlybird"
+          className="bg-white text-[#FF8C00] hover:bg-[#FF8C00] hover:text-white px-6 py-3 rounded-full font-extrabold text-base sm:text-lg shadow-2xl transition-all duration-300"
+        >
+          EARLY BIRD GHS 1,250
+        </a>
+        <a
+          href="/register?type=online"
+          className="bg-white text-[#FF8C00] hover:bg-[#FF8C00] hover:text-white px-6 py-3 rounded-full font-extrabold text-base sm:text-lg shadow-2xl transition-all duration-300"
+        >
+          ONLINE GHS 1,000
+        </a>
+      </motion.div>
+
       </section>
 
       {/* Countdown */}
@@ -76,8 +92,9 @@ export default function Home() {
           Join us in shaping the future of HR. Become a strategic partner or sponsor and showcase your brand to top HR leaders.
         </p>
         <a
-          href="/register"
-          className="inline-block bg-[#FF8C00] text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-orange-600 transition"
+          href="/sponsor"
+          className="bg-white text-[#FF8C00] hover:bg-[#FF8C00] hover:text-white px-6 py-3 rounded-full font-extrabold text-base sm:text-lg shadow-2xl transition-all duration-300"
+
         >
           Partner With Us
         </a>
