@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import CountdownTimer from './components/CountdownTimer';
 
+
 export default function Home() {
   return (
     <main className="bg-[#0A1C63] text-white">
@@ -100,15 +101,20 @@ export default function Home() {
         </a>
       </section>
 
+      
       {/* Floating Register Button */}
       <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">
+        {/*
         <a
           href="/register"
           className="bg-white text-[#FF8C00] hover:bg-[#FF8C00] hover:text-white px-6 py-3 rounded-full font-extrabold text-base sm:text-lg shadow-2xl transition-all duration-300"
         >
           Register Now
         </a>
+        */}
+        
       </div>
+      
 
     </main>
   );
