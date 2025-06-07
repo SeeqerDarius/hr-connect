@@ -14,19 +14,15 @@ export const metadata: Metadata = {
   description: "Official site for the HR Connect Conference in Accra, Ghana",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
-        {typeof window === "undefined" || !location.pathname.startsWith("/admin") ? <Header /> : null}
+        <Header />
         <main className="flex-grow">
           <PageWrapper>{children}</PageWrapper>
         </main>
-        {typeof window === "undefined" || !location.pathname.startsWith("/admin") ? <Footer /> : null}
+        <Footer />
         <ScrollToTop />
       </body>
     </html>
