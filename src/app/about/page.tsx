@@ -1,77 +1,259 @@
 'use client';
 
+import { motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+const backgroundImages = [
+  '/images/conference-session-0.jpg',
+  '/images/conference-session-1.jpg',
+  '/images/conference-session-4.jpg',
+
+];
+
 export default function AboutPage() {
   return (
     <main className="bg-white text-gray-900">
-      {/* Hero Section */}
-      <section className="bg-[url('/about-hero.jpg')] bg-cover bg-center text-white py-24">
-        <div className="text-center bg-black bg-opacity-60 py-10">
-          <h1 className="text-5xl font-bold">About Us</h1>
+      {/* Hero Section with Sliding Background */}
+      <section className="relative h-96 overflow-hidden">
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
+          loop={true}
+          className="h-full w-full"
+        >
+          {backgroundImages.map((image, index) => (
+            <SwiperSlide key={index}>
+              <div 
+                className="h-full w-full bg-cover bg-center"
+                style={{ backgroundImage: `url(${image})` }}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className="absolute inset-0 bg-black/60 flex items-center justify-center z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center px-4"
+          >
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">About Us</h1>
+            <p className="text-xl text-white max-w-2xl mx-auto">
+              Shaping the future of HR in West Africa through innovation and leadership
+            </p>
+          </motion.div>
         </div>
       </section>
 
       {/* Who We Are Section */}
       <section className="py-20 px-6 max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             <h2 className="text-3xl font-bold mb-4 text-[#FF8C00]">Who We Are</h2>
-            <p className="text-lg leading-relaxed">
-              HR Connect is West Africa’s premier HR leadership event, uniting professionals to explore innovation,
-              wellness, data strategy, and workplace transformation. We build platforms for networking, learning, and
-              growing the future of HR leadership in Africa.
+            <p className="text-lg leading-relaxed mb-6">
+              HR Connect is West Africa's premier HR leadership event, uniting professionals to explore innovation,
+              wellness, data strategy, and workplace transformation.
             </p>
-          </div>
-          <div>
-            <img src="/about-image.jpg" alt="Team" className="rounded shadow-md" />
-          </div>
+            <p className="text-lg leading-relaxed">
+              Since our founding in 2015, we've grown to become the region's most influential HR network, with over 5,000 professionals attending our annual conference and year-round events.
+            </p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="relative h-96 rounded-xl overflow-hidden shadow-lg"
+          >
+            <img 
+              src="/images/conference-session-1.jpg" 
+              alt="HR Connect Team" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+              <p className="text-white text-lg font-medium">Our team at the 2024 Leadership Summit</p>
+            </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Mission, Vision, Values */}
       <section className="bg-[#F9F9F9] py-16 px-6">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-center">
-          <div>
-            <h3 className="text-2xl font-bold text-[#FF8C00] mb-4">Mission</h3>
-            <p>
-              To empower HR professionals in West Africa by advancing innovation, inclusivity, and leadership
-              excellence.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-2xl font-bold text-[#FF8C00] mb-4">Vision</h3>
-            <p>
-              To be the leading HR network transforming workplaces and cultures across Africa.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-2xl font-bold text-[#FF8C00] mb-4">Values</h3>
-            <p>
-              Integrity, collaboration, innovation, leadership, and growth.
-            </p>
+        <div className="max-w-6xl mx-auto">
+          <motion.h2 
+            className="text-4xl font-bold text-center mb-16 text-[#0A1C63]"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Our Core Principles
+          </motion.h2>
+          
+          <div className="grid md:grid-cols-3 gap-10">
+            {[
+              {
+                title: "Mission",
+                content: "To empower HR professionals in West Africa by advancing innovation, inclusivity, and leadership excellence.",
+                icon: "🎯"
+              },
+              {
+                title: "Vision",
+                content: "To be the leading HR network transforming workplaces and cultures across Africa.",
+                icon: "🔮"
+              },
+              {
+                title: "Values",
+                content: "Integrity, collaboration, innovation, leadership, and growth.",
+                icon: "❤️"
+              }
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                className="bg-white p-8 rounded-xl shadow-md text-center"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <div className="text-4xl mb-4">{item.icon}</div>
+                <h3 className="text-2xl font-bold text-[#FF8C00] mb-4">{item.title}</h3>
+                <p className="text-gray-700">{item.content}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Our Professional Commitment */}
-      <section className="py-20 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <h2 className="text-3xl font-bold mb-6 text-[#FF8C00]">Our Professional Commitment</h2>
-          <ul className="space-y-4 list-disc pl-5">
-            <li>
-              <strong>Setting the Standard:</strong> We uphold the highest HR standards and ethics.
-            </li>
-            <li>
-              <strong>Leading with Integrity:</strong> We promote professionalism and transparency.
-            </li>
-            <li>
-              <strong>Valuing People:</strong> We prioritize employee growth, engagement, and success.
-            </li>
-            <li>
-              <strong>Exceeding Expectations:</strong> We deliver excellence every step of the way.
-            </li>
-          </ul>
+      <section className="py-20 px-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl font-bold mb-6 text-[#FF8C00]">Our Professional Commitment</h2>
+            <ul className="space-y-4">
+              {[
+                "Setting the Standard: We uphold the highest HR standards and ethics.",
+                "Leading with Integrity: We promote professionalism and transparency.",
+                "Valuing People: We prioritize employee growth, engagement, and success.",
+                "Exceeding Expectations: We deliver excellence every step of the way.",
+                "Driving Innovation: We embrace new ideas to transform workplaces."
+              ].map((item, index) => (
+                <motion.li 
+                  key={index}
+                  className="flex items-start gap-3"
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <span className="text-[#FF8C00] mt-1">✓</span>
+                  <span>{item}</span>
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="grid grid-cols-2 gap-4"
+          >
+            <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+              <img 
+                src="/images/HR-worksop.jpg" 
+                alt="HR Workshop" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+                <p className="text-white text-sm">Interactive Workshop Session</p>
+              </div>
+            </div>
+            <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+              <img 
+                src="/images/HR-AWARD.jpg" 
+                alt="Award Ceremony" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+                <p className="text-white text-sm">Annual HR Excellence Awards</p>
+              </div>
+            </div>
+            <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+              <img 
+                src="/images/expert-pannel.jpg" 
+                alt="Expert Panel" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+                <p className="text-white text-sm">Industry Expert Panel</p>
+              </div>
+            </div>
+            <div className="relative h-48 rounded-lg overflow-hidden shadow-md">
+              <img 
+                src="/images/Networking.jpg" 
+                alt="Networking" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+                <p className="text-white text-sm">Professional Networking</p>
+              </div>
+            </div>
+          </motion.div>
         </div>
-        <img src="/commitment.jpg" alt="Commitment" className="rounded shadow-md" />
+      </section>
+
+      {/* Testimonials */}
+      <section className="bg-[#0A1C63] text-white py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold mb-16 text-center text-[#FF8C00]">What People Say About Us</h2>
+          <Swiper
+            modules={[Pagination]}
+            pagination={{ clickable: true }}
+            spaceBetween={30}
+            className="pb-12"
+          >
+            {[
+              {
+                quote: "HR Connect transformed my approach to talent management. The insights I gained have been invaluable to my organization.",
+                name: "Ama Mensah",
+                title: "HR Director, Tech Solutions Ltd"
+              },
+              {
+                quote: "The best HR conference in West Africa. The quality of speakers and networking opportunities are unmatched.",
+                name: "Kwame Ofori",
+                title: "Head of People, FinCorp Africa"
+              },
+              {
+                quote: "Attending HR Connect was a career-defining moment. I returned to my company with innovative strategies that improved our employee engagement by 40%.",
+                name: "Ngozi Okonjo",
+                title: "Chief HR Officer, Pan-African Group"
+              }
+            ].map((testimonial, index) => (
+              <SwiperSlide key={index}>
+                <div className="bg-[#08174B] p-8 rounded-xl text-center max-w-3xl mx-auto">
+                  <p className="text-xl italic mb-6">"{testimonial.quote}"</p>
+                  <p className="font-bold">{testimonial.name}</p>
+                  <p className="text-gray-300">{testimonial.title}</p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </section>
     </main>
   );
