@@ -12,6 +12,8 @@ const speakerBackgrounds = [
   '/images/Mr-Kojo-Amissah.jpg',
   '/images/Patricia-Ama-Kissi.jpg',
   '/images/ERIC-KOJO-VAN-ESS-KURANCHIE-1.jpg',
+  '/images/oscar-bimpong.jpg',
+  '/images/comander.jpg',
   '/images/speakers/patricia-obo-nai.jpg',
 ];
 
@@ -27,7 +29,7 @@ interface Speaker {
 const speakers: Speaker[] = [
   {
     id: 1,
-    name: 'Ing. Patricia Obo-Nai',
+    name: 'Patricia Obo-Nai',
     title: 'CEO of Telecel Ghana',
     bio: `Ing. Patricia Obo-Nai is an electrical engineer and the first Ghanaian CEO of Vodafone Ghana, now Telecel Ghana.
 
@@ -80,6 +82,21 @@ He specializes in strategic planning, leadership, performance management, and HR
 He holds an MSc in Development Management, an Executive MBA in HRM, and a BSc in Business Management. He regularly speaks at corporate events such as Citi FM’s Corporate Business Bootcamp.`,
     imageUrl: '/images/speakers/ERIC-KOJO-VAN-ESS-KURANCHIE-1.jpg',
     category: 'Technology'
+  },
+  {
+    id: 6,
+    name: 'Commander James Emmanuel Kwegyir Aggrey-Orleans',
+    title: 'Trauma & Orthopaedic Surgeon',
+    bio: `Commander James Emmanuel Kwegyir Aggrey-Orleans
+Ghanaian Navy
+Trauma & Orthopaedic Surgeon
+Commander James Emmanuel Kwegyir Aggrey-Orleans is a
+senior officer of the Ghana Navy and is organic to Ghana
+Armed Forces Medical Services where he serves as a
+Trauma and Orthopaedic surgeon, Medical Support planner
+and instructor.`,
+    imageUrl: '/images/speakers/comander.jpg',
+    category: 'Healthcare'
   },
 ];
 
