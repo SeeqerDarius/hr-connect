@@ -13,6 +13,57 @@ const backgroundImages = [
   '/images/conference-session-4.jpg',
 ];
 
+const testimonials = [
+  {
+    quote: 'HR Connect transformed my approach to talent management. The insights I gained have been invaluable to my organization.',
+    name: 'Ama Mensah',
+    title: 'HR Director, Tech Solutions Ltd'
+  },
+  {
+    quote: 'The best HR conference in West Africa. The quality of speakers and networking opportunities are unmatched.',
+    name: 'Kwame Ofori',
+    title: 'Head of People, FinCorp Africa'
+  },
+  {
+    quote: 'Attending HR Connect was a career-defining moment. I returned with innovative strategies that improved our employee engagement by 40%.',
+    name: 'Ngozi Okonjo',
+    title: 'Chief HR Officer, Pan-African Group'
+  }
+];
+
+const corePrinciples = [
+  {
+    title: "Mission",
+    content: "To empower HR professionals in West Africa by advancing innovation, inclusivity, and leadership excellence.",
+    icon: "🎯"
+  },
+  {
+    title: "Vision",
+    content: "To be the leading HR network transforming workplaces and cultures across Africa.",
+    icon: "🔮"
+  },
+  {
+    title: "Values",
+    content: "Integrity, collaboration, innovation, leadership, and growth.",
+    icon: "❤️"
+  }
+];
+
+const commitments = [
+  'Setting the Standard: We uphold the highest HR standards and ethics.',
+  'Leading with Integrity: We promote professionalism and transparency.',
+  'Valuing People: We prioritize employee growth, engagement, and success.',
+  'Exceeding Expectations: We deliver excellence every step of the way.',
+  'Driving Innovation: We embrace new ideas to transform workplaces.'
+];
+
+const galleryImages = [
+  { src: "/images/HR-worksop.jpg", alt: "HR Workshop", label: "Interactive Workshop Session" },
+  { src: "/images/HR-AWARD.jpg", alt: "Award Ceremony", label: "Annual HR Excellence Awards" },
+  { src: "/images/expert-pannel.jpg", alt: "Expert Panel", label: "Industry Expert Panel" },
+  { src: "/images/Networking.jpg", alt: "Networking", label: "Professional Networking" }
+];
+
 export default function AboutPage() {
   return (
     <main className="bg-white text-gray-900">
@@ -27,10 +78,15 @@ export default function AboutPage() {
         >
           {backgroundImages.map((image, index) => (
             <SwiperSlide key={index}>
-              <div
-                className="h-full w-full bg-cover bg-center"
-                style={{ backgroundImage: `url(${image})` }}
-              />
+              <div className="h-full w-full relative">
+                <Image
+                  src={image}
+                  alt={`Conference session ${index}`}
+                  fill
+                  className="object-cover"
+                  priority={index === 0}
+                />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -79,6 +135,7 @@ export default function AboutPage() {
               alt="HR Connect Team" 
               fill
               className="object-cover"
+              priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
               <p className="text-white text-lg font-medium">Our team at the 2024 Leadership Summit</p>
@@ -101,21 +158,7 @@ export default function AboutPage() {
           </motion.h2>
           
           <div className="grid md:grid-cols-3 gap-10">
-            {[{
-              title: "Mission",
-              content: "To empower HR professionals in West Africa by advancing innovation, inclusivity, and leadership excellence.",
-              icon: "🎯"
-            },
-            {
-              title: "Vision",
-              content: "To be the leading HR network transforming workplaces and cultures across Africa.",
-              icon: "🔮"
-            },
-            {
-              title: "Values",
-              content: "Integrity, collaboration, innovation, leadership, and growth.",
-              icon: "❤️"
-            }].map((item, index) => (
+            {corePrinciples.map((item, index) => (
               <motion.div
                 key={index}
                 className="bg-white p-8 rounded-xl shadow-md text-center"
@@ -144,13 +187,7 @@ export default function AboutPage() {
           >
             <h2 className="text-3xl font-bold mb-6 text-[#FF8C00]">Our Professional Commitment</h2>
             <ul className="space-y-4">
-              {[
-                'Setting the Standard: We uphold the highest HR standards and ethics.',
-                'Leading with Integrity: We promote professionalism and transparency.',
-                'Valuing People: We prioritize employee growth, engagement, and success.',
-                'Exceeding Expectations: We deliver excellence every step of the way.',
-                'Driving Innovation: We embrace new ideas to transform workplaces.'
-              ].map((item, index) => (
+              {commitments.map((item, index) => (
                 <motion.li 
                   key={index}
                   className="flex items-start gap-3"
@@ -172,20 +209,15 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="grid grid-cols-2 gap-4"
           >
-            {[{
-              src: "/images/HR-worksop.jpg", alt: "HR Workshop", label: "Interactive Workshop Session"
-            },
-            {
-              src: "/images/HR-AWARD.jpg", alt: "Award Ceremony", label: "Annual HR Excellence Awards"
-            },
-            {
-              src: "/images/expert-pannel.jpg", alt: "Expert Panel", label: "Industry Expert Panel"
-            },
-            {
-              src: "/images/Networking.jpg", alt: "Networking", label: "Professional Networking"
-            }].map((img, i) => (
+            {galleryImages.map((img, i) => (
               <div key={i} className="relative h-48 rounded-lg overflow-hidden shadow-md">
-                <Image src={img.src} alt={img.alt} fill className="object-cover" />
+                <Image 
+                  src={img.src} 
+                  alt={img.alt} 
+                  fill 
+                  className="object-cover" 
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                   <p className="text-white text-sm">{img.label}</p>
                 </div>
@@ -205,21 +237,7 @@ export default function AboutPage() {
             spaceBetween={30}
             className="pb-12"
           >
-            {[{
-              quote: 'HR Connect transformed my approach to talent management. The insights I gained have been invaluable to my organization.',
-              name: 'Ama Mensah',
-              title: 'HR Director, Tech Solutions Ltd'
-            },
-            {
-              quote: 'The best HR conference in West Africa. The quality of speakers and networking opportunities are unmatched.',
-              name: 'Kwame Ofori',
-              title: 'Head of People, FinCorp Africa'
-            },
-            {
-              quote: 'Attending HR Connect was a career-defining moment. I returned to my company with innovative strategies that improved our employee engagement by 40%.',
-              name: 'Ngozi Okonjo',
-              title: 'Chief HR Officer, Pan-African Group'
-            }].map((testimonial, index) => (
+            {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
                 <div className="bg-[#08174B] p-8 rounded-xl text-center max-w-3xl mx-auto">
                   <p className="text-xl italic mb-6">&ldquo;{testimonial.quote}&rdquo;</p>

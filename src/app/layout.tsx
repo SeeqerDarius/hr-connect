@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "HR Connect Conference 2025",
   description: "Official site for the HR Connect Conference in Accra, Ghana",
   icons: {
-    icon: "/favicon.ico", // Default favicon (works since you've replaced it)
+    icon: "/favicon.ico", // Default favicon (works)
     // Optional: Uncomment these if you add corresponding files
     // shortcut: "/favicon-16x16.png",
     // apple: "/apple-touch-icon.png",
