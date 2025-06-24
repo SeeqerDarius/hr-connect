@@ -15,7 +15,7 @@ const sponsorTiers = [
         description: "Bone, Joint & Muscle Specialist Clinic"
       },
       {
-        name: "Movenpick Ambassador Hotel Accra",
+        name: "Movenpick",
         logo: "/sponsors/movenpick.png",
         url: "https://movenpick.accor.com/en/africa/ghana/accra/moevenpick-ambassador-hotel-accra.html",
         description: "5 Star Hotel in Accra, Ghana"
@@ -123,7 +123,7 @@ export default function SponsorsPage() {
             </motion.div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {tier.sponsors.map((sponsor, sponsorIndex) => (
+              {tier.sponsors.map((sponsor) => (
                 <motion.div
                   key={sponsor.name}
                   initial={{ opacity: 0, scale: 0.95 }}
