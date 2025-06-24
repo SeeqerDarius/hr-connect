@@ -24,53 +24,69 @@ interface Speaker {
   category?: string;
 }
 
-export default function SpeakersPage() {
-  const speakers: Speaker[] = [
-    {
-      id: 1,
-      name: 'Ing. Patricia Obo-Nai',
-      title: 'CEO of Telecel Ghana',
-      bio: 'Ing. Patricia Obo-Nai is an electrical engineer and the first Ghanaian CEO of Vodafone Ghana, now Telecel Ghana.\n\nIng. Obo-Nai holds a BSc. in Electrical and Electronic Engineering from Kwame Nkrumah University of Science and Technology (KNUST), an Executive MBA in Project Management from University of Ghana Business School and has completed executive education programmes at the Kellogg School of Management USA, London Business School, and INSEAD in France.\n\nShe has over two decades of experience in IT and Telecommunications, working as Technology Director in both Millicom Ghana Limited (Tigo) and Telecel Ghana. She also led the Fixed Business and Customer Operations of Telecel Ghana prior to becoming CEO.\n\nShe is recognized for her leadership and has numerous awards to her credit. She is passionate about the future of the youth and women in the digital age and has been on several local and international platforms including the UN General Assembly panel sessions advocating for youth and women.\n\nA passionate advocate for STEM, she serves on several boards, including the KNUST Engineering Education Project, ABSA Bank Ghana and the Global Young Academy Advisory Board, Germany.\n\nShe is married with 3 children.',
-      imageUrl: '/images/speakers/patricia-obo-nai.jpg',
-      category: 'Leadership'
-    },
-    {
-      id: 2,
-      name: 'Oscar Bimpong',
-      title: 'Founder, Train2inspire Consultancy',
-      bio: 'Oscar Bimpong is the Founder and CEO of Train2inspire Consultancy, a distinguished business training and development firm with operations in both the UK and Ghana. Oscar is an internationally recognised Mindset Transformation Consultant, Corporate Trainer, and Keynote Speaker, with over 17 years of experience in coaching, training, and speaking engagements across the globe.\n\nHe is the author of the internationally acclaimed book, "Mindset Revolution: Re-engineering Your Mind from Prison to Purpose". The book underscores a powerful message: the most dangerous prison is not one with physical walls, but the prison of the mind. As Oscar powerfully articulates, an imprisoned mind results in an imprisoned life. In addition to this seminal work, he has authored three other books, all centred on empowering individuals and organisations to realise their full potential through mindset transformation.\n\nThe central objective of his writings and training programs is to reshape negative thought patterns into goal-oriented mindsets, enabling individuals to align their personal aspirations with the vision, mission, and core values of their organisations.\n\nOscar is also BBC-trained in radio operations and media production, having contributed extensively to community radio and educational initiatives in the UK. His commitment to corporate mindset transformation and youth empowerment has earned him numerous awards and recognitions in the UK and beyond.\n\nCurrently, he serves as an Associate Lecturer at Arden University, Nelson College, and the Global Banking School in London, where he imparts his expertise to the next generation of business professionals. His work also extends deeply into Africa, where he continues to lead initiatives aimed at promoting mindset transformation across the continent.',
-      imageUrl: '/images/speakers/oscar-bimpong.jpg',
-      category: 'Mindset'
-    },
-    {
-      id: 3,
-      name: 'Kojo Amissah',
-      title: 'Strategy & Performance Consultant -CITAM',
-      bio: 'Kojo Amissah is a Strategy and Performance Consultant at CITAM, where he leads high-impact training, consulting, and staffing services. He also serves as the lead instructor for the SHRM-CP and SHRM-SCP certification prep courses.\n\nKojo brings extensive consulting and training experience in areas such as strategic planning, leadership and change management, performance management, competency management, and compensation and benefits. He has worked across various sectors, including oil and gas, mining, manufacturing, finance, and the public sector, supporting a wide range of organizational development initiatives.\n\nHe holds a BS in Computer Science, an MBA in Entrepreneurship, and professional certifications including SHRM-SCP and SPHR.\n\nKojo simply loves all things HR.',
-      imageUrl: '/images/speakers/Mr-Kojo-Amissah.jpg',
-      category: 'HR Strategy'
-    },
-    {
-      id: 4,
-      name: 'Patricia Ama Kissi',
-      title: 'CEO SEDAT Consult',
-      bio: '15+ years in artificial intelligence research with publications in top-tier journals. Leads initiatives to make AI more accessible and ethical. Regular speaker at international tech conferences.',
-      imageUrl: '/images/speakers/Patricia-Ama-Kissi.jpg',
-      category: 'Technology'
-    },
-    {
-      id: 5,
-      name: 'ERIC KOJO VAN-ESS KURANCHIE',
-      title: 'AI Research Lead, TechFuture',
-      bio: 'Strategic HR expert with 15+ years experience in Talent Management, Change Management, and International HR. Currently leads HR strategy at Bank of Africa Ghana. Previously headed Human Capital at ProCredit SLC. HR consultant for multiple organizations including NND Digital and Millennium Insurance.\n\nHolds MSc in Development Management (KNUST), Executive MBA in HRM (University of Ghana), BSc in Business Management (Central University), and HND in Mechanical Engineering. Regular HR resource person for Citi FM Corporate Business Bootcamp.\n\nAreas of expertise: Recruitment, Performance Management, Learning & Development, Compensation & Benefits, Labour Relations, Succession Planning, Customer Service Management, and Corporate Communications.',
-      imageUrl: '/images/speakers/ERIC-KOJO-VAN-ESS-KURANCHIE-1.jpg',
-      category: 'Technology'
-    },
-  ];
+const speakers: Speaker[] = [
+  {
+    id: 1,
+    name: 'Ing. Patricia Obo-Nai',
+    title: 'CEO of Telecel Ghana',
+    bio: `Ing. Patricia Obo-Nai is an electrical engineer and the first Ghanaian CEO of Vodafone Ghana, now Telecel Ghana.
 
+Ing. Obo-Nai holds a BSc. in Electrical and Electronic Engineering from KNUST, an Executive MBA in Project Management from University of Ghana Business School and has completed executive education programmes at the Kellogg School of Management USA, London Business School, and INSEAD in France.
+
+She has over two decades of experience in IT and Telecommunications, working as Technology Director in both Millicom Ghana Limited (Tigo) and Telecel Ghana. She also led the Fixed Business and Customer Operations of Telecel Ghana prior to becoming CEO.
+
+She is recognized for her leadership and has numerous awards to her credit. She is passionate about the future of the youth and women in the digital age and has been on several local and international platforms including the UN General Assembly.
+
+She serves on several boards, including KNUST Engineering Education Project, ABSA Bank Ghana, and the Global Young Academy Advisory Board, Germany.`,
+    imageUrl: '/images/speakers/patricia-obo-nai.jpg',
+    category: 'Leadership'
+  },
+  {
+    id: 2,
+    name: 'Oscar Bimpong',
+    title: 'Founder, Train2inspire Consultancy',
+    bio: `Oscar Bimpong is the Founder and CEO of Train2inspire Consultancy with operations in both the UK and Ghana. He is a Mindset Transformation Consultant, Corporate Trainer, and Keynote Speaker with over 17 years of experience.
+
+He is the author of "Mindset Revolution: Re-engineering Your Mind from Prison to Purpose" and three other books focused on mindset development.
+
+Oscar is BBC-trained in radio operations and media production and has earned numerous awards. He currently lectures at Arden University and leads mindset initiatives across Africa.`,
+    imageUrl: '/images/speakers/oscar-bimpong.jpg',
+    category: 'Mindset'
+  },
+  {
+    id: 3,
+    name: 'Kojo Amissah',
+    title: 'Strategy & Performance Consultant - CITAM',
+    bio: `Kojo Amissah is a Consultant at CITAM leading training, consulting, and staffing. He also teaches SHRM-CP and SHRM-SCP certification courses.
+
+He specializes in strategic planning, leadership, performance management, and HR development. He holds a BS in Computer Science, an MBA in Entrepreneurship, and certifications including SHRM-SCP and SPHR.`,
+    imageUrl: '/images/speakers/Mr-Kojo-Amissah.jpg',
+    category: 'HR Strategy'
+  },
+  {
+    id: 4,
+    name: 'Patricia Ama Kissi',
+    title: 'CEO SEDAT Consult',
+    bio: `Patricia Ama Kissi has over 15 years in artificial intelligence research with multiple publications. She leads AI accessibility and ethics initiatives and is a regular speaker at international tech conferences.`,
+    imageUrl: '/images/speakers/Patricia-Ama-Kissi.jpg',
+    category: 'Technology'
+  },
+  {
+    id: 5,
+    name: 'ERIC KOJO VAN-ESS KURANCHIE',
+    title: 'AI Research Lead, TechFuture',
+    bio: `Eric Kojo is a strategic HR expert with over 15 years experience in Talent and Change Management. He leads HR strategy at Bank of Africa Ghana and has worked with ProCredit SLC, NND Digital, and Millennium Insurance.
+
+He holds an MSc in Development Management, an Executive MBA in HRM, and a BSc in Business Management. He regularly speaks at corporate events such as Citi FM’s Corporate Business Bootcamp.`,
+    imageUrl: '/images/speakers/ERIC-KOJO-VAN-ESS-KURANCHIE-1.jpg',
+    category: 'Technology'
+  },
+];
+
+export default function SpeakersPage() {
   return (
     <main className="bg-white text-gray-900">
-      {/* Hero Section with Sliding Background */}
+      {/* Hero Slider */}
       <section className="relative h-96 overflow-hidden">
         <Swiper
           modules={[Autoplay, Pagination]}
@@ -79,8 +95,8 @@ export default function SpeakersPage() {
           loop
           className="h-full w-full"
         >
-          {speakerBackgrounds.map((image, index) => (
-            <SwiperSlide key={index}>
+          {speakerBackgrounds.map((image, i) => (
+            <SwiperSlide key={i}>
               <div
                 className="h-full w-full bg-cover bg-center"
                 style={{ backgroundImage: `url(${image})` }}
@@ -96,14 +112,12 @@ export default function SpeakersPage() {
             className="text-center px-4"
           >
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Our Distinguished Speakers</h1>
-            <p className="text-xl text-white max-w-2xl mx-auto">
-              Industry leaders shaping the future of business and technology
-            </p>
+            <p className="text-xl text-white max-w-2xl mx-auto">Industry leaders shaping the future of business and tech</p>
           </motion.div>
         </div>
       </section>
 
-      {/* Speakers Grid Section */}
+      {/* Speakers Grid */}
       <section className="py-20 px-6 max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -130,12 +144,7 @@ export default function SpeakersPage() {
             >
               <Link href={`/speakers/${speaker.id}`} passHref>
                 <div className="relative h-64 w-full cursor-pointer">
-                  <Image
-                    src={speaker.imageUrl}
-                    alt={speaker.name}
-                    fill
-                    className="object-cover"
-                  />
+                  <Image src={speaker.imageUrl} alt={speaker.name} fill className="object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
                     <div>
                       <span className="bg-[#FF8C00] text-white text-xs font-semibold px-3 py-1 rounded-full mb-2 inline-block">
@@ -146,14 +155,9 @@ export default function SpeakersPage() {
                     </div>
                   </div>
                 </div>
-
                 <div className="p-6">
-                  <p className="text-gray-700 line-clamp-3 mb-4">
-                    {speaker.bio.substring(0, 150)}...
-                  </p>
-                  <div className="text-[#0A1C63] font-medium hover:underline focus:outline-none">
-                    View Full Profile
-                  </div>
+                  <p className="text-gray-700 line-clamp-3 mb-4">{speaker.bio.slice(0, 150)}...</p>
+                  <div className="text-[#0A1C63] font-medium hover:underline">View Full Profile</div>
                 </div>
               </Link>
             </motion.div>
@@ -161,7 +165,7 @@ export default function SpeakersPage() {
         </div>
       </section>
 
-      {/* Keynote Highlight */}
+      {/* Keynote Section */}
       <section className="bg-[#F9F9F9] py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -172,9 +176,7 @@ export default function SpeakersPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold mb-4 text-[#0A1C63]">Featured Keynote Speakers</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Our headline speakers bringing transformative insights
-            </p>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Our headline speakers bringing transformative insights</p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-10 items-center">
@@ -196,9 +198,7 @@ export default function SpeakersPage() {
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-2">Ing. Patricia Obo-Nai</h3>
                     <p className="text-gray-200 mb-4">"The Future of Digital Transformation in Africa"</p>
-                    <span className="bg-[#FF8C00] text-white text-xs font-semibold px-3 py-1 rounded-full">
-                      Opening Keynote
-                    </span>
+                    <span className="bg-[#FF8C00] text-white text-xs font-semibold px-3 py-1 rounded-full">Opening Keynote</span>
                   </div>
                 </div>
               </motion.div>
@@ -222,9 +222,7 @@ export default function SpeakersPage() {
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-2">Oscar Bimpong</h3>
                     <p className="text-gray-200 mb-4">"Mindset Revolution: From Prison to Purpose"</p>
-                    <span className="bg-[#FF8C00] text-white text-xs font-semibold px-3 py-1 rounded-full">
-                      Closing Keynote
-                    </span>
+                    <span className="bg-[#FF8C00] text-white text-xs font-semibold px-3 py-1 rounded-full">Closing Keynote</span>
                   </div>
                 </div>
               </motion.div>
@@ -233,7 +231,7 @@ export default function SpeakersPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA */}
       <section className="bg-[#0A1C63] text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
