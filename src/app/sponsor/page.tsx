@@ -8,7 +8,7 @@ export default function SponsorPage() {
     <main className="bg-white text-gray-900">
       {/* Hero Section */}
       <section className="relative py-24 px-6 bg-[#0A1C63] text-white">
-        <div className="absolute inset-0 bg-[url(&apos;/images/pattern.svg&apos;)] opacity-10"></div>
+        <div className="absolute inset-0 bg-[url('/images/pattern.svg')] opacity-10"></div>
         <div className="max-w-6xl mx-auto relative z-10 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-white">Partner with </span>
@@ -72,7 +72,7 @@ export default function SponsorPage() {
 
           {/* Additional Options */}
           <div className="mt-16 max-w-4xl mx-auto bg-[#0A1C63] p-8 rounded-xl text-white">
-            <h3 className="text-2xl font-bold text-[#FF8C00] mb-6 text-center">&Agrave; La Carte Sponsorship Options</h3>
+            <h3 className="text-2xl font-bold text-[#FF8C00] mb-6 text-center">À La Carte Sponsorship Options</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-[#08174B] p-4 rounded-lg text-center">
                 <h4 className="font-bold text-lg mb-2">Exhibition Stand</h4>
@@ -105,13 +105,13 @@ export default function SponsorPage() {
               <p className="italic mb-4 text-gray-700">
                 &quot;Sponsoring HR Connect was one of our best marketing decisions last year. The quality of attendees and networking opportunities exceeded our expectations.&quot;
               </p>
-              <p className="font-bold text-[#0A1C63]">&mdash; HR Director, Leading Tech Company</p>
+              <p className="font-bold text-[#0A1C63]">— HR Director, Leading Tech Company</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#FF8C00]">
               <p className="italic mb-4 text-gray-700">
                 &quot;The visibility we gained through our Platinum partnership translated directly into new business opportunities. The team was professional and delivered on all promises.&quot;
               </p>
-              <p className="font-bold text-[#0A1C63]">&mdash; CEO, HR Solutions Provider</p>
+              <p className="font-bold text-[#0A1C63]">— CEO, HR Solutions Provider</p>
             </div>
           </div>
         </div>
@@ -123,7 +123,7 @@ export default function SponsorPage() {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="bg-black/10 backdrop-blur-sm p-6 rounded-xl inline-block mb-6">
             <h2 className="text-3xl md:text-4xl font-bold text-white drop-shadow-lg">
-              Ready to Elevate Your Brand&quest;
+              Ready to Elevate Your Brand?
             </h2>
           </div>
           <div className="bg-black/10 backdrop-blur-sm p-6 rounded-xl max-w-3xl mx-auto mb-8">
@@ -142,7 +142,7 @@ export default function SponsorPage() {
               href="tel:+233123456789"
               className="bg-black/20 hover:bg-black/30 text-white border-2 border-white/80 px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all duration-300 hover:scale-105"
             >
-              Call &plus;233 123 456 789
+              Call +233 123 456 789
             </a>
           </div>
         </div>
