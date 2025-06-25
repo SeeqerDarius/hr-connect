@@ -70,14 +70,15 @@ export default function Home() {
             >
               {/* Logo as Heading */}
               <div className="mb-8">
-               <Image 
-  src="/images/HRCONFERENCELOGO.png" 
-  alt="HR Connect Conference Logo"
-  width={600}
-  height={200}
-  className="mx-auto"
-  priority
-/>              </div>
+                <Image 
+                  src="/images/HRCONFERENCELOGO.png" 
+                  alt="HR Connect Conference Logo"
+                  width={600}
+                  height={200}
+                  className="mx-auto"
+                  priority
+                />
+              </div>
               
               <span className="inline-block bg-[#FF8C00] text-white px-4 py-1 rounded-full text-sm font-bold mb-3">
                 2025 EDITION
@@ -109,7 +110,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
             >
-              Join Africa's premier HR conference to explore data-driven strategies, resilience, and wellness for thriving workplaces.
+              Join Africa&apos;s premier HR conference to explore data-driven strategies, resilience, and wellness for thriving workplaces.
             </motion.p>
 
             <motion.div
@@ -126,12 +127,14 @@ export default function Home() {
               </a>
               <a
                 href="/register?type=earlybird"
-                className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg shadow-xl transition-all duration-300 hover:scale-105">
+                className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg shadow-xl transition-all duration-300 hover:scale-105"
+              >
                 Early Bird (GHS 1,250)
               </a>
               <a
                 href="/register?type=online"
-                className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg shadow-xl transition-all duration-300 hover:scale-105" >
+                className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg shadow-xl transition-all duration-300 hover:scale-105"
+              >
                 Online (GHS 1,000)
               </a>
             </motion.div>
@@ -156,7 +159,7 @@ export default function Home() {
               Why Attend <span className="text-[#FF8C00]">HR Connect 2025</span>?
             </h2>
             <p className="max-w-2xl mx-auto text-lg">
-              Discover the key benefits of joining Africa's most impactful HR conference
+              Discover the key benefits of joining Africa&apos;s most impactful HR conference
             </p>
           </motion.div>
 
@@ -192,7 +195,7 @@ export default function Home() {
               <span className="text-[#FF8C00]">Partner</span> With Us
             </h2>
             <p className="max-w-2xl mx-auto text-lg mb-8">
-              Align your brand with Africa's premier HR event and gain access to top HR decision-makers.
+              Align your brand with Africa&apos;s premier HR event and gain access to top HR decision-makers.
             </p>
             <div className="flex flex-wrap justify-center gap-6">
               <a
@@ -226,9 +229,9 @@ export default function Home() {
             </h2>
             <div className="bg-[#F9F9F9] p-8 rounded-xl shadow-md">
               <blockquote className="text-xl italic mb-6">
-                "HR Connect transformed how we approach talent management. The insights we gained helped us increase employee retention by 30%."
+                &quot;HR Connect transformed how we approach talent management. The insights we gained helped us increase employee retention by 30%.&quot;
               </blockquote>
-              <p className="font-bold">— HR Director, Leading Financial Institution</p>
+              <p className="font-bold">&mdash; HR Director, Leading Financial Institution</p>
             </div>
           </motion.div>
         </div>
