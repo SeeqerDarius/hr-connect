@@ -10,12 +10,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const speakerBackgrounds = [
-  '/images/Mr-Kojo-Amissah.jpg',
-  '/images/Patricia-Ama-Kissi.jpg',
-  '/images/ERIC-KOJO-VAN-ESS-KURANCHIE-1.jpg',
-  '/images/oscar-bimpong.jpg',
+  '/images/speakers/Mr-Kojo-Amissah.jpg',
+  '/images/speakers/Patricia-Ama-Kissi.jpg',
+  '/images/speakers/ERIC-KOJO-VAN-ESS-KURANCHIE-1.jpg',
+  '/images/speakers/Oscar-Bimpong.jpg',
   '/images/comander.jpg',
-  '/images/speakers/patricia-obo-nai.jpg',
+  '/images/speakers/PATRICIA-OBO-NAI.jpg',
+  '/images/speakers/Rosie Ebe-Arthur.jpg',
+  '/images/speakers/Yvone-Wiredu.jpg',
 ];
 
 interface Speaker {
@@ -41,7 +43,7 @@ She has over two decades of experience in IT and Telecommunications, working as 
 She is recognized for her leadership and has numerous awards to her credit. She is passionate about the future of the youth and women in the digital age and has been on several local and international platforms including the UN General Assembly.
 
 She serves on several boards, including KNUST Engineering Education Project, ABSA Bank Ghana, and the Global Young Academy Advisory Board, Germany.`,
-    imageUrl: '/images/speakers/patricia-obo-nai.jpg',
+    imageUrl: '/images/speakers/PATRICIA-OBO-NAI.jpg',
     category: 'Leadership'
   },
   {
@@ -53,7 +55,7 @@ She serves on several boards, including KNUST Engineering Education Project, ABS
 He is the author of "Mindset Revolution: Re-engineering Your Mind from Prison to Purpose" and three other books focused on mindset development.
 
 Oscar is BBC-trained in radio operations and media production and has earned numerous awards. He currently lectures at Arden University and leads mindset initiatives across Africa.`,
-    imageUrl: '/images/speakers/oscar-bimpong.jpg',
+    imageUrl: '/images/speakers/Oscar-Bimpong.jpg',
     category: 'Mindset'
   },
   {
@@ -225,7 +227,7 @@ export default function SpeakersPage() {
                 className="relative aspect-[3/4] rounded-xl overflow-hidden shadow-xl cursor-pointer"
               >
                 <Image
-                  src="/images/speakers/patricia-obo-nai-keynote.jpg"
+                  src="/images/speakers/PATRICIA-OBO-NAI-keynote.jpg"
                   alt="Patricia Obo-Nai Keynote"
                   fill
                   className="object-cover object-top"
@@ -249,7 +251,7 @@ export default function SpeakersPage() {
                 className="relative aspect-[3/4] rounded-xl overflow-hidden shadow-xl cursor-pointer"
               >
                 <Image
-                  src="/images/speakers/oscar-bimpong-keynote.jpg"
+                  src="/images/speakers/Oscar-Bimpong-keynote.jpg"
                   alt="Oscar Bimpong Keynote"
                   fill
                   className="object-cover object-top"
