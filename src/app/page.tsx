@@ -71,9 +71,9 @@ export default function Home() {
               {/* Logo as Heading */}
               <div className="mb-8">
                 <Image 
-                  src="/images/HRCONFERENCELOGO.png" 
+                  src="/images/hr-connect-logo.png" 
                   alt="HR Connect Conference Logo"
-                  width={600}
+                  width={400}
                   height={200}
                   className="mx-auto"
                   priority

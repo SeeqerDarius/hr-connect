@@ -2,9 +2,10 @@
 
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -106,7 +107,9 @@ export default function SpeakersPage() {
       {/* Hero Slider */}
       <section className="relative h-96 overflow-hidden">
         <Swiper
-          modules={[Autoplay, Pagination]}
+          modules={[Autoplay, Pagination, EffectFade]}
+          effect="fade"
+          fadeEffect={{ crossFade: true }}
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
           loop
@@ -114,14 +117,25 @@ export default function SpeakersPage() {
         >
           {speakerBackgrounds.map((image, i) => (
             <SwiperSlide key={i}>
-              <div
-                className="h-full w-full bg-cover bg-center"
-                style={{ backgroundImage: `url(${image})` }}
-              />
+              <motion.div
+                initial={{ scale: 1.05, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.5 }}
+                className="h-full w-full relative"
+              >
+                <Image
+                  src={image}
+                  alt=""
+                  fill
+                  priority={i === 0}
+                  className="object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+              </motion.div>
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="absolute inset-0 bg-black/60 flex items-center justify-center z-10">
+        <div className="absolute inset-0 flex items-center justify-center z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -160,8 +174,13 @@ export default function SpeakersPage() {
               className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-xl"
             >
               <Link href={`/speakers/${speaker.id}`} passHref>
-                <div className="relative h-64 w-full cursor-pointer">
-                  <Image src={speaker.imageUrl} alt={speaker.name} fill className="object-cover" />
+                <div className="relative aspect-[3/4] w-full cursor-pointer">
+                  <Image
+                    src={speaker.imageUrl}
+                    alt={speaker.name}
+                    fill
+                    className="object-cover object-top"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
                     <div>
                       <span className="bg-[#FF8C00] text-white text-xs font-semibold px-3 py-1 rounded-full mb-2 inline-block">
@@ -203,13 +222,13 @@ export default function SpeakersPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="relative h-96 rounded-xl overflow-hidden shadow-xl cursor-pointer"
+                className="relative aspect-[3/4] rounded-xl overflow-hidden shadow-xl cursor-pointer"
               >
                 <Image
                   src="/images/speakers/patricia-obo-nai-keynote.jpg"
                   alt="Patricia Obo-Nai Keynote"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-8">
                   <div>
@@ -227,13 +246,13 @@ export default function SpeakersPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="relative h-96 rounded-xl overflow-hidden shadow-xl cursor-pointer"
+                className="relative aspect-[3/4] rounded-xl overflow-hidden shadow-xl cursor-pointer"
               >
                 <Image
                   src="/images/speakers/oscar-bimpong-keynote.jpg"
                   alt="Oscar Bimpong Keynote"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-8">
                   <div>
