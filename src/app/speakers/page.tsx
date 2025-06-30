@@ -10,14 +10,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const speakerBackgrounds = [
-  '/images/speakers/Mr-Kojo-Amissah.jpg',
-  '/images/speakers/Patricia-Ama-Kissi.jpg',
-  '/images/speakers/ERIC-KOJO-VAN-ESS-KURANCHIE-1.jpg',
-  '/images/speakers/Oscar-Bimpong.jpg',
-  '/images/comander.jpg',
-  '/images/speakers/PATRICIA-OBO-NAI.jpg',
-  '/images/speakers/Rosie Ebe-Arthur.jpg',
-  '/images/speakers/Yvone-Wiredu.jpg',
+  '/images/IMG-20250610-WA0018.jpg',
+  //'/images/speakers/Patricia-Ama-Kissi.jpg',
+  //'/images/speakers/ERIC-KOJO-VAN-ESS-KURANCHIE-1.jpg',
+  //'/images/speakers/Oscar-Bimpong.jpg',
+  //'/images/comander.jpg',
+  //'/images/speakers/PATRICIA-OBO-NAI.jpg',
+  //'/images/speakers/Rosie Ebe-Arthur.jpg',
+  //'/images/speakers/Yvone-Wiredu.jpg',
 ];
 
 interface Speaker {
@@ -29,7 +29,8 @@ interface Speaker {
   category?: string;
 }
 
-const speakers: Speaker[] = [
+import { speakers } from '../data/speakers-data';
+  [
   {
     id: 1,
     name: 'Patricia Obo-Nai',
@@ -58,10 +59,13 @@ const speakers: Speaker[] = [
     id: 3,
     name: 'Kojo Amissah',
     title: 'Strategy & Performance Consultant - CITAM',
-    bio: `Kojo Amissah is a Consultant at CITAM leading training, consulting, and staffing. 
-          He also teaches SHRM-CP and SHRM-SCP certification courses.
-          He specializes in strategic planning, leadership, performance management, and HR development. 
-          He holds a BS in Computer Science, an MBA in Entrepreneurship, and certifications including SHRM-SCP and SPHR.`,
+    bio: `Kojo Amissah is a Strategy and Performance Consultant at CITAM, where he leads high-impact training, consulting, and staffing services. He also serves as the lead instructor for the SHRM-CP and SHRM-SCP certification prep courses.
+
+Kojo brings extensive consulting and training experience in areas such as strategic planning, leadership and change management, performance management, competency management, and compensation and benefits. He has worked across various sectors, including oil and gas, mining, manufacturing, finance, and the public sector, supporting a wide range of organizational development initiatives.
+
+He holds a BS in Computer Science, an MBA in Entrepreneurship, and professional certifications including SHRM-SCP and SPHR.
+
+Kojo simply loves all things HR.`,
     imageUrl: '/images/speakers/Mr-Kojo-Amissah.jpg',
     category: 'HR Strategy'
   },
@@ -100,6 +104,36 @@ const speakers: Speaker[] = [
           and instructor.`,
     imageUrl: '/images/speakers/comander.jpg',
     category: 'Healthcare'
+  },
+  {
+    id: 7,
+    name: 'Commander James Emmanuel Kwegyir Aggrey-Orleans',
+    title: 'Trauma & Orthopaedic Surgeon',
+    bio: ` Rosie 
+Ebe-Arthur is a Chartered Fellow of the Chartered Institute of Personnel and Development (CIPD) UK and 
+Board Director on a couple of Boards in Ghana.  She brings with her a plethora of experience from the United 
+Kingdom and Africa. `,
+    imageUrl: '/images/speakers/Rosie Ebe-Arthur.jpg',
+    category: 'Healthcare'
+  },
+  {
+    id: 8,
+    name: 'Paa Kwesi-Barnes',
+    title: 'Moderator',
+    bio: `???.`,
+    imageUrl: '/images/speakers/Paa-Kwesi-Barnes-moderator.jpg',
+    category: 'PR'
+  },
+   {
+    id: 9,
+    name: 'Yvonne Wiredu-Akpabli',
+    title: 'HR Consultant/ Coporate Trainer-SHRM',
+    bio: `Yvonne is a highly trained HR professional with over 16years of experience in the practice of managing a broad spectrum of human resources programs, services, and functions; She possesses a strong command on performance management, employment laws, recruitment & selection, benefit plans, training and development; and compliance issues.
+She has significant experience managing various HR assignments for public sector organisations, NGOs, Telecommunication, financial, national, shipping, and multinational companies. 
+Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Management and Public Administration (GIMPA). She also has a BA in English and French from the University of Cape Coast. In 2017, she was certified as a global HR professional after passing her SPHRi from HRCI. HR Focus also adjudged her as one of the top 40 HR Practitioners in Ghana in the same year. She also holds an LLB from GIMPA and an LLM in Labour Law from the University of Ghana Law School. She is a member of SHRM, a global HR forum, ACHR Ghana and a Fellow at CIHRP Ghana. She is a facilitator of HR courses at the HR Certification Centre and the Chartered Institute of Human Resource Managers (CIHRM) Ghana. She was adjudged the HR Personality of the year by the HRCC in 2023.
+`,
+    imageUrl: '/images/speakers/Paa-Kwesi-Barnes-moderator.jpg',
+    category: 'PR'
   },
 ];
 
@@ -283,16 +317,17 @@ export default function SpeakersPage() {
               Reserve your spot today to learn from these industry leaders and network with peers
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
+             {/* <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-[#FF8C00] hover:bg-[#FF6D00] text-white font-bold py-3 px-8 rounded-full transition-colors"
               >
                 Register Now
-              </motion.button>
+              </motion.button>*/}
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+              
                 className="bg-transparent hover:bg-white/10 text-white font-bold py-3 px-8 rounded-full border border-white transition-colors"
               >
                 View Full Agenda

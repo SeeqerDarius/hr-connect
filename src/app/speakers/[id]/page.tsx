@@ -4,7 +4,7 @@
 
 import { notFound } from 'next/navigation';
 import { useParams } from 'next/navigation';
-import { speakers } from '../../data/speakers-data'; // We'll create this file next
+import { speakers } from '../../data/speakers-data'; 
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -20,7 +20,7 @@ export default function SpeakerPage() {
 
   return (
     <main className="max-w-4xl mx-auto p-8">
-      <Link href="/#speakers" className="text-[#0A1C63] font-bold mb-4 inline-block hover:underline">
+      <Link href="/speakers" className="text-[#0A1C63] font-bold mb-4 inline-block hover:underline">
         ← Back to Speakers
       </Link>
 
