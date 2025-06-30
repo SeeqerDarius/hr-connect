@@ -80,14 +80,14 @@ Kojo simply loves all things HR.`,
   {
     id: 5,
     name: 'ERIC KOJO VAN-ESS KURANCHIE',
-    title: 'AI Research Lead, TechFuture',
+    title: 'Strategic HR Leader & Group Head of HR, Bank of Africa Ghana',
     bio: `Eric Kojo is a strategic HR expert with over 15 years experience in Talent and Change Management. 
           He leads HR strategy at Bank of Africa Ghana and has worked with ProCredit SLC, NND Digital, 
           and Millennium Insurance.
           He holds an MSc in Development Management, an Executive MBA in HRM, and a BSc in Business Management. 
           He regularly speaks at corporate events such as Citi FM’s Corporate Business Bootcamp.`,
     imageUrl: '/images/speakers/ERIC-KOJO-VAN-ESS-KURANCHIE-1.jpg',
-    category: 'Technology'
+    category: 'HR Strategy'
   },
   {
     id: 6,
@@ -112,7 +112,7 @@ Kojo simply loves all things HR.`,
 Board Director on a couple of Boards in Ghana. She brings with her a plethora of experience from the United 
 Kingdom and Africa.`,
     imageUrl: '/images/speakers/Rosie Ebe-Arthur.jpg',
-    category: 'Healthcare'
+    category: 'Leadership'
   },
   {
     id: 8,
@@ -130,8 +130,17 @@ Kingdom and Africa.`,
 She has significant experience managing various HR assignments for public sector organisations, NGOs, Telecommunication, financial, national, shipping, and multinational companies. 
 Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Management and Public Administration (GIMPA). She also has a BA in English and French from the University of Cape Coast. In 2017, she was certified as a global HR professional after passing her SPHRi from HRCI. HR Focus also adjudged her as one of the top 40 HR Practitioners in Ghana in the same year. She also holds an LLB from GIMPA and an LLM in Labour Law from the University of Ghana Law School. She is a member of SHRM, a global HR forum, ACHR Ghana and a Fellow at CIHRP Ghana. She is a facilitator of HR courses at the HR Certification Centre and the Chartered Institute of Human Resource Managers (CIHRM) Ghana. She was adjudged the HR Personality of the year by the HRCC in 2023.`,
     imageUrl: '/images/speakers/Yvone-Wiredu.jpg',
-    category: 'PR'
-  }
+    category: 'Consultancy'
+  },
+  {
+    id: 10,
+    name: 'Dr. Cheryl Arutt',
+    title: 'clinical & forensic psychologist',
+    bio: `Dr. Cheryl Arutt is a licensed clinical & forensic psychologist, TEDx speaker, media consultant and Certified EMDRIA Therapist & Consultant based in Los Angeles. A specialist in creative resilience & post-traumatic growth, Dr. Cheryl offers EMDR Intensives & Adjunct EMDR via telehealth. She graduated summa cum laude from UCLA and holds a Doctor of Psychology (PsyD) degree from CSPP-LA, where she was awarded Outstanding Clinical Dissertation. A passionate advocate for survivors of trauma, Dr. Cheryl has served on several Boards dedicated to helping survivors, and consults with clinicians and organizations about effectively treating complex and developmental trauma. Dr. Cheryl is Access Hollywood’s go-to psychologist for trauma issues, a frequent psychological expert on networks including CNN, HLN and DiscoveryID, and speaks internationally about trauma, creativity and post-traumatic growth. For more information, please visit askdrcheryl.com and CreativeEMDR.com .`,
+    imageUrl: '/images/speakers/Dr.-Cheryl-Arutt.jpg',
+    category: 'Psychology'
+  },
+
 ];
 
 export default function SpeakersPage() {
@@ -327,4 +336,4 @@ export default function SpeakersPage() {
       </section>
     </main>
   );
-}
+
