@@ -336,4 +336,4 @@ export default function SpeakersPage() {
       </section>
     </main>
   );
-
+}
