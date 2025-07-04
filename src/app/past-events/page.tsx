@@ -60,13 +60,13 @@ export default function PastEventsPage() {
           <div className="space-y-8">
             <div className="bg-[#F9F9F9] p-6 rounded-xl shadow-md border-l-4 border-[#FF8C00]">
               <p className="italic mb-4 text-gray-700">
-                "The 2024 edition brought together over 500 HR professionals to discuss building resilience in the modern workplace."
+                &quot;The 2024 edition brought together over 500 HR professionals to discuss building resilience in the modern workplace.&quot;
               </p>
               <p className="font-bold text-[#0A1C63]">— Conference Organizer</p>
             </div>
             <div className="bg-[#F9F9F9] p-6 rounded-xl shadow-md border-l-4 border-[#FF8C00]">
               <p className="italic mb-4 text-gray-700">
-                "Our virtual 2022 conference reached participants from 15 African countries, making it our most accessible event yet."
+                &quot;Our virtual 2022 conference reached participants from 15 African countries, making it our most accessible event yet.&quot;
               </p>
               <p className="font-bold text-[#0A1C63]">— Digital Team Lead</p>
             </div>
