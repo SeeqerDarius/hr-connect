@@ -27,7 +27,7 @@ export default function Header() {
         {/* Logo with Text */}
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/images/logo/hr connect logo.png"
+            src="/images/logo/hr-connect-logo.png"
             alt="HR Connect Conference Logo"
             width={40}
             height={40}
