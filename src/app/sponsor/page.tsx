@@ -288,15 +288,15 @@ export default function SponsorPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="mailto:info@hrnetworkafrica.org"
-              className="bg-white/10 hover:bg-white/20 text-white border-2 border-white/80 px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all duration-300 hover:scale-105"
-            >
+              className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg shadow-xl transition-all duration-300 hover:scale-105"
+             >
               Email Our Partnerships Team
             </a>
             <a
               href="tel:+233123456789"
-              className="bg-white/10 hover:bg-white/20 text-white border-2 border-white/80 px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all duration-300 hover:scale-105"
-            >
-              Call +233 123 456 789
+              className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg shadow-xl transition-all duration-300 hover:scale-105"
+             >
+              Call Cynthia- +233(0)266879046 
             </a>
           </div>
         </div>
