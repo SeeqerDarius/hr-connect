@@ -125,12 +125,12 @@ export default function Home() {
               >
                 Standard (GHS 1,500)
               </a>
-              <a
+              {/*<a
                 href="/register?type=earlybird"
                 className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg shadow-xl transition-all duration-300 hover:scale-105"
               >
                 Early Bird (GHS 1,250)
-              </a>
+              </a>*/}
               <a
                 href="/register?type=online"
                 className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg shadow-xl transition-all duration-300 hover:scale-105"
@@ -215,7 +215,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonial Section */}
+      {/* Testimonial Section
       <section className="py-20 px-6 bg-white text-[#0A1C63]">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
@@ -235,7 +235,7 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

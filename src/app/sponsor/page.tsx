@@ -46,7 +46,7 @@ export default function SponsorPage() {
         </div>
       </section>
 
-      {/* Packages Section */}
+      {/* Packages Section - 2x2 Grid Layout */}
       <section id="packages" className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-4 text-[#0A1C63]">
@@ -56,199 +56,203 @@ export default function SponsorPage() {
             Choose the partnership level that aligns with your marketing objectives and budget.
           </p>
 
-          {/* Platinum Package */}
-          <div className="mb-16 border-2 border-[#FF8C00] rounded-xl overflow-hidden shadow-xl">
-            <div className="bg-[#0A1C63] text-white p-6">
-              <h3 className="text-2xl font-bold flex items-center">
-                <span className="text-[#FF8C00] mr-2">★</span> Platinum Partner - GHC50,000
-              </h3>
+          {/* Top Row - Platinum and Gold */}
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            {/* Platinum Package */}
+            <div className="border-2 border-[#FF8C00] rounded-xl overflow-hidden shadow-xl">
+              <div className="bg-[#0A1C63] text-white p-6">
+                <h3 className="text-2xl font-bold flex items-center">
+                  <span className="text-[#FF8C00] mr-2">★</span> Platinum Partner - GHC50,000
+                </h3>
+              </div>
+              <div className="p-6 bg-white">
+                <ul className="grid md:grid-cols-2 gap-4">
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>2-minute corporate video presentation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Verbal recognition as Platinum sponsor</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>10-minute special presentation slot</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Logo on conference website</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Logo on all display screens and banners</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Company profile in conference brochure</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Prime social media placement</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Free 3m x 3m exhibition booth</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>8 entry passes</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>3 roller banners (2 inside, 1 outside)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Promotional materials distribution</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Custom benefit negotiation</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="p-6 bg-white">
-              <ul className="grid md:grid-cols-2 gap-4">
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>2-minute corporate video presentation</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Verbal recognition as Platinum sponsor</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>10-minute special presentation slot</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Logo on conference website</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Logo on all display screens and banners</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Company profile in conference brochure</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Prime social media placement</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Free 3m x 3m exhibition booth</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>8 entry passes</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>3 roller banners (2 inside, 1 outside)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Promotional materials distribution</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Custom benefit negotiation</span>
-                </li>
-              </ul>
+
+            {/* Gold Package */}
+            <div className="border-2 border-[#FF8C00] rounded-xl overflow-hidden shadow-xl">
+              <div className="bg-[#0A1C63] text-white p-6">
+                <h3 className="text-2xl font-bold flex items-center">
+                  <span className="text-[#FF8C00] mr-2">★</span> Gold Partner - GHC35,000
+                </h3>
+              </div>
+              <div className="p-6 bg-white">
+                <ul className="grid md:grid-cols-2 gap-4">
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>2-minute corporate video presentation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Logo on conference website</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Logo on all display screens and banners</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Company advertisement in brochure</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>7-minute special presentation slot</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Free 3m x 3m exhibition booth</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>6 entry passes</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>3 pull-up banners (2 inside, 1 outside)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Promotional materials distribution</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Custom benefit negotiation</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          {/* Gold Package */}
-          <div className="mb-16 border-2 border-[#FF8C00] rounded-xl overflow-hidden shadow-xl">
-            <div className="bg-[#0A1C63] text-white p-6">
-              <h3 className="text-2xl font-bold flex items-center">
-                <span className="text-[#FF8C00] mr-2">★</span> Gold Partner - GHC35,000
-              </h3>
+          {/* Bottom Row - Silver and Bronze */}
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Silver Package */}
+            <div className="border-2 border-[#FF8C00] rounded-xl overflow-hidden shadow-xl">
+              <div className="bg-[#0A1C63] text-white p-6">
+                <h3 className="text-2xl font-bold flex items-center">
+                  <span className="text-[#FF8C00] mr-2">★</span> Silver Partner - GHC25,000
+                </h3>
+              </div>
+              <div className="p-6 bg-white">
+                <ul className="grid md:grid-cols-2 gap-4">
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>2-minute corporate video presentation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Company advertisement in brochure</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>3m x 3m exhibition booth</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Logo on all display screens and banners</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>4 entry passes</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>2 roller banners (1 inside, 1 outside)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Promotional materials distribution</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Custom benefit negotiation</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="p-6 bg-white">
-              <ul className="grid md:grid-cols-2 gap-4">
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>2-minute corporate video presentation</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Logo on conference website</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Logo on all display screens and banners</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Company advertisement in brochure</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>7-minute special presentation slot</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Free 3m x 3m exhibition booth</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>6 entry passes</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>3 pull-up banners (2 inside, 1 outside)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Promotional materials distribution</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Custom benefit negotiation</span>
-                </li>
-              </ul>
+
+            {/* Bronze Package */}
+            <div className="border-2 border-[#FF8C00] rounded-xl overflow-hidden shadow-xl">
+              <div className="bg-[#0A1C63] text-white p-6">
+                <h3 className="text-2xl font-bold flex items-center">
+                  <span className="text-[#FF8C00] mr-2">★</span> Bronze Partner - GHC10,000
+                </h3>
+              </div>
+              <div className="p-6 bg-white">
+                <ul className="grid gap-4">
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Company advertisement in brochure</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Logo on all display screens and banners</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>3 entry passes</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>2 roller banners (1 inside, 1 outside)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#FF8C00] mr-2">✓</span>
+                    <span>Promotional materials distribution</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-
-          {/* Silver Package */}
-          <div className="mb-16 border-2 border-[#FF8C00] rounded-xl overflow-hidden shadow-xl">
-            <div className="bg-[#0A1C63] text-white p-6">
-              <h3 className="text-2xl font-bold flex items-center">
-                <span className="text-[#FF8C00] mr-2">★</span> Silver Partner - GHC25,000
-              </h3>
-            </div>
-            <div className="p-6 bg-white">
-              <ul className="grid md:grid-cols-2 gap-4">
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>2-minute corporate video presentation</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Company advertisement in brochure</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>3m x 3m exhibition booth</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Logo on all display screens and banners</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>4 entry passes</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>2 roller banners (1 inside, 1 outside)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Promotional materials distribution</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Custom benefit negotiation</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Bronze Package */}
-          <div className="mb-16 border-2 border-[#FF8C00] rounded-xl overflow-hidden shadow-xl">
-            <div className="bg-[#0A1C63] text-white p-6">
-              <h3 className="text-2xl font-bold flex items-center">
-                <span className="text-[#FF8C00] mr-2">★</span> Bronze Partner - GHC10,000
-              </h3>
-            </div>
-            <div className="p-6 bg-white">
-              <ul className="grid gap-4">
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Company advertisement in brochure</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Logo on all display screens and banners</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>3 entry passes</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>2 roller banners (1 inside, 1 outside)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#FF8C00] mr-2">✓</span>
-                  <span>Promotional materials distribution</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Additional Options */}
         </div>
       </section>
 
@@ -288,15 +292,15 @@ export default function SponsorPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="mailto:info@hrnetworkafrica.org"
-              className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg shadow-xl transition-all duration-300 hover:scale-105"
-             >
+              className="bg-white/10 hover:bg-white/20 text-white border-2 border-white/80 px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all duration-300 hover:scale-105"
+            >
               Email Our Partnerships Team
             </a>
             <a
-              href="tel:+233123456789"
-              className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg shadow-xl transition-all duration-300 hover:scale-105"
-             >
-              Call Cynthia- +233(0)266879046 
+              href="tel:+233266879046"
+              className="bg-white/10 hover:bg-white/20 text-white border-2 border-white/80 px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all duration-300 hover:scale-105"
+            >
+              Call Cynthia - +233 2668-7904-6
             </a>
           </div>
         </div>

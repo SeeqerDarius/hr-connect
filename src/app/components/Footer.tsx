@@ -1,4 +1,5 @@
 import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { SiX } from 'react-icons/si'; // Importing X logo from Simple Icons
 import { HiMail } from "react-icons/hi";
 
 export default function Footer() {
@@ -37,7 +38,7 @@ export default function Footer() {
             className="hover:opacity-80 transition-opacity"
             aria-label="X (Twitter)"
           >
-            <FaTwitter size={20} className="text-[#1DA1F2]" />
+            <SiX size={20} className="text-[#000000]" />
           </a>
           
           {/* Email - Red for contrast */}

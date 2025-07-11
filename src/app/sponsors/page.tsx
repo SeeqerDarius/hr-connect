@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const sponsorTiers = [
   {
@@ -81,7 +82,7 @@ const sponsorTiers = [
 export default function SponsorsPage() {
   return (
     <main className="bg-white text-gray-900">
-      {/* Hero Section - Updated to match speakers page */}
+      {/* Hero Section */}
       <section className="relative h-96 overflow-hidden">
         <div className="absolute inset-0 bg-black/60 flex items-center justify-center z-10">
           <motion.div
@@ -105,7 +106,7 @@ export default function SponsorsPage() {
         />
       </section>
 
-      {/* Sponsor Tiers - Updated colors */}
+      {/* Sponsor Tiers */}
       <div className="max-w-7xl mx-auto px-6 py-20">
         {sponsorTiers.map((tier, tierIndex) => (
           <section key={tier.name} className={`mb-20 ${tierIndex !== 0 ? 'mt-24' : ''}`}>
@@ -162,7 +163,7 @@ export default function SponsorsPage() {
           </section>
         ))}
 
-        {/* Community Partners Section - Updated colors */}
+        {/* Community Partners Section */}
         <motion.section
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -215,7 +216,7 @@ export default function SponsorsPage() {
           </div>
         </motion.section>
 
-        {/* CTA - Updated to match speakers page */}
+        {/* CTA Section */}
         <section className="bg-[#0A1C63] text-white py-20 px-6">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
@@ -229,20 +230,24 @@ export default function SponsorsPage() {
                 Join our prestigious sponsor community and connect with HR leaders from across Africa
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-[#FF8C00] hover:bg-[#FF6D00] text-white font-bold py-3 px-8 rounded-full transition-colors"
-                >
-                  Download Prospectus
-                </motion.button>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-transparent hover:bg-white/10 text-white font-bold py-3 px-8 rounded-full border border-white transition-colors"
-                >
-                  Contact Our Team
-                </motion.button>
+                <Link href="/sponsor" passHref>
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="bg-transparent hover:bg-white/10 text-white font-bold py-3 px-8 rounded-full border border-white transition-colors"
+                  >
+                    View Sponsorship Packages
+                  </motion.button>
+                </Link>
+                <a href="mailto:info@hrnetworkafrica.org">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="bg-transparent hover:bg-white/10 text-white font-bold py-3 px-8 rounded-full border border-white transition-colors"
+                  >
+                    Contact Our Team
+                  </motion.button>
+                </a>
               </div>
             </motion.div>
           </div>

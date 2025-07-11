@@ -40,7 +40,7 @@ const speakers: Speaker[] = [
           She is recognized for her leadership and has numerous awards to her credit. She is passionate about the future of the youth and women in the digital age and has been on several local and international platforms including the UN General Assembly.
           She serves on several boards, including KNUST Engineering Education Project, ABSA Bank Ghana, and the Global Young Academy Advisory Board, Germany.`,
     imageUrl: '/images/speakers/PATRICIA-OBO-NAI.jpg',
-    category: 'Leadership'
+    category: 'Guest Speaker'
   },
   {
     id: 2,
@@ -52,7 +52,7 @@ const speakers: Speaker[] = [
           Oscar is BBC-trained in radio operations and media production and has earned numerous awards. 
           He currently lectures at Arden University and leads mindset initiatives across Africa.`,
     imageUrl: '/images/speakers/Oscar-Bimpong.jpg',
-    category: 'Mindset'
+    category: 'Keynote Speaker'
   },
   {
     id: 3,
@@ -66,7 +66,7 @@ He holds a BS in Computer Science, an MBA in Entrepreneurship, and professional 
 
 Kojo simply loves all things HR.`,
     imageUrl: '/images/speakers/Mr-Kojo-Amissah.jpg',
-    category: 'HR Strategy'
+    category: 'Pannel Moderator'
   },
   {
     id: 4,
@@ -87,7 +87,7 @@ Kojo simply loves all things HR.`,
           He holds an MSc in Development Management, an Executive MBA in HRM, and a BSc in Business Management. 
           He regularly speaks at corporate events such as Citi FM’s Corporate Business Bootcamp.`,
     imageUrl: '/images/speakers/ERIC-KOJO-VAN-ESS-KURANCHIE-1.jpg',
-    category: 'HR Strategy'
+    category: 'M.C'
   },
   {
     id: 6,
@@ -112,7 +112,7 @@ Kojo simply loves all things HR.`,
 Board Director on a couple of Boards in Ghana. She brings with her a plethora of experience from the United 
 Kingdom and Africa.`,
     imageUrl: '/images/speakers/Rosie Ebe-Arthur.jpg',
-    category: 'Leadership'
+    category: 'Pannel Member'
   },
   {
     id: 8,
@@ -120,7 +120,7 @@ Kingdom and Africa.`,
     title: 'Moderator',
     bio: `???.`,
     imageUrl: '/images/speakers/Paa-Kwesi-Barnes-moderator.jpg',
-    category: 'PR'
+    category: 'Pannel Moderator'
   },
   {
     id: 9,
@@ -138,7 +138,47 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     title: 'clinical & forensic psychologist',
     bio: `Dr. Cheryl Arutt is a licensed clinical & forensic psychologist, TEDx speaker, media consultant and Certified EMDRIA Therapist & Consultant based in Los Angeles. A specialist in creative resilience & post-traumatic growth, Dr. Cheryl offers EMDR Intensives & Adjunct EMDR via telehealth. She graduated summa cum laude from UCLA and holds a Doctor of Psychology (PsyD) degree from CSPP-LA, where she was awarded Outstanding Clinical Dissertation. A passionate advocate for survivors of trauma, Dr. Cheryl has served on several Boards dedicated to helping survivors, and consults with clinicians and organizations about effectively treating complex and developmental trauma. Dr. Cheryl is Access Hollywood’s go-to psychologist for trauma issues, a frequent psychological expert on networks including CNN, HLN and DiscoveryID, and speaks internationally about trauma, creativity and post-traumatic growth. For more information, please visit askdrcheryl.com and CreativeEMDR.com .`,
     imageUrl: '/images/speakers/Dr.-Cheryl-Arutt.jpg',
-    category: 'Psychology'
+    category: 'Guest Speaker'
+  },
+  {
+    id: 11,
+    name: 'Mary Bennett',
+    title: '???????',
+    bio: `?????`,
+    imageUrl: '/images/speakers/Mary-Bennett.jpg',
+    category: 'Pannel Member'
+  },
+  {
+    id: 12,
+    name: '???? ????',
+    title: '???????',
+    bio: `?????`,
+    imageUrl: '/images/speakers/hr-netowr-ld.jpg',
+    category: 'Pannel Member'
+  },
+  {
+    id: 13,
+    name: '???? ????',
+    title: '???????',
+    bio: `?????`,
+    imageUrl: '/images/speakers/hr-netowr-ld.jpg',
+    category: 'Pannel Member'
+  },
+  {
+    id: 14,
+    name: '???? ????',
+    title: '???????',
+    bio: `?????`,
+    imageUrl: '/images/speakers/hr-netowr-ld.jpg',
+    category: 'Pannel Member'
+  },
+  {
+    id: 15,
+    name: '???? ????',
+    title: '???????',
+    bio: `?????`,
+    imageUrl: '/images/speakers/hr-netowr-ld.jpg',
+    category: 'Pannel Member'
   },
 
 ];
@@ -323,6 +363,7 @@ export default function SpeakersPage() {
               Reserve your spot today to learn from these industry leaders and network with peers
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/agenda" passHref> 
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -330,6 +371,7 @@ export default function SpeakersPage() {
               >
                 View Full Agenda
               </motion.button>
+              </Link>
             </div>
           </motion.div>
         </div>

@@ -24,26 +24,26 @@ export default function PastEventsPage() {
       <section className="py-16 px-6 bg-[#F9F9F9]">
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
-            {/* 2024 Event */}
+            {/* 2019 Event */}
             <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-[#FF8C00]">
               <div className="text-[#FF8C00] text-4xl mb-4">📅</div>
-              <h3 className="text-xl font-bold mb-2 text-[#0A1C63]">2024 Edition</h3>
+              <h3 className="text-xl font-bold mb-2 text-[#0A1C63]">2019 Edition</h3>
               <p className="text-gray-700 mb-4">The Resilient Workforce</p>
               <p className="text-sm text-gray-500">Accra, Ghana</p>
             </div>
 
-            {/* 2023 Event */}
+            {/* 2022 Event */}
             <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-[#FF8C00]">
               <div className="text-[#FF8C00] text-4xl mb-4">🎤</div>
-              <h3 className="text-xl font-bold mb-2 text-[#0A1C63]">2023 Edition</h3>
+              <h3 className="text-xl font-bold mb-2 text-[#0A1C63]">2022 Edition</h3>
               <p className="text-gray-700 mb-4">Future of Work</p>
               <p className="text-sm text-gray-500">Kumasi, Ghana</p>
             </div>
 
-            {/* 2022 Event */}
+            {/* 2023 Event */}
             <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-[#FF8C00]">
               <div className="text-[#FF8C00] text-4xl mb-4">💻</div>
-              <h3 className="text-xl font-bold mb-2 text-[#0A1C63]">2022 Edition</h3>
+              <h3 className="text-xl font-bold mb-2 text-[#0A1C63]">2023 Edition</h3>
               <p className="text-gray-700 mb-4">HR Leadership in Crisis</p>
               <p className="text-sm text-gray-500">Virtual Conference</p>
             </div>
@@ -85,12 +85,12 @@ export default function PastEventsPage() {
             Be part of our next groundbreaking conference for HR professionals in Africa.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
+           {/* <a
               href="/register"
               className="bg-white/10 hover:bg-white/20 text-white border-2 border-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all duration-300 hover:scale-105"
             >
               Register Now
-            </a>
+            </a>*/}
             <a
               href="/contact"
               className="bg-white/10 hover:bg-white/20 text-white border-2 border-white px-8 py-4 rounded-full font-bold text-lg shadow-lg transition-all duration-300 hover:scale-105"

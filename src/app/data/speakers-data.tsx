@@ -1,4 +1,4 @@
-// src/app/data/speakers-data.ts
+// src/app/data/speakers-data.tsx
 
 export interface Speaker {
   id: number;
@@ -7,6 +7,12 @@ export interface Speaker {
   bio: string;
   imageUrl: string;
   category?: string;
+  company?: string;
+  linkedin?: string;
+  twitter?: string;
+  website?: string;
+  session?: string;
+  keyPoints?: string[];
 }
 
 export const speakers: Speaker[] = [
@@ -14,6 +20,9 @@ export const speakers: Speaker[] = [
     id: 1,
     name: 'Patricia Obo-Nai',
     title: 'CEO of Telecel Ghana',
+    linkedin: 'https://gh.linkedin.com/in/ing-patricia-obo-nai-7a4a9214',
+    twitter: 'https://twitter.com/PatriciaOboNai', 
+    website: '', 
     bio: `Ing. Patricia Obo-Nai is an electrical engineer and the first Ghanaian CEO of Vodafone Ghana, 
         now Telecel Ghana.  
         Ing. Obo-Nai holds a BSc. in Electrical and Electronic Engineering from Kwame Nkrumah 
@@ -39,6 +48,8 @@ export const speakers: Speaker[] = [
     id: 2,
     name: 'Oscar Bimpong',
     title: 'Founder, Train2inspire Consultancy',
+    linkedin: '',
+    twitter: '',
     bio: `Oscar Bimpong, the Founder and CEO of Train2inspire Consultancy, a distinguished 
         business training and development firm with operations in both the UK and Ghana. Oscar is an 
         internationally recognised Mindset Transformation Consultant, Corporate Trainer, and 
@@ -169,9 +180,42 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     id: 10,
     name: 'Dr. Cheryl Arutt',
     title: 'Moderator',
-    bio: `Dr. Cheryl Arutt is a licensed clinical & forensic psychologist, TEDx speaker, media consultant and Certified EMDRIA Therapist & Consultant based in Los Angeles. A specialist in creative resilience & post-traumatic growth, Dr. Cheryl offers EMDR Intensives & Adjunct EMDR via telehealth. She graduated summa cum laude from UCLA and holds a Doctor of Psychology (PsyD) degree from CSPP-LA, where she was awarded Outstanding Clinical Dissertation. A passionate advocate for survivors of trauma, Dr. Cheryl has served on several Boards dedicated to helping survivors, and consults with clinicians and organizations about effectively treating complex and developmental trauma. Dr. Cheryl is Access Hollywood’s go-to psychologist for trauma issues, a frequent psychological expert on networks including CNN, HLN and DiscoveryID, and speaks internationally about trauma, creativity and post-traumatic growth.  For more information, please visit askdrcheryl.com and CreativeEMDR.com .`,
+    bio: `Dr. Cheryl Arutt is a licensed clinical & forensic psychologist, TEDx speaker, media consultant and Certified EMDRIA Therapist & Consultant based in Los Angeles. A specialist in creative resilience & post-traumatic growth, Dr. Cheryl offers EMDR Intensives & Adjunct EMDR via telehealth. She graduated summa cum laude from UCLA and holds a Doctor of Psychology (PsyD) degree from CSPP-LA, where she was awarded Outstanding Clinical Dissertation. A passionate advocate for survivors of trauma, Dr. Cheryl has served on several Boards dedicated to helping survivors, and consults with clinicians and organizations about effectively treating complex and developmental trauma. Dr. Cheryl is Access Hollywood’s go-to psychologist for trauma issues, a frequent psychological expert on networks including CNN, HLN and DiscoveryID, and speaks internationally about trauma, creativity and post-traumatic growth. For more information, please visit askdrcheryl.com and CreativeEMDR.com .`,
     imageUrl: '/images/speakers/Dr.-Cheryl-Arutt.jpg',
     category: 'PR'
   },
+  {
+    id: 11,
+    name: 'Mary Bennett',
+    title: 'Moderator',
+    bio: `?????.`,
+    imageUrl: '/images/speakers/Mary-Bennett.jpg',
+    category: 'Moderator'
+  },
+  {
+    id: 12,
+    name: '???? ????',
+    title: 'Moderator',
+    bio: `?????.`,
+    imageUrl: '/images/speakers/hr-netowr-ld.jpg',
+    category: 'Moderator'
+  },
+  {
+    id: 13,
+    name: '???? ????',
+    title: 'Moderator',
+    bio: `?????.`,
+    imageUrl: '/images/speakers/hr-netowr-ld.jpg',
+    category: 'Moderator'
+  },
+  {
+    id: 13,
+    name: '???? ????',
+    title: 'Moderator',
+    bio: `?????.`,
+    imageUrl: '/images/speakers/hr-netowr-ld.jpg',
+    category: 'Moderator'
+  },
+  
   // ... add the rest of your speakers
 ];
