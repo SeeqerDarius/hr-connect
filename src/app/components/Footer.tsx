@@ -1,4 +1,4 @@
-import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaLinkedin,} from "react-icons/fa";
 import { SiX } from 'react-icons/si'; // Importing X logo from Simple Icons
 import { HiMail } from "react-icons/hi";
 

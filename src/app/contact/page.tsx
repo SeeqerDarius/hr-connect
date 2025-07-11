@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { MapPin, Mail, Phone, Clock, MessageSquare } from 'lucide-react';
+import { MapPin, Mail, Phone, MessageSquare } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -18,7 +18,7 @@ export default function ContactPage() {
               Contact <span className="text-amber-400">Us,</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              We're here to help with any questions about our up coming conference
+              We&rsquo;re here to help with any questions about our up coming conference
             </p>
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
-              
+
             </div>
 
             {/* Contact Form */}
