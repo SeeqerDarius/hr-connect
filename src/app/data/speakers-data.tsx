@@ -193,20 +193,20 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     category: 'Moderator'
   },
   {
-    id: 12,
-    name: '???? ????',
-    title: 'Moderator',
+    id: 21,
+    name: 'Margaret Jackson',
+    title: 'Managing Partner, Rainbow Consult',
     bio: `?????.`,
-    imageUrl: '/images/speakers/hr-netowr-ld.jpg',
-    category: 'Moderator'
+    imageUrl: '/images/speakers/MJ-Headshot.png',
+    category: 'Keynote Speaker'
   },
   {
-    id: 13,
-    name: '???? ????',
-    title: 'Moderator',
+    id: 22,
+    name: 'Dr. Stella Agyenim-Boateng Keynote',
+    title: 'Vice Chairman. Public Services Commission',
     bio: `?????.`,
-    imageUrl: '/images/speakers/hr-netowr-ld.jpg',
-    category: 'Moderator'
+    imageUrl: '/images/speakers/stella-agyenim-boateng.jpg',
+    category: 'Keynote Speaker'
   },
   {
     id: 14,
