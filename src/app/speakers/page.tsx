@@ -82,7 +82,7 @@ Kojo simply loves all things HR.`,
           He leads HR strategy at Bank of Africa Ghana and has worked with ProCredit SLC, NND Digital, 
           and Millennium Insurance.
           He holds an MSc in Development Management, an Executive MBA in HRM, and a BSc in Business Management. 
-          He regularly speaks at corporate events such as Citi FM’s Corporate Business Bootcamp.`,
+          He regularly speaks at corporate events such as Citi FM's Corporate Business Bootcamp.`,
     imageUrl: '/images/speakers/ERIC-KOJO-VAN-ESS-KURANCHIE-1.jpg',
     category: 'M.C'
   },
@@ -133,7 +133,7 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     id: 10,
     name: 'Dr. Cheryl Arutt',
     title: 'clinical & forensic psychologist',
-    bio: `Dr. Cheryl Arutt is a licensed clinical & forensic psychologist, TEDx speaker, media consultant and Certified EMDRIA Therapist & Consultant based in Los Angeles. A specialist in creative resilience & post-traumatic growth, Dr. Cheryl offers EMDR Intensives & Adjunct EMDR via telehealth. She graduated summa cum laude from UCLA and holds a Doctor of Psychology (PsyD) degree from CSPP-LA, where she was awarded Outstanding Clinical Dissertation. A passionate advocate for survivors of trauma, Dr. Cheryl has served on several Boards dedicated to helping survivors, and consults with clinicians and organizations about effectively treating complex and developmental trauma. Dr. Cheryl is Access Hollywood’s go-to psychologist for trauma issues, a frequent psychological expert on networks including CNN, HLN and DiscoveryID, and speaks internationally about trauma, creativity and post-traumatic growth. For more information, please visit askdrcheryl.com and CreativeEMDR.com .`,
+    bio: `Dr. Cheryl Arutt is a licensed clinical & forensic psychologist, TEDx speaker, media consultant and Certified EMDRIA Therapist & Consultant based in Los Angeles. A specialist in creative resilience & post-traumatic growth, Dr. Cheryl offers EMDR Intensives & Adjunct EMDR via telehealth. She graduated summa cum laude from UCLA and holds a Doctor of Psychology (PsyD) degree from CSPP-LA, where she was awarded Outstanding Clinical Dissertation. A passionate advocate for survivors of trauma, Dr. Cheryl has served on several Boards dedicated to helping survivors, and consults with clinicians and organizations about effectively treating complex and developmental trauma. Dr. Cheryl is Access Hollywood's go-to psychologist for trauma issues, a frequent psychological expert on networks including CNN, HLN and DiscoveryID, and speaks internationally about trauma, creativity and post-traumatic growth. For more information, please visit askdrcheryl.com and CreativeEMDR.com .`,
     imageUrl: '/images/speakers/Dr.-Cheryl-Arutt.jpg',
     category: 'Panel Member'
   },
@@ -273,10 +273,6 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     imageUrl: '/images/speakers/patience-osekre.jpg',
     category: 'Masterclass Trainer'
   },
-  
-  
-
-
 ];
 
 export default function SpeakersPage() {
@@ -351,29 +347,33 @@ export default function SpeakersPage() {
               viewport={{ once: true }}
               className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-xl"
             >
-              <Link href={`/speakers/${speaker.id}`} passHref>
-                <div className="relative aspect-[3/4] w-full cursor-pointer">
-                  <Image
-                    src={speaker.imageUrl}
-                    alt={speaker.name}
-                    fill
-                    className="object-cover object-top"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
-                    <div>
-                      <span className="bg-[#FF8C00] text-white text-xs font-semibold px-3 py-1 rounded-full mb-2 inline-block">
-                        {speaker.category}
-                      </span>
-                      <h3 className="text-xl font-bold text-white">{speaker.name}</h3>
-                      <p className="text-gray-200 text-sm">{speaker.title}</p>
-                    </div>
+              <div className="relative aspect-[3/4] w-full cursor-pointer">
+                <Image
+                  src={speaker.imageUrl}
+                  alt={speaker.name}
+                  fill
+                  className="object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+                  <div>
+                    <span className="bg-[#FF8C00] text-white text-xs font-semibold px-3 py-1 rounded-full mb-2 inline-block">
+                      {speaker.category}
+                    </span>
+                    <h3 className="text-xl font-bold text-white">{speaker.name}</h3>
+                    <p className="text-gray-200 text-sm">{speaker.title}</p>
                   </div>
                 </div>
-                <div className="p-6">
-                  <p className="text-gray-700 line-clamp-3 mb-4">{speaker.bio.slice(0, 150)}...</p>
-                  <div className="text-[#0A1C63] font-medium hover:underline">View Full Profile</div>
-                </div>
-              </Link>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-700 line-clamp-3 mb-4">
+                  {speaker.bio.startsWith('???') ? 'Bio coming soon...' : speaker.bio.slice(0, 150) + '...'}
+                </p>
+                {!speaker.bio.startsWith('???') && (
+                  <Link href={`/speakers/${speaker.id}`} passHref>
+                    <div className="text-[#0A1C63] font-medium hover:underline">View Full Profile</div>
+                  </Link>
+                )}
+              </div>
             </motion.div>
           ))}
         </div>
@@ -394,7 +394,6 @@ export default function SpeakersPage() {
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -411,14 +410,11 @@ export default function SpeakersPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-8">
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-2">Dr. Stella Agyenim-Boaten</h3>
-                    <p className="text-gray-200 mb-4">&quot;The Future of Digital Transformation in Africa&quot;</p>
+                    <p className="text-gray-200 mb-4">"The Future of Digital Transformation in Africa"</p>
                     <span className="bg-[#FF8C00] text-white text-xs font-semibold px-3 py-1 rounded-full">Opening Keynote</span>
                   </div>
                 </div>
               </motion.div>
-            
-
-           
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -435,12 +431,11 @@ export default function SpeakersPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-8">
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-2">Margaret Jackson</h3>
-                    <p className="text-gray-200 mb-4">&quot;Leading With Grace as A Professional&quot;</p>
+                    <p className="text-gray-200 mb-4">"Leading With Grace as A Professional"</p>
                     <span className="bg-[#FF8C00] text-white text-xs font-semibold px-3 py-1 rounded-full">Closing Keynote</span>
                   </div>
                 </div>
               </motion.div>
-            
           </div>
         </div>
       </section>
