@@ -52,7 +52,7 @@ const speakers: Speaker[] = [
           Oscar is BBC-trained in radio operations and media production and has earned numerous awards. 
           He currently lectures at Arden University and leads mindset initiatives across Africa.`,
     imageUrl: '/images/speakers/Oscar-Bimpong.jpg',
-    category: 'Keynote Speaker'
+    category: 'Masterclass Trainer'
   },
   {
     id: 3,
@@ -63,7 +63,7 @@ Kojo brings extensive consulting and training experience in areas such as strate
 He holds a BS in Computer Science, an MBA in Entrepreneurship, and professional certifications including SHRM-SCP and SPHR.
 Kojo simply loves all things HR.`,
     imageUrl: '/images/speakers/Mr-Kojo-Amissah.jpg',
-    category: 'Pannel Moderator'
+    category: 'Panel Moderator'
   },
   {
     id: 4,
@@ -72,7 +72,7 @@ Kojo simply loves all things HR.`,
     bio: `Patricia Ama Kissi has over 15 years in artificial intelligence research with multiple publications. 
           She leads AI accessibility and ethics initiatives and is a regular speaker at international tech conferences.`,
     imageUrl: '/images/speakers/Patricia-Ama-Kissi.jpg',
-    category: 'Technology'
+    category: 'Masterclass Trainer'
   },
   {
     id: 5,
@@ -109,7 +109,7 @@ Kojo simply loves all things HR.`,
 Board Director on a couple of Boards in Ghana. She brings with her a plethora of experience from the United 
 Kingdom and Africa.`,
     imageUrl: '/images/speakers/Rosie Ebe-Arthur.jpg',
-    category: 'Pannel Member'
+    category: 'Panel Member'
   },
   {
     id: 8,
@@ -117,7 +117,7 @@ Kingdom and Africa.`,
     title: 'Moderator',
     bio: `???.`,
     imageUrl: '/images/speakers/Paa-Kwesi-Barnes-moderator.jpg',
-    category: 'Pannel Moderator'
+    category: 'Panel Moderator'
   },
   {
     id: 9,
@@ -127,7 +127,7 @@ Kingdom and Africa.`,
 She has significant experience managing various HR assignments for public sector organisations, NGOs, Telecommunication, financial, national, shipping, and multinational companies. 
 Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Management and Public Administration (GIMPA). She also has a BA in English and French from the University of Cape Coast. In 2017, she was certified as a global HR professional after passing her SPHRi from HRCI. HR Focus also adjudged her as one of the top 40 HR Practitioners in Ghana in the same year. She also holds an LLB from GIMPA and an LLM in Labour Law from the University of Ghana Law School. She is a member of SHRM, a global HR forum, ACHR Ghana and a Fellow at CIHRP Ghana. She is a facilitator of HR courses at the HR Certification Centre and the Chartered Institute of Human Resource Managers (CIHRM) Ghana. She was adjudged the HR Personality of the year by the HRCC in 2023.`,
     imageUrl: '/images/speakers/Yvone-Wiredu.jpg',
-    category: 'Consultancy'
+    category: 'Masterclass Trainer'
   },
   {
     id: 10,
@@ -135,7 +135,7 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     title: 'clinical & forensic psychologist',
     bio: `Dr. Cheryl Arutt is a licensed clinical & forensic psychologist, TEDx speaker, media consultant and Certified EMDRIA Therapist & Consultant based in Los Angeles. A specialist in creative resilience & post-traumatic growth, Dr. Cheryl offers EMDR Intensives & Adjunct EMDR via telehealth. She graduated summa cum laude from UCLA and holds a Doctor of Psychology (PsyD) degree from CSPP-LA, where she was awarded Outstanding Clinical Dissertation. A passionate advocate for survivors of trauma, Dr. Cheryl has served on several Boards dedicated to helping survivors, and consults with clinicians and organizations about effectively treating complex and developmental trauma. Dr. Cheryl is Access Hollywood’s go-to psychologist for trauma issues, a frequent psychological expert on networks including CNN, HLN and DiscoveryID, and speaks internationally about trauma, creativity and post-traumatic growth. For more information, please visit askdrcheryl.com and CreativeEMDR.com .`,
     imageUrl: '/images/speakers/Dr.-Cheryl-Arutt.jpg',
-    category: 'Guest Speaker'
+    category: 'Panel Member'
   },
   {
     id: 11,
@@ -143,7 +143,7 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     title: 'Learning and Organiztional Transition Manager, Pecan Energies',
     bio: `?????`,
     imageUrl: '/images/speakers/Mary-Bennett.jpg',
-    category: 'Pannel Member'
+    category: 'Panel Moderator'
   },
   {
     id: 12,
@@ -151,7 +151,7 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     title: 'Founder and CEO, RiviaCo (Rivia)',
     bio: `???`,
     imageUrl: '/images/speakers/isidore-kpotufe.jpg',
-    category: 'Pannel Moderator'
+    category: 'Panel Moderator'
   },
   {
     id: 13,
@@ -159,7 +159,7 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     title: 'Founder, People Edge Consulting',
     bio: `?????`,
     imageUrl: '/images/speakers/marc-voi-chiuli.jpg',
-    category: 'Pannel Member'
+    category: 'Panel Member'
   },
   {
     id: 14,
@@ -183,7 +183,7 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     title: 'CEO, OML Africa',
     bio: `?????`,
     imageUrl: '/images/speakers/anita-wiafe.jpg',
-    category: 'Pannel Member'
+    category: 'Panel Member'
   },
   {
     id: 17,
@@ -191,7 +191,7 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     title: 'CEO, OML Africa',
     bio: `?????`,
     imageUrl: '/images/speakers/debora-asmah.jpg',
-    category: 'Pannel Member'
+    category: 'Panel Member'
   },
   {
     id: 18,
@@ -199,7 +199,7 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     title: 'Trauma & Orthopaedic Surgeon',
     bio: `?????`,
     imageUrl: '/images/speakers/healthline.jpg',
-    category: 'Pannel Member'
+    category: 'Panel Member'
   },
   {
     id: 19,
@@ -207,7 +207,7 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     title: 'Associate Professor, University of Ghana Business School',
     bio: `?????`,
     imageUrl: '/images/speakers/afful-dadzie.jpg',
-    category: 'Pannel Member'
+    category: 'Panel Member'
   },
   {
     id: 20,
@@ -215,7 +215,7 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     title: 'Author/Transformational Speaker/Certified Life Empoerment Coach',
     bio: `?????`,
     imageUrl: '/images/speakers/theo-tackie.jpg',
-    category: 'Pannel Member'
+    category: 'Panel Member'
   },
   {
     id: 21,
@@ -239,7 +239,7 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     title: 'CEO and Founder Zenfusion COnsultancy',
     bio: `?????`,
     imageUrl: '/images/speakers/munnira-shiek.jpg',
-    category: 'Keynote Speaker'
+    category: 'Speed Coach'
   },
   {
     id: 24,
@@ -263,7 +263,7 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     title: 'Proficient Consulting',
     bio: `?????`,
     imageUrl: '/images/speakers/irene-asare.jpg',
-    category: 'Pannel Member'
+    category: 'Panel Member'
   },
   {
     id: 27,
@@ -271,7 +271,7 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     title: 'Life Coach - Mental Health and well being Advocate, Author',
     bio: `?????`,
     imageUrl: '/images/speakers/Delassie-Dogbe.jpg',
-    category: 'Pannel Member'
+    category: 'Panel Member'
   },
   {
     id: 28,
@@ -279,7 +279,7 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     title: 'Managing Director, Supreme Healthcare Management Services',
     bio: `?????`,
     imageUrl: '/images/speakers/patience-osekre.jpg',
-    category: 'Pannel Member'
+    category: 'Masterclass Trainer'
   },
   
   
@@ -402,7 +402,7 @@ export default function SpeakersPage() {
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            <Link href="/speakers/22" passHref>
+            
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -424,9 +424,9 @@ export default function SpeakersPage() {
                   </div>
                 </div>
               </motion.div>
-            </Link>
+            
 
-            <Link href="/speakers/21" passHref>
+           
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -448,7 +448,7 @@ export default function SpeakersPage() {
                   </div>
                 </div>
               </motion.div>
-            </Link>
+            
           </div>
         </div>
       </section>
