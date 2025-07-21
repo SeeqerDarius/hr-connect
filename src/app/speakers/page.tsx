@@ -409,8 +409,8 @@ export default function SpeakersPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-8">
                   <div>
-                    <h3 className="text-2xl font-bold text-white mb-2">Dr. Stella Agyenim-Boaten</h3>
-                    <p className="text-gray-200 mb-4">"The Future of Digital Transformation in Africa"</p>
+                    <h3 className="text-2xl font-bold text-white mb-2">Dr. Stella Agyenim-Boateng</h3>
+                    <p className="text-gray-200 mb-4">&quot;The Future of Digital Transformation in Africa&quot;</p>
                     <span className="bg-[#FF8C00] text-white text-xs font-semibold px-3 py-1 rounded-full">Opening Keynote</span>
                   </div>
                 </div>
@@ -431,7 +431,7 @@ export default function SpeakersPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-8">
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-2">Margaret Jackson</h3>
-                    <p className="text-gray-200 mb-4">"Leading With Grace as A Professional"</p>
+                    <p className="text-gray-200 mb-4">&quot;Leading With Grace as A Professional&quot;</p>
                     <span className="bg-[#FF8C00] text-white text-xs font-semibold px-3 py-1 rounded-full">Closing Keynote</span>
                   </div>
                 </div>

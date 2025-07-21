@@ -51,20 +51,6 @@ const galleryImages = [
   '/images/IMG-20250624-WA0018.jpg',
   '/images/IMG-20250624-WA0019.jpg',
   '/images/IMG-20250624-WA0016.jpg',
-  '/images/.jpg',
-  
-
-
-
-
-
-
-
-
-  
- 
- 
-  
 ];
 
 export default function GalleryPage() {
