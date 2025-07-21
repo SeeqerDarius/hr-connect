@@ -98,8 +98,8 @@ Kojo simply loves all things HR.`,
           Armed Forces Medical Services where he serves as a
           Trauma and Orthopaedic surgeon, Medical Support planner
           and instructor.`,
-    imageUrl: '/images/speakers/comander.jpg',
-    category: 'Healthcare'
+    imageUrl: '/images/speakers/healthline.jpg',
+    category: 'Panel Member'
   },
   {
     id: 7,
@@ -191,14 +191,6 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     title: 'CEO, OML Africa',
     bio: `?????`,
     imageUrl: '/images/speakers/debora-asmah.jpg',
-    category: 'Panel Member'
-  },
-  {
-    id: 18,
-    name: 'CDR (Dr) Jek Aggrey-Orleans',
-    title: 'Trauma & Orthopaedic Surgeon',
-    bio: `?????`,
-    imageUrl: '/images/speakers/healthline.jpg',
     category: 'Panel Member'
   },
   {
