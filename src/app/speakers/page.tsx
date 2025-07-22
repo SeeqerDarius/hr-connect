@@ -149,7 +149,33 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     id: 12,
     name: 'Isidore Kpotufe',
     title: 'Founder and CEO, RiviaCo (Rivia)',
-    bio: `???`,
+    bio: `Isidore is a technology entrepreneur with a track record in building ventures across
+          finance, transportation, and healthcare in Africa.
+          He is one of the few technology founders in Africa to have exited their startup in a
+          million-dollar deal through the sale of his startup, stabus, to Canada-based company
+          Treepz.
+ As the Founder and CEO of RiviaCo (Rivia), Isidore leads a healthcare venture that
+ operates a network of “smart clinics” offering differentiated primary care services in
+ Ghana. Rivia uses technology to personalise patient treatment and broaden access to
+ quality healthcare services. Rivia currently operates 6 clinics in Ghana serving th
+ Before his role at Rivia, Isidore served as the Chief Marketing Officer of Treepz, a
+ Canadian-based mobility startup specialising in developing technology solutions for
+ various use cases, including rentals, ticketing, payment, and fleet management. This
+ position followed the sale of Isidore's company, Stabus, to Treepz in a million-dollar
+ deal. Isidore also founded Westacpe, which provides a platform for consumers to
+ compare financial services like insurance. Westcape’s assets were sold to a local
+ microfinance institution in Ghana.
+ Isidore's diverse background also includes a stint as the Director of Communications at
+ IMANI Africa, one of Ghana's esteemed think tanks. He is a founding member of the
+ Alliance for the Future of Healthcare in Africa (AFHA), which advocates for quality
+ healthcare in Africa through resource mobilisation, stakeholder engagements and
+ clinical research.
+ As afirmbeliever in the catalytic power of education, Isidore runs book donations and
+ scholarship to primary-JHS pupils, yearly on his birthday, which falls on the 4th
+ Driven by a firm belief in the power of technology, Isidore is dedicated to scaling the
+ impact of innovative business models that address Africa's most pressing challenges,
+ while simultaneously advancing the frontiers of innovation through rigorous scientific
+ research`,
     imageUrl: '/images/speakers/isidore-kpotufe.jpg',
     category: 'Panel Moderator'
   },
@@ -181,14 +207,22 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     id: 16,
     name: 'Anita Wiafe',
     title: 'CEO, OML Africa',
-    bio: `?????`,
+    bio: `Anita Wiafe is a seasoned expert in strategic human resources management and organizational development, with over three decades of consulting experience in human capital management, organizational design, and corporate transformation. Her work spans national and international projects, including collaborations with several of the Big 5 companies, where she has served as both a functional and technical expert.
+Anita has led the development of national learning and HR frameworks for African countries, designed performance management systems, implemented talent management strategies, and built HR data and analytics platforms. Her leadership in delivering national leadership training programs has had a lasting impact across sectors.
+Certified by the International Labour Organisation (ILO), Anita specializes in SCORE training, business continuity, and SME productivity measurement. Her corporate consulting portfolio includes work in salary structure development, skills assessments, progression frameworks, and workforce alignment with strategic goals.
+Her expertise in change management covers HR audits, mergers and acquisitions due diligence, restructuring, and HR systems implementation. With deep knowledge of over 20 African Labour Laws, and additional expertise in UK and European employment legislation, Anita is a trusted authority on employment terms, risk management, and industrial relations, including union negotiations and collective bargaining agreements.
+Anita is also highly proficient in HR policy development, aligning and standardizing policies across regions in Africa, Europe, Asia, the UK, and the USA. Her skills include psychometric testing, assessment center design, personality profiling, and skills inventory creation.
+Currently, she serves as the Executive Secretary of the eCommerce Association of Ghana (eCAG), where she champions women in eCommerce. A former board chair and board member of multiple organizations, Anita is deeply committed to social issues affecting women, children, and youth. She is also certified by the ILO in gender equality and workplace diversity and serves as an arbitrator and mediator for the National Labour Commission of Ghana.
+Anita Wiafe’s work continues to shape the future of HR and organizational leadership across continents, industries, and communities.
+
+`,
     imageUrl: '/images/speakers/anita-wiafe.jpg',
     category: 'Panel Member'
   },
   {
     id: 17,
     name: 'Deborah Asmah',
-    title: 'CEO, OML Africa',
+    title: 'Co-Founder, Npontu Technologies',
     bio: `?????`,
     imageUrl: '/images/speakers/debora-asmah.jpg',
     category: 'Panel Member'
@@ -213,7 +247,13 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     id: 21,
     name: 'Margaret Jackson',
     title: 'Managing Partner, Rainbow Consult',
-    bio: `?????`,
+    bio: `Margaret Jackson, FLPI is the Managing Partner of Rainbow 
+Consult. She is a Fellow of the Learning and Performance 
+Institute, UK.  A Member of  the Aspen Network of Development 
+Entrepreneurs (ANDE), Society for Human Resource 
+Management, USA and a member of Institute of Human 
+Resource Management, Ghana. She is also a member of the core 
+faculty of the West African Civil Society Institute. `,
     imageUrl: '/images/speakers/MJ-Headshot.png',
     category: 'Keynote Speaker'
   },
@@ -221,7 +261,28 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     id: 22,
     name: 'Dr. Stella Agyenim-Boateng',
     title: 'Vice Chairman. Public Services Commission',
-    bio: `?????`,
+    bio: `Dr. (Mrs.) Irene Stella Agyenim-Boateng is a distinguished Ghanaian human resource management expert, transformational leader, and public sector executive with over three decades of experience spanning the education, telecommunications, insurance, consultancy, and energy sectors.
+Renowned for her visionary leadership and people-centered approach, Dr. Agyenim-Boateng has held several high-impact roles across both public and private institutions, consistently driving organizational transformation, strategic growth, and operational excellence.
+Key Roles & Achievements
+•	Current Vice Chairman, Public Services Commission of Ghana (appointed October 2023)
+•	Former Deputy Chief Executive (Services), Volta River Authority (VRA) – led HR, legal, real estate, corporate affairs, and more
+•	HR Director at Vodafone Ghana, Ghana Telecom, and GLICO Group
+•	Strategic Advisor to the CEO of VRA post-retirement, contributing to executive leadership and institutional development
+Professional Expertise
+Dr. Agyenim-Boateng is a C-suite HR executive with senior leadership and board-level experience across multinational corporations and public institutions. Her expertise includes:
+•	Strategy formulation & execution
+•	Labour-union management, employment law, and international labour standards
+•	Active engagement with the International Labour Organization (ILO) and the Ghana Employers’ Association (GEA)
+•	Recruitment, talent management, diversity & inclusion
+•	Business partnering, development & relief management
+•	Learning & development, stakeholder engagement, and performance management
+•	Reward, compensation & recognition systems
+•	Property & facilities management, fleet operations
+•	Occupational health, safety & employee wellbeing
+•	Event coordination, crisis communication, and organizational development
+•	Security operations, school administration, negotiation, and policy implementation
+Leadership Style
+Dr. Agyenim-Boateng is celebrated for her affable, approachable, and people-centered leadership, paired with a structured, diligent, and results-oriented mindset. Her ability to navigate complex organizational landscapes with clarity and compassion has made her a trusted voice in HR transformation and public sector reform.`,
     imageUrl: '/images/speakers/stella-agyenim-boateng.jpg',
     category: 'Keynote Speaker'
   },
@@ -229,15 +290,19 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     id: 23,
     name: 'Munnira Shiekh',
     title: 'CEO and Founder Zenfusion COnsultancy',
-    bio: `?????`,
+    bio: `Munnira Sheikh, CEO of Zenfusion Consultancy, is a business & strategy analyst carrying an extensive experience across different industries. Working in FMCG, manufacturing plants, trade and service sector, across marketing research, product development and sales and distribution domains, give her an edge in understanding various business areas.`,
     imageUrl: '/images/speakers/munnira-shiek.jpg',
     category: 'Speed Coach'
   },
   {
     id: 24,
-    name: 'Yvonne Ohui McCarthy',
+    name: 'Yvonne Ohui MacCarthy',
     title: 'CEO, Institute of Customer Service Professionals',
-    bio: `?????`,
+    bio: `Meet Yvonne Ohui MacCarthy, CSP, a visionary leader and the 
+driving force behind the Institute of Customer Service Professionals 
+(ICSP), where she serves as the Founder and Head Consultant. With 
+an unwavering commitment to service excellence, Yvonne is also 
+the esteemed Chair of both the West African Association of.`,
     imageUrl: '/images/speakers/yvonne-ohui-mccarthy.jpg',
     category: 'Masterclass Trainer'
   },
@@ -245,7 +310,12 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     id: 25,
     name: 'Emmaline Datey',
     title: 'CEO, ICS Africa',
-    bio: `?????`,
+    bio: `Emmaline Datey is a Public Speaker, Brands Influencer, HR Strategist, Leadership and Personal Development Coach, German-Africa Startup Consultant, as well as an Events Consultant. As an HR strategist with up to 15 years’ of Human Resource general practice, she has had experience within several industries including Aviation, Oil and Gas, Academia, Media, Wellness, Fashion, Medical Laboratory, Supply Chain, and Manufacturing. 
+She is the Founder and CEO of ICS Africa Limited (Impact Concepts and Solutions Africa) – a budding Pan African company that provides Management Consulting, Personal & Professional Development, Marketing and Communications, as well as Corporate Events Engineering and Management services. She is also the founder and lead blogger of a digital platform called The Fearless and Fabulous Network where she inspires women in leadership, faith, love and career, personal growth as well as promote exceptional women, globally. Additionally, she is the Director for West Africa Female Leaders and Entrepreneurs Network, an African community of female leaders in business.
+Emmaline chartered as a Professional in HR (PHR) in 2014 with the Human Resource Certification Institute, USA and possesses a first-class degree from the Valley View University in Human Resource Management (BBA) and an Advanced International Human Resource Management Diploma in 2023. She also bagged a certification from John Maxwell Team as a certified speaker, trainer, and coach in Aug 2021. 
+Emmaline has been honored as one of Ghana’s 100 Most Influential Women in 2017, one of the Top 100 speakers in Ghana, 2018, one of the 2020 50 Most Influential Young Ghanaians, a 2022 Ghana 25 under 25 Mentor Awards in HR and Business Consulting, a Visionary African Woman Award Recipient in 2023, and a 2023 Women of Color Creating Wealth International Awardee. She has been further listed among the ELOY Foundation & African Women CEO’s Network’s 50 Power People who embody resilience, leadership and advocate for women's empowerment and inclusion in Africa in 2024, a recipient of the 2024 International Africa Women Peace Awards (IAWPA) as well as one of the Young Global Leaders Network’s 40 most inspirational female leaders in Ghana 2024. 
+
+`,
     imageUrl: '/images/speakers/emmaline-datey.jpg',
     category: 'Speed Coach'
   },
@@ -261,7 +331,11 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     id: 27,
     name: 'Delasi Dogbe',
     title: 'Life Coach - Mental Health and well being Advocate, Author',
-    bio: `?????`,
+    bio: `Delasie Dogbey is a dynamic Relationship Strategist, Life Coach, Business Development Coach, Author, Ghostwriter, and Project & Marketing Strategist. He holds a Master’s degree in Business Administration and has collaborated with some of Ghana’s most prominent brands, including Ghana Telecom, Vodafone, TV3 Network, SIC Insurance, UT Group, FirstBanc Financial Services, Allianz Insurance International, Africa SME Organization, and Enterprise Group.
+A passionate advocate for personal and professional growth, Delasie has spearheaded numerous trainings and seminars on topics such as public speaking, authorpreneurship, confidence building, business networking, mindset transformation, purpose discovery, and emotional wellness. He is a nominee for the prestigious 40 Under 40 Awards for emerging leaders and currently serves as President of the Rotary Club of Accra-Legon District.
+As a prolific writer, Delasie is the author of several inspiring books, including Allow God to Be God—Our Testimony, It Is Well, Not Easily Broken, and Depression: Don’t Suffer in Silence. His thought-provoking articles have appeared in the Business and Financial Times (B&FT) and Rotary District Magazine, and he has been featured on the cover of FGBMFI Voice Magazine. He also serves as an expert panelist on radio and television platforms.
+Delasie is the founder and CEO of the Ladies War Room Organization, an initiative dedicated to empowering women to become the best version of themselves through support for maternal health, emotional wellness, and the cultivation of meaningful relationships. Through this platform, he has provided over 200 women and young girls with free counseling and mental health support.
+Driven by a mission to inspire positive change, Delasie is widely recognized as a motivational speaker, idea generator, self-starter, and compassionate leader who believes in service that transforms lives.`,
     imageUrl: '/images/speakers/Delassie-Dogbe.jpg',
     category: 'Panel Member'
   },
@@ -269,10 +343,66 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     id: 28,
     name: 'Patience Osekre',
     title: 'Managing Director, Supreme Healthcare Management Services',
-    bio: `?????`,
+    bio: ` 
+Patience Osekre is a Consultant Psychotherapist and a Wellness Expert trained in the UK 
+with a wealth of experience and expertise in providing Health and Well-being Services for 
+Individuals, Groups and Organisations. She has worked for many years in Managerial position 
+within the Public/ Statutory, Private and Voluntary Sector in the UK prior to relocating to 
+Ghana.  
+She is currently the Managing Director of Supreme Healthcare Management services   and 
+EAP-Africa (Subsidiary) in Ghana, a pioneering initiative in Sub Saharan Africa which 
+provides 24/7 Employee Assistance Program and Wellbeing Services /Consultancy for Banks, 
+Oil Companies, the Mining Industry, Embassies, Schools, Clinics, hospitals, and other 
+Corporate Institutions in various other sectors to enhance Employee wellbeing, performance, 
+and productivity.  She leads a Multi-disciplinary/Multi-Lingual Team of Professionals in 
+delivering a wide range of multifaceted Employee Well-being Services in Ghana and across 
+the continent.  
+Patience is currently engaged in initiatives, such as the EAP Africa Summit and ACE 
+(Authentic Caring Employer) Awards, that assist corporate organisations in redefining 
+Workplace Mental Health and Wellbeing as a Business imperative and strategic Priority. Her 
+prime goal is to help organisations harness the Mental Capital of their workforce by developin
+
+SHMS-LEADING EXPERT IN CORPORATE WELLNESS PROMOTION Page 1 
+meaningful and sustained wellbeing policies and workplace interventions that support good 
+mental health.  She is passionate about creating environments where employees can thrive both 
+personally and professionally. Her mission is to integrate best mental health practices into 
+organisational cultures, promoting overall well-being and productivity. 
+She has been involved in a lot of Research in the UK which has helped to promote, safeguard 
+the welfare needs and best Interest of Children and Adults Wellbeing.  Promoting   Innovative 
+Well-being solutions to improve psychological safety, Mental Health literacy and a workplace 
+culture that normalises Mental Health, have been a huge passion that fuels her zeal, 
+commitment, and determination. She is currently writing a book Entitled “Emotional Literacy.” 
+She is a registered member of BACP (British Association of Counsellors and Psychotherapist 
+UK and a registered member of HCPC (Health &Care Professionals Council) UK.`,
     imageUrl: '/images/speakers/patience-osekre.jpg',
     category: 'Masterclass Trainer'
   },
+   {
+    id: 29,
+    name: 'Dr. Francis Eduku',
+    title: 'CEO,CIHRM',
+    bio: `Dr. Francis Eduku is the Chief Executive Officer of the Chartered Institute of Human Resource Management, Ghana (CIHRM), and has more than two decades of experience in HR leadership and organizational effectiveness. He specializes in strategic human resource management, culture and transformation, and organizational resilience. He has worked extensively with multinational gold mining firms such as Gold Fields and Golden Star Resources and occupied various executive roles, including Vice President of Human Resources and Corporate Affairs, Vice President of Human Resources, and Acting Vice President of Sustainable Development. 
+Dr. Eduku holds a PhD with Distinction in Human Resource Management. He also has an MBA with a specialty in Human Resource Management and an Executive Master’s Degree in Alternative Dispute Resolution (ADR). He is a Fellow of CIHRM, a Chartered HR Professional (CIPD, UK), and a Certified Balanced Scorecard Professional of the Balanced Scorecard Institute and George Washington University College of Professional Studies, USA. 
+He is a regular speaker at high-profile HR conferences and currently champions effective human resource management practices and standards in Ghana through collaborations with international and local organizations and tertiary institutions.
+Dr. Eduku is an alumnus of Saïd Business School, University of Oxford, UK, and a lecturer at the University of Ghana, Legon.
+`,
+    imageUrl: '/images/speakers/Dr-Eduku.jpg',
+    category: 'Masterclass Trainer'
+  },
+  {
+    id: 30,
+    name: 'Georgia Manfreda Appiah',
+    title: 'coming soon',
+    bio: `Giorgia Manfreda Appiah is a dynamic leader with over a decade of experience in human resource management, company operations, and strategic leadership. She is the Managing Partner and Chief Operating Officer of Nuffield Clinic, a specialist healthcare facility in Accra, Ghana, where she has led the clinic’s transformation and expansion in orthopaedics, rheumatology, physiotherapy, and family medicine.
+She holds a degree in Healthcare Management from the University of Minnesota and currently serves as the company lead for Nuffield Clinic’s participation in the Stanford Seed Transformation Program. Giorgia is known for her hands-on leadership style and commitment to building systems that empower teams and deliver quality care.
+Beyond her work at Nuffield, Giorgia is deeply passionate about the Neoanim Foundation, an initiative dedicated to providing prosthetic limbs to children. Her mission is to reduce the long-term impact of disability on children affected by trauma or medical malpractice, helping them reclaim their potential and live fully.
+Giorgia brings to every space a powerful blend of operational excellence, empathy-driven leadership, and a clear vision for inclusive and impactful healthcare systems.`,
+    imageUrl: '/images/speakers/giorgia-manfreda-appiah.jpg',
+    category: 'coming soon'
+  },
+  
+  
+
 ];
 
 export default function SpeakersPage() {
