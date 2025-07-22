@@ -34,7 +34,6 @@ const galleryImages = [
   '/images/IMG-20191215-WA0022.jpg',
   '/images/IMG-20191215-WA0023.jpg',
   '/images/IMG-20191215-WA0024.jpg',
-  '/images/IMG-20191215-WA0003.jpg',
   '/images/IMG-20191215-WA0007.jpg',
   '/images/IMG-20191215-WA0008.jpg',
   '/images/IMG-20191215-WA0009.jpg',
@@ -43,7 +42,6 @@ const galleryImages = [
   '/images/IMG-20191215-WA0012.jpg',
   '/images/IMG-20191217-WA0013.jpg',
   '/images/IMG-20191217-WA0014.jpg',
-  '/images/IMG-20191217-WA0015.jpg',
   '/images/IMG-20191217-WA0016.jpg',
   '/images/IMG-20191217-WA0017.jpg',
   '/images/IMG-20191217-WA0019.jpg',
@@ -72,7 +70,7 @@ export default function GalleryPage() {
           </motion.div>
         </div>
         <Image
-          src="/images/gallery/hero-bg.jpg"
+          src="/images/IMG-20250610-WA0099.jpg"
           alt="Gallery background"
           fill
           className="object-cover"
@@ -179,15 +177,8 @@ export default function GalleryPage() {
         >
           <h2 className="text-3xl font-bold mb-6 text-white">Join Us Next Time!</h2>
           <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-            Don't miss out on creating more amazing memories at our next event
+            Don&apos;t miss out on creating more amazing memories at our next event
           </p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-[#FF8C00] hover:bg-[#FF6B00] text-white font-bold py-3 px-8 rounded-full transition-colors"
-          >
-            Register Interest
-          </motion.button>
         </motion.div>
       </section>
     </main>
