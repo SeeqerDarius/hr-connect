@@ -386,8 +386,8 @@ Dr. Eduku holds a PhD with Distinction in Human Resource Management. He also has
 He is a regular speaker at high-profile HR conferences and currently champions effective human resource management practices and standards in Ghana through collaborations with international and local organizations and tertiary institutions.
 Dr. Eduku is an alumnus of Saïd Business School, University of Oxford, UK, and a lecturer at the University of Ghana, Legon.
 `,
-    imageUrl: '/images/speakers/Dr-Eduku.jpg',
-    category: 'Masterclass Trainer'
+    imageUrl: '/images/speakers/dr-eduku.jpg',
+    category: 'Panelist and Speaker'
   },
   {
     id: 30,
