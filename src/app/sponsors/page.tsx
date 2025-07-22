@@ -11,7 +11,7 @@ const sponsorTiers = [
     sponsors: [
       {
         name: "Nuffield Clinic",
-        logo: "/images/sponsors/nuffieldclinic.png",
+        logo: "/images/sponsors/nuffieldclin.png",
         url: "https://nuffieldclinic.com",
         description: "Bone, Joint & Muscle Specialist Clinic"
       },
@@ -35,7 +35,7 @@ const sponsorTiers = [
       },
       {
         name: "Dalex",
-        logo: "/images/sponsors/Dalex-Logo-tfid.jpg",
+        logo: "/images/sponsors/dalex-Logo-tfid.jpg",
         url: "https://www.dalexswift.com",
         description: "Save yourself the heartache by investing your money where it gives back."
       },
@@ -53,7 +53,7 @@ const sponsorTiers = [
     sponsors: [
       {
         name: "Black Boys Band",
-        logo: "/images/sponsors/IMG_9612.png",
+        logo: "/images/sponsors/bbs.jpg",
         url: "#",
         description: "Ghana's premier highlife band"
       },
@@ -80,7 +80,13 @@ const sponsorTiers = [
         logo: "/images/sponsors/silky.png",
         url: "#",
         description: "Fashion and beauty brand"
-      }
+      },
+      {
+        name: "Sedat Consult",
+        logo: "/images/sponsors/sedat.jpg",
+        url: "https://sedatconsultlimited.com/",
+        description: "We help you grow your business to create wealth"
+      },
     ]
   }
 ];
