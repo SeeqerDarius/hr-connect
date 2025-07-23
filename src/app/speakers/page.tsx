@@ -69,7 +69,7 @@ const speakersByCategory = {
       name: 'Cynthia Mawulawoe Kodowu',
       title: 'Founder, HR Network',
       bio: `Cynthia is a results and people driven C-Suite Leader with a proven track record of driving organizational growth, optimizing operations, and delivering exceptional results. She is a strategic thinker with a passion for innovation and a commitment to excellence. Her 15+ year career has dedicated her attention to positively impacting medium businesses, HR professionals and departments. She is especially skilled in Strategic Leadership, Risk Management, Change Management, Financial Management, P & L Management, Business Development, Stakeholder Relations, Team Building, Banking Operations, People Strategy and its essential experiences in Training and Development, Recruitments and Selection, Employee Relations, Strategic Business Partnering. Industries that have felt her impact include Banking, Hospitality, Retail, Insurance and Marketing.
-Cynthia has gained certification from some of the Globe’s leading educational institutions. Her degrees include MBA in Project Management, BA in Accountancy (GIMPA) and HND in Marketing. In addition to her degrees, she has also amassed a number of certificates, which include: Instructional Design Certificate from ATD-USA, Executive Masters from UCLA, Certified HR Business Partner and Human Resource Analyst (GAFM), CIPD Associate level 5 (CIPD UK), Associate member (CIHRMP), Certificate in Strategic Management, Advanced Certificate in HR (Pan African Institute), Certificate in Diversity, Equity and Inclusion and currently undertaking her MCIPD with CIPD -UK 2023/2024 cohort .`,
+Cynthia has gained certification from some of the Globe's leading educational institutions. Her degrees include MBA in Project Management, BA in Accountancy (GIMPA) and HND in Marketing. In addition to her degrees, she has also amassed a number of certificates, which include: Instructional Design Certificate from ATD-USA, Executive Masters from UCLA, Certified HR Business Partner and Human Resource Analyst (GAFM), CIPD Associate level 5 (CIPD UK), Associate member (CIHRMP), Certificate in Strategic Management, Advanced Certificate in HR (Pan African Institute), Certificate in Diversity, Equity and Inclusion and currently undertaking her MCIPD with CIPD -UK 2023/2024 cohort .`,
       imageUrl: '/images/speakers/cynthia.jpg',
       category: 'Convener'
     }
@@ -287,7 +287,7 @@ Cynthia has gained certification from some of the Globe’s leading educational 
       title: 'CEO, Grace Center For Growth and Excellence',
       bio: `Grace is a Pastor, Certified Trainer, Speaker, Executive Coach and Entrepreneur licensed as an independent Executive Program Director with The John Maxwell Leadership Team.`,
       imageUrl: '/images/speakers/biophoto.jpg',
-      category: `Speed Coach`
+      category: 'Speed Coach'
     }
   ]
 };
@@ -316,7 +316,7 @@ export default function SpeakersPage() {
               >
                 <Image
                   src={image}
-                  alt=""
+                  alt="Speaker background"
                   fill
                   priority={i === 0}
                   className="object-cover object-top"

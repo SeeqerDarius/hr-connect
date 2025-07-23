@@ -2,7 +2,7 @@
 
 import { FaCoffee, FaPrayingHands, FaMusic, FaUtensils, FaChalkboardTeacher, FaHandshake, FaUsers, FaMicrophone, FaVideo, FaComments, FaMapMarkerAlt, FaExternalLinkAlt } from 'react-icons/fa';
 import { ReactNode } from 'react';
-import { MapPin, Mail, Phone, MessageSquare } from 'lucide-react';
+
 
 interface AgendaItemProps {
   time: string;
