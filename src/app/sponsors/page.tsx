@@ -87,6 +87,12 @@ const sponsorTiers = [
         url: "https://sedatconsultlimited.com/",
         description: "We help you grow your business to create wealth"
       },
+      {
+        name: "ICSP",
+        logo: "/images/sponsors/icsp.jpg",
+        url: "https://icspghana.com/",
+        description: "We provide holisitic and specilized customer services..."
+      },
     ]
   }
 ];

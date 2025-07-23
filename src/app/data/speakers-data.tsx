@@ -1,4 +1,4 @@
-// src/app/data/speakers-data.tsx
+// speakers data
 
 export interface Speaker {
   id: number;
@@ -163,7 +163,13 @@ career journeys.`,
     id: 8,
     name: 'Paa Kwesi-Barnes',
     title: 'Moderator',
-    bio: `???.`,
+    linkedin: 'https://web.facebook.com/paakwesi.barnes',
+    bio: `Paa Kwesi Barnes stands as a seasoned Digital Technology Expert, boasting over 15 years of immersive experience across diverse roles encompassing information technology strategy and consulting, sales, and business management. His extensive journey has equipped him with formidable skills and insights, particularly in domains like core banking transformation, digital engagement, credit origination and appraisal, customer experience solutions, human capital solutions, quality assurance, and software testing. With a track record spanning the Telecom, Banking, and other financial sectors, Paa Kwesi has been deeply involved in mentorship, coaching, and training initiatives, not only within finance but also extending his reach into the HR sector.
+
+Throughout his career, Paa Kwesi has consistently assumed leadership positions, showcasing his unwavering dedication and expertise in the field. His profound industry knowledge, coupled with an unyielding commitment to excellence and client satisfaction, has consistently positioned him as a trusted ally in businesses' journey towards growth and success.
+
+He is currently the Director for Business Development and Managing Consultant at Senrab ConsulTech Limited in Ghana. Paa Kwesi spearheads strategic initiatives and consultancy efforts, driving the company towards new heights of innovation and impact. Beyond his professional endeavours, Paa Kwesi finds fulfilment in his role as a devoted husband and father to three wonderful children.
+.`,
     imageUrl: '/images/speakers/Paa-Kwesi-Barnes-moderator.jpg',
     category: 'PR'
   },
@@ -171,11 +177,12 @@ career journeys.`,
     id: 9,
     name: 'Yvonne Wiredu-Akpabli',
     title: 'HR Consultant/ Coporate Trainer-SHRM',
+    linkedin: 'https://www.linkedin.com/in/mary-bennett-chartered-mcipd-73382656/',
     bio: `Yvonne is a highly trained HR professional with over 16years of experience in the practice of managing a broad spectrum of human resources programs, services, and functions; She possesses a strong command on performance management, employment laws, recruitment & selection, benefit plans, training and development; and compliance issues.
 She has significant experience managing various HR assignments for public sector organisations, NGOs, Telecommunication, financial, national, shipping, and multinational companies. 
 Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Management and Public Administration (GIMPA). She also has a BA in English and French from the University of Cape Coast. In 2017, she was certified as a global HR professional after passing her SPHRi from HRCI. HR Focus also adjudged her as one of the top 40 HR Practitioners in Ghana in the same year. She also holds an LLB from GIMPA and an LLM in Labour Law from the University of Ghana Law School. She is a member of SHRM, a global HR forum, ACHR Ghana and a Fellow at CIHRP Ghana. She is a facilitator of HR courses at the HR Certification Centre and the Chartered Institute of Human Resource Managers (CIHRM) Ghana. She was adjudged the HR Personality of the year by the HRCC in 2023.
 `,
-    imageUrl: '/images/speakers/Yvone-Wiredu.jpg',
+    imageUrl: '/images/speakers/yvonne.jpg',
     category: 'PR'
   },
   {
@@ -190,7 +197,11 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     id: 11,
     name: 'Mary Bennett',
     title: 'Moderator',
-    bio: `?????.`,
+    linkedin: 'https://www.linkedin.com/in/mary-bennett-chartered-mcipd-73382656/',
+    bio: `Mary Bennett is a globally experienced professional specializing in Organizational Development, Learning & Development, and Human Resource Management. Her diverse certifications include being an IFC-LPI TPMA Certified Trainer, an ILM Certified Training & Development Professional, and a qualified Insights Discovery Practitioner. She is also an active member of the Chartered Institute of Personnel and Development (CIPD).
+Mary’s cross-industry expertise spans Oil and Gas, Telecommunications, IT, Health, Education, and Government sectors, where she has consistently advised and influenced leadership from mid-level management to the boardroom. Her professional journey includes roles at notable organizations such as Tullow Oil, Ericsson AB, iBurst Africa, Finsbury Orthopedics, and Age Concern, among others.
+With a passion for human-centered growth, Mary is committed to helping individuals and organizations unlock their full potential through transformational learning and strategic people development.
+.`,
     imageUrl: '/images/speakers/Mary-Bennett.jpg',
     category: 'Moderator'
   },
@@ -228,6 +239,94 @@ Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Man
     imageUrl: '/images/speakers/isidore-kpotufe.jpg',
     category: 'Entrepreneurship'
   },
+   {
+    id: 13,
+    name: 'Marc Voi Chiuli',
+    title: 'Founder, People Edge Consulting',
+    linkedin: 'https://www.linkedin.com/in/marc-voi-chiuli-msc-hrm-assoc-cipd-mihrm-37963110/',
+    bio: `Marc founded People Edge Consulting, to provide HR services to the small/medium business 
+community.  He has 25+ years of diverse human resources and management experience that 
+spans start-ups and established organizations, providing leadership and guidance to managers 
+and executives. He has led engagements in areas of HR Audits, HR Metrics, Competency 
+Assessment, Organizational Culture Surveys, Job Evaluation, Performance Management 
+Systems and HR Transformation for clients both in public and private sector. 
+Prior to founding People Edge Consulting., Marc held human resources leadership positions at 
+Mumias Sugar Company and  Kenya Tourism Board.  
+Marc holds a Master of Science Degree in Human Resources from the University of Manchester 
+(UK) and a Bachelor of Arts Degree from the University of Nairobi, and a Higher National 
+Diploma in Human Resources Management from the College of Human Resources 
+Management (K). He is a member of IHRM (K) and an Associate Member of CIPD (UK). He is also 
+a Certified HR Practitioner. Marc loves travelling and has travelled to France, United Kingdom, 
+Canada and Japan.`,
+    imageUrl: '/images/speakers/marc-voi-chiuli.jpg',
+    category: 'Panel Member'
+  },
+ 
+  {
+    id: 14,
+    name: 'Dr. George Ayee',
+    title: 'Organisation Change Enabling Expert',
+    linkedin: 'https://www.linkedin.com/in/george-ayee/',
+    bio: `George Ayee is an organizational development/effectiveness, change enablement and business transformation consultant, transformational speaker, corporate trainer, facilitator, and certified coach. He worked with Price Waterhouse as Senior Consultant, Deloitte an Associate Consultant, Managing Consultant with Achievement Motivation Group in East Africa, International Director of Media Productions, Deputy Vice Chancellor of Kampala International University and Director of Kampala University in East Africa. 
+George has facilitated various meetings and provided consulting services to corporate bodies and organizations including International Conference for International Union for Conservation of Nature (IUCN), World Bank, Ecotrust, African Wildlife Foundation, Financial Institutions, The Ministry of Water, Lands and Environment, Oxfam, Kisoro District Local Administration, Care International, ActionAid, on-site and off-site meetings for Senior Leadership teams, Boards, and many others. George spends his time facilitating change and transformation programs, coaching leaders to work through change and transformation successfully. George has facilitated meetings in Canada, Australia, USA, England, Uganda, Kenya, Tanzania, Rwanda, Malawi, Zimbabwe, and Ghana. 
+George was the architect behind the setup of the Change Management and Business Transformation office at Husky Energy where he led the function and provided oversight for all change and business transformation initiatives. He also led the organizational change management function at the Calgary Board of Education specifically ensuring the successful rollout of the Enterprise Portal. 
+George is a Certified Professional Coach (CPC) Leadership Circle Profile 360, Collective Leadership Assessment, Lumina Leader and Lumina Spark, Certified Change Management Professional (CCMP), Master Change Management Professional (MCMP) and Prosci ADKAR Change Management.
+George provides leadership and oversight in Organizational Development in People Strategy and Partnerships at the City of Calgary, Alberta, Canada. He travels internationally to give talks on Transformation, Change, and Resilience. 
+George holds a Doctor of Business Administration degree from Australia; Master of Business Administration (MBA) from London, England; Bachelor of Science in International Business from USA.  
+`,
+    imageUrl: '/images/speakers/dr-george-ayee.jpg',
+    category: 'Speed Coach'
+  },
+  {
+    id: 15,
+    name: 'Laury-Georges-Lane',
+    title: 'Legal and Human Resources Executive',
+    linkedin: 'https://www.linkedin.com/in/laury-georges-lane-21998917/',
+    bio: `Laury Georges-Lane, a former Human Resources executive and legal professional with 27 
+years of experience, is now at the helm of two consulting firms: LGL Consulting & Executive 
+Advisory Group, LLC, and its international subsidiary, LGL Consulting & Executive Advisory 
+Group - International. Over the course of her career, she has delivered impactful results 
+across multiple industries, including: 
+• Energy 
+• Government  
+• Healthcare 
+• International Business Trade & Development 
+• Non-Profit 
+Laury provides consultative and mediation services domestically and abroad, emphasizing 
+workforce development, leadership training, and HR policy matters.  She has served as an 
+expert HR panelist on topics including: 
+• International Trade in the Global Marketplace 
+• HR in the Artificial Intelligence era 
+• Post Secondary Training and Workforce Development 
+• Global HR: Executive People Services and its Impact 
+Laury continues to make an indelible impact on people and systems through her civic 
+contributions on both public and private sector boards, as well as her active involvement in 
+community service organizations. In both 2020 and 2021, she was honored by her city’s 
+Commission Board as a Women’s History Month Honoree. More recently, in 2025, the Southern 
+Region of Delta Sigma Theta Sorority, Incorporated recognized her globally for her contributions 
+to international awareness and involvement. 
+She has been prominently featured in multiple magazine publications, showcasing her 
+impact on business and philanthropy both domestically and internationally. 
+Laury’s philanthropic efforts extend far beyond the United States, reaching into West 
+Africa, where she has adopted the Village of Sipane in the Thies region near Dakar, 
+Senegal. Her mission focuses on championing education reform, bridging the gender 
+education gap, and addressing poverty and economic inequality to drive lasting, 
+transformative change. Laury has recently been appointed to the advisory board of the 
+Heritage and Cultural Society of Africa Foundation (HACSA-USA), where she supports 
+initiatives that advance STEM education, particularly technology, for girls and women 
+across Africa. HACSA was founded by Ambassador Johanna Svanikier, former Ghanaian 
+Ambassador to France and Portugal, and Permanent Delegate to UNESCO and La 
+Francophonie. 
+She holds degrees from the University of Florida, Nova Southeastern Shepard Broad 
+College of Law, Nova Southeastern H. Wayne Huizenga College of Business, 
+and an executive certification through the Harvard Extension School of Business. 
+Equally notable, she has earned her Florida Supreme Circuit Civil Mediator credentialing 
+that continues to allow her to contend for the best and align herself with excellence.  As a 
+Florida Supreme Court Mediator, Laury is retained to mitigate risk by helping foster an 
+increasingly collaborative work culture through mutual resolution.`,
+    imageUrl: '/images/speakers/laury-georges-lane.png',
+    category: 'Keynote Speaker'
+  },
   {
     id: 16,
     name: 'Anita Wiafe',
@@ -242,13 +341,76 @@ Certified by the International Labour Organisation (ILO), Anita specializes in S
 Her expertise in change management covers HR audits, mergers and acquisitions due diligence, restructuring, and HR systems implementation. With deep knowledge of over 20 African Labour Laws, and additional expertise in UK and European employment legislation, Anita is a trusted authority on employment terms, risk management, and industrial relations, including union negotiations and collective bargaining agreements.
 Anita is also highly proficient in HR policy development, aligning and standardizing policies across regions in Africa, Europe, Asia, the UK, and the USA. Her skills include psychometric testing, assessment center design, personality profiling, and skills inventory creation.
 Currently, she serves as the Executive Secretary of the eCommerce Association of Ghana (eCAG), where she champions women in eCommerce. A former board chair and board member of multiple organizations, Anita is deeply committed to social issues affecting women, children, and youth. She is also certified by the ILO in gender equality and workplace diversity and serves as an arbitrator and mediator for the National Labour Commission of Ghana.
-Anita Wiafe’s work continues to shape the future of HR and organizational leadership across continents, industries, and communities.
-
-`,
+Anita Wiafe’s work continues to shape the future of HR and organizational leadership across continents, industries, and communities.`,
     imageUrl: '/images/speakers/anita-wiafe.jpg',
     category: 'Panel Member'
   },
-  
+  {
+    id: 17,
+    name: 'Deborah Asmah',
+    title: 'Co-Founder, Npontu Technologies',
+    linkedin: 'https://www.linkedin.com/in/deborah-asmah-cipm-8524585a/',
+    bio: `Ms. Deborah Asmah is an expert in AI, digital governance, privacy, and compliance, 
+whose contributions have significantly shaped Ghana's digital landscape. Her innovative 
+approaches have enabled seamless access to digital tools, promoted financial inclusion, and 
+driven digital transformation across multiple sectors. Deborah is the co-founder of Npontu 
+Technologies Ltd, a technology company specializing in the use of Artificial Intelligence 
+(AI) and software development to provide digital solutions and lead transformation 
+initiatives. Under her leadership, Npontu Technologies has scaled from a startup to a thriving 
+technology powerhouse serving over 20k clients across Ghana. In addition to its national 
+footprint, she has driven market expansion into other geographic regions including Nigeria, 
+Côte d'Ivoire and United Kingdom(UK). 
+She holds a Master of Law from Queen Mary University of London. She is a licensed Certified 
+Information Privacy Manager (CIPM) with the International Association of Privacy 
+Professionals (IAPP) and a certified Data Protection Officer (DPO). She is an ardent advocate 
+for Public Policy, with extensive research experience at the intersection of technology, AI, and 
+compliance. Ms. Deborah Asmah’s work has directly led to MSME digitization 
+transformation opportunities for over 23k+ businesses in Ghana, contributing to business 
+growth, job creation and strong Partnerships with Organizations such as MTN Ghana, 
+Association of Ghana Industries(AGI), Ghana Enterprise Agency (GEA), MasterCard 
+foundation amongst others.  
+Deborah Asmah believes that when AI and digital technologies are used responsibly, they can 
+be powerful catalysts for social and economic progress. She is deeply committed to advancing 
+women’s empowerment, fostering business growth and championing global ESG objectives. 
+Deborah is a frequent speaker at leading conferences across Africa, where she shares her 
+insights on the future of AI, privacy and compliance, and digital governance. She has recently 
+spoken at: 
+• Africa AI Stakeholder Meeting on Innovative Governance and Capacity Building, 2024, 
+Kigali, Rwanda. 
+• SheTrades Ghana Hub, Ghana Export Promotion Authority – 2024, Accra, Ghana. 
+• Digital Governance for Social Inclusion and Sustainable Development, AfreGov, 2024, 
+Kigali, Rwanda. 
+• Navigating Digital Frontiers: Legal Considerations and Tech Innovations, ALT Network 
+Summit, 2024, Kigali, Rwanda. 
+• The Global Conference on Human Resources in Africa (GCHRA), 2024, Accra, Ghana.`,
+    imageUrl: '/images/speakers/debora-asmah.jpg',
+    category: 'Panel Member'
+  },
+  {
+    id: 19,
+    name: 'Prof. E. Afful-Dadzie',
+    title: 'Associate Professor, University of Ghana Business School',
+    linkedin: 'https://www.linkedin.com/in/eric-afful-dadzie-b8748338/',
+    bio: `Prof. Eric Afful-Dadzie is a distinguished academic and consultant specializing in Decision Sciences, Business Intelligence, Analytics, and Information Systems. With a deep-seated passion for leveraging data-driven methodologies to solve complex organizational challenges, he has established himself as a leading authority in the application of artificial intelligence (AI), machine learning (ML), and data analytics to enhance decision-making processes across industries.
+
+Prof. E. Afful-Dadzie was a Queen Elizabeth II fellow at McGill University, Canada and the 2016/2017 most promising researcher at University of Ghana Business School. With over 50 research articles in top tier journals such as Government Information Quarterly, International Journal of Information Management, Management Decision, Applied Energy, Applied artificial Intelligence, Quality & Quantity, Kybernetes, Multi-Criteria Decision Analysis among others, Prof. E. Afful-Dadzie continues to make significant contributions to the fields of Decision Sciences and Information Systems. He has supervised and mentored numerous postgraduate students in PhD and MPhil works. Some of his mentees have become lecturers in public universities in Ghana.
+
+Beyond academia, Prof. Afful-Dadzie is a sought-after consultant, advising organizations on digital transformation, AI-driven decision support and business analytics strategies. He has trained or consulted for major brands including the Bank of Ghana (BoG), Tullow Oil, University of Ghana Medical Centre (UGMC), GLICOHealth, Marie Stopes International, ABSA Bank, the Jospong Group, CalBank, GRIDCO, BOST, Ghana Ports and Harbours Authority, Subah Info Solutions, HPW Fresh & Dry Ltd, Bunge Loders Croklaan Ltd, Accra Compost and Recycling Plant (ACARP), Kofi Annan International Peacekeeping Training Centre (KAIPTC), Precious Minerals Marketing Company (PMMC), GCNET among others. Prof. is the brain behind the sought after HR Analytics and Health Analytics Training programmes in Ghana. He was the leader behind the 2022 HR Outlook and Benchmarking Survey, a collaboration between KPMG, CIHRM and HR Network Africa.
+
+Prof. Afful-Dadzie is a regular speaker at international conferences and industry summits, where he shares insights on the evolving landscape of AI in business strategy. His ability to translate complex analytical models into practical business solutions has made him a trusted advisor to executives and policymakers. With a career dedicated to advancing knowledge and practical applications in analytics and information systems, Prof. Eric Afful-Dadzie continues to shape the future of data-driven decision-making, empowering businesses and institutions to thrive in the digital age.
+`,
+    imageUrl: '/images/speakers/afful-dadzie.jpg',
+    category: 'Panel Member'
+  },
+  {
+    id: 20,
+    name: 'Dr. Theo Tackie',
+    linkedin: 'https://www.linkedin.com/in/theo-welbeck-tackie-dm-odc-409a84199/',
+    title: 'Author/Transformational Speaker/Certified Life Empoerment Coach',
+    bio: `Change Expert/Senior Scrum Master with over 10+ years of top-notch knowledge and experience in facilitation and coaching Agile Team, Skilled in stimulating teams to meet deadlines on projects. Ready for a new scrum-oriented role with a progressive organization that will challenge my knowledge.`,
+    imageUrl: '/images/speakers/theo-tackie.jpg',
+    category: 'Panel Member'
+  },
   {
     id: 21,
     name: 'Margaret Jackson',
@@ -492,6 +654,47 @@ Dr. Agyenim-Boateng is celebrated for her affable, approachable, and people-cent
           He is a regular speaker at high-profile HR conferences and currently champions effective human resource management practices and standards in Ghana through collaborations with international and local organizations and tertiary institutions.
           Dr. Eduku is an alumnus of Saïd Business School, University of Oxford, UK, and a lecturer at the University of Ghana, Legon.`,
     imageUrl: '/images/speakers/dr-eduku.jpg',
+    category: 'Panelist and Speaker'
+  },
+  {
+    id: 29,
+    name: 'Georgia Manfreda Appiah',
+    linkedin: 'https://www.linkedin.com/in/deborah-asmah-cipm-8524585a/',
+    title: 'coming soon',
+    bio: `Ms. Deborah Asmah is an expert in AI, digital governance, privacy, and compliance, 
+whose contributions have significantly shaped Ghana's digital landscape. Her innovative 
+approaches have enabled seamless access to digital tools, promoted financial inclusion, and 
+driven digital transformation across multiple sectors. Deborah is the co-founder of Npontu 
+Technologies Ltd, a technology company specializing in the use of Artificial Intelligence 
+(AI) and software development to provide digital solutions and lead transformation 
+initiatives. Under her leadership, Npontu Technologies has scaled from a startup to a thriving 
+technology powerhouse serving over 20k clients across Ghana. In addition to its national 
+footprint, she has driven market expansion into other geographic regions including Nigeria, 
+Côte d'Ivoire and United Kingdom(UK). 
+She holds a Master of Law from Queen Mary University of London. She is a licensed Certified 
+Information Privacy Manager (CIPM) with the International Association of Privacy 
+Professionals (IAPP) and a certified Data Protection Officer (DPO). She is an ardent advocate 
+for Public Policy, with extensive research experience at the intersection of technology, AI, and 
+compliance. Ms. Deborah Asmah’s work has directly led to MSME digitization 
+transformation opportunities for over 23k+ businesses in Ghana, contributing to business 
+growth, job creation and strong Partnerships with Organizations such as MTN Ghana, 
+Association of Ghana Industries(AGI), Ghana Enterprise Agency (GEA), MasterCard 
+foundation amongst others.  
+Deborah Asmah believes that when AI and digital technologies are used responsibly, they can 
+be powerful catalysts for social and economic progress. She is deeply committed to advancing 
+women’s empowerment, fostering business growth and championing global ESG objectives. 
+Deborah is a frequent speaker at leading conferences across Africa, where she shares her 
+insights on the future of AI, privacy and compliance, and digital governance. She has recently 
+spoken at: 
+• Africa AI Stakeholder Meeting on Innovative Governance and Capacity Building, 2024, 
+Kigali, Rwanda. 
+• SheTrades Ghana Hub, Ghana Export Promotion Authority – 2024, Accra, Ghana. 
+• Digital Governance for Social Inclusion and Sustainable Development, AfreGov, 2024, 
+Kigali, Rwanda. 
+• Navigating Digital Frontiers: Legal Considerations and Tech Innovations, ALT Network 
+Summit, 2024, Kigali, Rwanda. 
+• The Global Conference on Human Resources in Africa (GCHRA), 2024, Accra, Ghana.`,
+    imageUrl: '/images/speakers/giorgia-manfreda-appiah.jpg',
     category: 'coming soon'
   },
   {
@@ -506,6 +709,31 @@ Giorgia brings to every space a powerful blend of operational excellence, empath
     imageUrl: '/images/speakers/giorgia-manfreda-appiah.jpg',
     category: 'coming soon'
   },
+  {
+    id: 31,
+    name: 'Grace Krobo-Edusei',
+    title: 'CEO, Grace Center For Growth and Excellence',
+    bio: `Grace is a Pastor, Certified Trainer, Speaker, Executive Coach and Entrepreneur. She is 
+licensed as an independent Executive Program Director with The John Maxwell Leadership  
+Team; an elite World Leader in Leadership, Coaching and Training Development. She is also 
+a Neuroencoding Specialist, a Licensed Brain Health Trainer and a certified Global Priority 
+Solutions Specialist. 
+Her core competencies are in Executive Leadership Coaching, Personal Growth and 
+Leadership Development; adding value and transforming lives by helping people and 
+organizations with practical tools to fulfil their purpose and realize their ultimate goals. 
+Aside from being a keynote speaker she regularly facilitates Leaders’ Values Round Tables, 
+Group Coaching, Workshops and Masterminds; all aimed and tailored to aid Team Building 
+and the personal and Professional Growth of Individuals and Organizations. 
+She is a married mother of three adult children. To give back to her community, she 
+volunteers on the board of trustees of the Children’s Heart Foundation Ghana, a charity with 
+the mandate to raise funds for open Heart Surgery for underprivileged Ghanaian children 
+living with congenital heart disease. 
+She loves reading, gardening and photography. 
+Her Motto: It is not about what is in it for me but how I can add value.`,
+    imageUrl: '/images/speakers/biophoto.jpg',
+    category: 'coming soon'
+  },
+  
   
 
   
