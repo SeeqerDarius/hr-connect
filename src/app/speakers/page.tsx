@@ -13,15 +13,6 @@ const speakerBackgrounds = [
   '/images/IMG-20250610-WA0018.jpg',
 ];
 
-interface Speaker {
-  id: number;
-  name: string;
-  title: string;
-  bio: string;
-  imageUrl: string;
-  category: string;
-}
-
 // Helper function to handle "????" values
 const handleComingSoon = (value: string) => {
   return value.trim() === '????' ? 'Coming Soon' : value;
