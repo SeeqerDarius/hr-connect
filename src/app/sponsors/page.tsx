@@ -20,7 +20,13 @@ const sponsorTiers = [
         logo: "/images/sponsors/movenpick.png",
         url: "https://movenpick.accor.com/en/africa/ghana/accra/moevenpick-ambassador-hotel-accra.html",
         description: "5 Star Hotel in Accra, Ghana"
-      }
+      },
+      {
+        name: "Channel One",
+        logo: "/images/sponsors/c11.png",
+        url: "https://channelonenewsonline.com/",
+        description: "A privately owned TV Station based in Tesano..."
+      },
     ]
   },
   {
@@ -35,7 +41,7 @@ const sponsorTiers = [
       },
       {
         name: "Dalex",
-        logo: "/images/sponsors/dalex-Logo-tfid.jpg",
+        logo: "/images/sponsors/dalex-Logo.jpg",
         url: "https://www.dalexswift.com",
         description: "Save yourself the heartache by investing your money where it gives back."
       },
