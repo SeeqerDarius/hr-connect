@@ -99,6 +99,18 @@ const sponsorTiers = [
         url: "https://icspghana.com/",
         description: "We provide holisitic and specilized customer services..."
       },
+      {
+        name: "Philips Outsourcing",
+        logo: "/images/sponsors/philips.jpg",
+        url: "https://phillipsoutsourcing.net/",
+        description: "With over 17 years of delivering innovative solutions..."
+      },
+      {
+        name: "HH Factor",
+        logo: "/images/sponsors/factor.jpg",
+        url: "https://phillipsoutsourcing.net/",
+        description: "..."
+      },
     ]
   }
 ];

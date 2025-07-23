@@ -90,7 +90,7 @@ export const speakers: Speaker[] = [
   },
   {
     id: 4,
-    name: 'Patricia Ama Kissi',
+    name: 'Patricia Abena Kissi',
     title: 'CEO SEDAT Consult',
     bio: `Patricia Ama Kissi has over 15 years in artificial intelligence research with multiple publications. 
           She leads AI accessibility and ethics initiatives and is a regular speaker at international tech conferences.`,
@@ -707,7 +707,7 @@ She holds a degree in Healthcare Management from the University of Minnesota and
 Beyond her work at Nuffield, Giorgia is deeply passionate about the Neoanim Foundation, an initiative dedicated to providing prosthetic limbs to children. Her mission is to reduce the long-term impact of disability on children affected by trauma or medical malpractice, helping them reclaim their potential and live fully.
 Giorgia brings to every space a powerful blend of operational excellence, empathy-driven leadership, and a clear vision for inclusive and impactful healthcare systems.`,
     imageUrl: '/images/speakers/giorgia-manfreda-appiah.jpg',
-    category: 'coming soon'
+    category: 'Panel Member'
   },
   {
     id: 31,
@@ -733,7 +733,42 @@ Her Motto: It is not about what is in it for me but how I can add value.`,
     imageUrl: '/images/speakers/biophoto.jpg',
     category: 'coming soon'
   },
-  
+  {
+    id: 32,
+    name: 'Cynthia Mawulawoe Kodowu',
+    title: 'Founder HR Network',  
+    linkedin: 'https://www.linkedin.com/in/cynthiamawulawoekodowu/',
+    bio: `Cynthia is a results and people driven C-Suite Leader with a proven track record of driving organizational growth, optimizing operations, and delivering exceptional results. She is a strategic thinker with a passion for innovation and a commitment to excellence. Her 15+ year career has dedicated her attention to positively impacting medium businesses, HR professionals and departments. She is especially skilled in Strategic Leadership, Risk Management, Change Management, Financial Management, P & L Management, Business Development, Stakeholder Relations, Team Building, Banking Operations, People Strategy and its essential experiences in Training and Development, Recruitments and Selection, Employee Relations, Strategic Business Partnering. Industries that have felt her impact include Banking, Hospitality, Retail, Insurance and Marketing.
+
+Cynthia has gained certification from some of the Globe’s leading educational institutions. Her degrees include MBA in Project Management, BA in Accountancy (GIMPA) and HND in Marketing. In addition to her degrees, she has also amassed a number of certificates, which include: Instructional Design Certificate from ATD-USA, Executive Masters from UCLA, Certified HR Business Partner and Human Resource Analyst (GAFM), CIPD Associate level 5 (CIPD UK), Associate member (CIHRMP), Certificate in Strategic Management, Advanced Certificate in HR (Pan African Institute), Certificate in Diversity, Equity and Inclusion and currently undertaking her MCIPD with CIPD -UK 2023/2024 cohort .
+
+Her unwavering drive to excel and commendable interpersonal skills have enabled her to pursue and achieve many career highlights such as founding the HR Network Africa group of HR professionals.
+
+Cynthia is the mind and driving force behind the HR Network Africa. HR Network Africa is an ever-growing community of 500+ HR Practitioners globally that offers training by some of the continent’s highest-ranking practitioners. The success of these programmes is to grow the individual, and this motivation also led to the creation of HR Campus Connect. Cynthia has managed to bring her vision of creating a resource for ambitious HR professionals to grow and network to life with the HR Network. 
+
+Cynthia has been able to consistently raise and maintain high standards of work. In her past position as HR Director in one of the nation’s industry-leading companies, Cynthia proved to be a leader that guarantees outstanding results. This is proven by her track record with the benefits and compensation, employee engagement, Training and Development initiatives that she implemented across the Trasacco Group of companies. 
+
+In 2021, she took on the challenge to make a significant shift from the HR practice to a higher role in executive management as Country Manager for BTL Marketing Company (BTL AFRICA) where she has took on the mandate to lead the strategic charge on revenue and profitability mobilization using her people strategy and strategic business management skills to increase organizational productivity. 
+
+In 2025, she took another bold step in her career by taking on the role as Chief Operating Officer at Perbi Cubs Africa, a digital education company offering library services focused on literacy-promoting endeavour that desires to see an enlightened people of African descent who are a product of an enviable national culture of leisure reading.
+
+Cynthia has an intrinsic urge to unearth the potential in people to develop organizations. This urge is apparent when she commits to coaching and mentoring the next generation of HR leaders. She is of the genuine belief that the current leaders in HR must invest in the next generation so that they may continue to improve HR functionality which will then maximise organization profitability.  
+
+Cynthis is a member of several laudable networks including but not limited to the Executive Women Network, W50 Santander Executive Women’s Network, The Boardroom Africa, the Learning and Performance Institute, the Global Academy of Finance and Management, the Chartered Institute of Human Resource Management (CIHRM), the Professional Marketers Association of Ghana Students (PROMAGS) and SIRDIR.
+
+Overall, Cynthia has proven herself to be of value to organizations she has worked through her will to improve, implementation of innovative solutions and interpersonal skills. She is a woman rising in the C-Suite level proving to women that the highest position in any organization is also available for women to venture into. Furthermore, she has proven an asset to business organizations through her leadership and visionary skills as well as to her fellow HR practitioners as she has displayed through the work of the HR Network and through her coaching and mentoring programs.
+.`,
+    imageUrl: '/images/speakers/cynthia.jpg',
+    category: 'Guest Speaker'
+  },
+   {
+      id: 33,
+      name: 'Paul Opoku',
+      title: '????',
+      bio: `????.`,
+      imageUrl: '/images/speakers/paul.jpg',
+      category: 'Speed Coach'
+    },
   
 
   

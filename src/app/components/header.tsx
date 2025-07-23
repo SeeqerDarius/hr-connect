@@ -12,11 +12,11 @@ export default function Header() {
 
   const navItems = [
     { label: 'Home', href: '/' },
-    { label: 'Agenda', href: '/agenda' },
     { label: 'Speakers', href: '/speakers' },
-    { label: 'About Us', href: '/about' },
+    { label: 'Agenda', href: '/agenda' },
+    //{ label: 'About Us', href: '/about' },
     { label: 'Gallery', href: '/gallery' },
-    { label: 'Past Events', href: '/past-events' },
+    //{ label: 'Past Events', href: '/past-events' },
     { label: 'Sponsors', href: '/sponsors' },
     { label: 'FAQ', href: '/faq' },
   ];
