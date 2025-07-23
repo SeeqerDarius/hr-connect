@@ -343,7 +343,7 @@ export default function Home() {
               Our <span className="text-[#FF8C00]">Sponsors</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              We're grateful to our partners who make this event possible
+              We&lsquo;re grateful to our partners who make this event possible
             </p>
           </motion.div>
 
