@@ -155,30 +155,7 @@ With a passion for human-centered growth, Mary is committed to helping individua
     bio: `Isidore is a technology entrepreneur with a track record in building ventures across
           finance, transportation, and healthcare in Africa.
           He is one of the few technology founders in Africa to have exited their startup in a
-          million-dollar deal through the sale of his startup, stabus, to Canada-based company
-          Treepz.
- As the Founder and CEO of RiviaCo (Rivia), Isidore leads a healthcare venture that
- operates a network of “smart clinics” offering differentiated primary care services in
- Ghana. Rivia uses technology to personalise patient treatment and broaden access to
- quality healthcare services. Rivia currently operates 6 clinics in Ghana serving th
- Before his role at Rivia, Isidore served as the Chief Marketing Officer of Treepz, a
- Canadian-based mobility startup specialising in developing technology solutions for
- various use cases, including rentals, ticketing, payment, and fleet management. This
- position followed the sale of Isidore's company, Stabus, to Treepz in a million-dollar
- deal. Isidore also founded Westacpe, which provides a platform for consumers to
- compare financial services like insurance. Westcape’s assets were sold to a local
- microfinance institution in Ghana.
- Isidore's diverse background also includes a stint as the Director of Communications at
- IMANI Africa, one of Ghana's esteemed think tanks. He is a founding member of the
- Alliance for the Future of Healthcare in Africa (AFHA), which advocates for quality
- healthcare in Africa through resource mobilisation, stakeholder engagements and
- clinical research.
- As afirmbeliever in the catalytic power of education, Isidore runs book donations and
- scholarship to primary-JHS pupils, yearly on his birthday, which falls on the 4th
- Driven by a firm belief in the power of technology, Isidore is dedicated to scaling the
- impact of innovative business models that address Africa's most pressing challenges,
- while simultaneously advancing the frontiers of innovation through rigorous scientific
- research`,
+          `,
     imageUrl: '/images/speakers/isidore-kpotufe.jpg',
     category: 'Panel Moderator'
   },
@@ -296,14 +273,7 @@ She is the Founder and CEO of ICS Africa Limited (Impact Concepts and Solutions 
     imageUrl: '/images/speakers/emmaline-datey.jpg',
     category: 'Speed Coach'
   },
-  {
-    id: 26,
-    name: 'Irene Asare',
-    title: 'Proficient Consulting',
-    bio: `?????`,
-    imageUrl: '/images/speakers/irene-asare.jpg',
-    category: 'Panel Member'
-  },
+  
   {
     id: 27,
     name: 'Delasi Dogbe',
