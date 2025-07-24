@@ -769,6 +769,25 @@ Overall, Cynthia has proven herself to be of value to organizations she has work
       imageUrl: '/images/speakers/paul.jpg',
       category: 'Speed Coach'
     },
+    {
+      id: 34,
+      name: 'Eunice Dede Tornyi',
+      title: 'Public Relations Professional',
+      bio: `Format 1
+
+Eunice Dede Tornyi is the award winning host of the African Women’s Voices Show with 17 years of experience in TV presenting and production.
+
+She is a public relations professional with Global Media Alliance and Business lead for E-productions, a first class production company in Ghana, and a member of the Global Media Alliance subsidiaries.
+
+She has a Masters in International Relations & Diplomacy and was former executive director of the Ghana Nigeria Business Council steering committee. She is currently the president of the  International Relations & Diplomacy Network Ghana and a member of its governing council 
+
+Eunice Tornyi is also a stage actress, professional Event MC, voice actor/voice over artist & and voice coach who speaks fluent English, Fante, and Igbo, with a working knowledge of French and Yoruba
+ 
+With her extensive experience and diverse skill set, Eunice Dede Tornyi is a respected figure in Media, Diplomacy and Public Relations
+`,
+      imageUrl: '/images/speakers/co-mc.jpg',
+      category: 'Co M.C'
+    },
   
 
   

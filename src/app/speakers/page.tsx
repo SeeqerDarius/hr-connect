@@ -20,6 +20,8 @@ const handleComingSoon = (value: string) => {
 
 // Speakers grouped by category
 const speakersByCategory = {
+
+  
   "Keynote Speakers": [
     {
       id: 22,
@@ -44,6 +46,14 @@ const speakersByCategory = {
       bio: `Laury Georges-Lane, a former Human Resources executive and legal professional with 27 years of experience, is now at the helm of two consulting firms specializing in HR advisory services.`,
       imageUrl: '/images/speakers/laury-georges-lane.png',
       category: 'Keynote Speaker'
+    },
+    {
+      id: 32,
+      name: 'Cynthia Mawulawoe Kodowu',
+      title: 'Founder, HR Network',
+      bio: `Cynthia is a results and people driven C-Suite Leader with a proven track record of driving organizational growth, optimizing operations, and delivering exceptional results. She is a strategic thinker with a passion for innovation and a commitment to excellence. Her 15+ year career has dedicated her attention to positively impacting medium businesses, HR professionals and departments. She is especially skilled in Strategic Leadership, Risk Management, Change Management, Financial Management, P & L Management, Business Development, Stakeholder Relations, Team Buildi`,
+      imageUrl: '/images/speakers/cynthia.jpg',
+      category: 'Convener'
     }
   ],
   "Guest Speakers": [
@@ -55,15 +65,7 @@ const speakersByCategory = {
       imageUrl: '/images/speakers/PATRICIA-OBO-NAI.jpg',
       category: 'Guest Speaker'
     },
-    {
-      id: 32,
-      name: 'Cynthia Mawulawoe Kodowu',
-      title: 'Founder, HR Network',
-      bio: `Cynthia is a results and people driven C-Suite Leader with a proven track record of driving organizational growth, optimizing operations, and delivering exceptional results. She is a strategic thinker with a passion for innovation and a commitment to excellence. Her 15+ year career has dedicated her attention to positively impacting medium businesses, HR professionals and departments. She is especially skilled in Strategic Leadership, Risk Management, Change Management, Financial Management, P & L Management, Business Development, Stakeholder Relations, Team Building, Banking Operations, People Strategy and its essential experiences in Training and Development, Recruitments and Selection, Employee Relations, Strategic Business Partnering. Industries that have felt her impact include Banking, Hospitality, Retail, Insurance and Marketing.
-Cynthia has gained certification from some of the Globe's leading educational institutions. Her degrees include MBA in Project Management, BA in Accountancy (GIMPA) and HND in Marketing. In addition to her degrees, she has also amassed a number of certificates, which include: Instructional Design Certificate from ATD-USA, Executive Masters from UCLA, Certified HR Business Partner and Human Resource Analyst (GAFM), CIPD Associate level 5 (CIPD UK), Associate member (CIHRMP), Certificate in Strategic Management, Advanced Certificate in HR (Pan African Institute), Certificate in Diversity, Equity and Inclusion and currently undertaking her MCIPD with CIPD -UK 2023/2024 cohort .`,
-      imageUrl: '/images/speakers/cynthia.jpg',
-      category: 'Convener'
-    }
+    
   ],
   "Masterclass Trainers": [
     {
@@ -115,6 +117,14 @@ Cynthia has gained certification from some of the Globe's leading educational in
       bio: `Eric Kojo is a strategic HR expert with over 15 years experience in Talent and Change Management. He leads HR strategy at Bank of Africa Ghana.`,
       imageUrl: '/images/speakers/ERIC-KOJO-VAN-ESS-KURANCHIE-1.jpg',
       category: 'M.C'
+    },
+    {
+      id: 34,
+      name: 'Eunice Dede Tornyi',
+      title: 'Public Relations Professional',
+      bio: `Eunice Dede Tornyi is the award winning host of the African Women’s Voices Show with 17 years of experience in TV presenting and production.`,
+      imageUrl: '/images/speakers/co-mc.jpg',
+      category: 'Co M.C'
     },
     {
       id: 3,

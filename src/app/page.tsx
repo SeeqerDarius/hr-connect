@@ -11,16 +11,17 @@ import Link from 'next/link';
 
 // Sponsor data (logos only)
 const sponsors = [
-  { name: "Nuffield Clinic", logo: "/images/sponsors/nuffieldclinic.png" },
+  { name: "Nuffield Clinic", logo: "/images/sponsors/nuffieldclin.png" },
   { name: "Movenpick", logo: "/images/sponsors/movenpick.png" },
   { name: "Sweet Melody", logo: "/images/sponsors/10th-Ann-Logo.png" },
-  { name: "Dalex", logo: "/images/sponsors/Dalex-Logo-tfid.jpg" },
+  { name: "Dalex", logo: "/images/sponsors/dalex-Logo.jpg" },
   { name: "ICS Africa", logo: "/images/sponsors/icsafrica.png" },
-  { name: "Black Boys Band", logo: "/images/sponsors/IMG_9612.png" },
+  { name: "Black Boys Band", logo: "/images/sponsors/bbs.jpg" },
   { name: "Perbi Cubs", logo: "/images/sponsors/PC-peach.png" },
   { name: "Pele", logo: "/images/sponsors/PELE-white.png" },
   { name: "Philips Outsourcing", logo: "/images/sponsors/philips.jpg" },
   { name: "HH Factor", logo: "/images/sponsors/factor.jpg" },
+  { name: "ICSP", logo: "/images/sponsors/icsp.jpg" },
 ];
 
 // Featured speakers data (from speakers page)
