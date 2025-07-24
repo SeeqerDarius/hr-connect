@@ -118,11 +118,11 @@ export default function Home() {
               initial={{ opacity: 0, y: -40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="mb-6"
+              className="mb-0"
             >
-              <div className="mb-8">
+              <div className="mb-0">
                 <Image 
-                  src="/images/hr-connect-logo.png" 
+                  src="/images/logo/logo.png" 
                   alt="HR Connect Conference Logo"
                   width={400}
                   height={200}
@@ -131,18 +131,18 @@ export default function Home() {
                 />
               </div>
               
-              <span className="inline-block bg-[#FF8C00] text-white px-4 py-1 rounded-full text-sm font-bold mb-3">
+              <span className="inline-block bg-[#FF8C00] text-white px-4 py-1 rounded-full text-sm font-bold mb-10"> 
                 2025 EDITION
               </span>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
+              {/*<h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-0 leading-tight">
                 Empowering <span className="text-[#FF8C00]">HR Excellence:</span>
-              </h1>
+              </h1>*/}
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="flex flex-col sm:flex-row justify-center gap-6 mb-8"
+              className="flex flex-col sm:flex-row justify-center gap-6 mb-2" 
             >
               <div className="flex items-center justify-center">
                 <FaCalendarAlt className="text-[#FF8C00] mr-2" />
@@ -155,7 +155,7 @@ export default function Home() {
             </motion.div>
 
             <motion.p
-              className="max-w-2xl mx-auto text-lg sm:text-xl mb-10 leading-relaxed"
+              className="max-w-2xl mx-auto text-lg sm:text-xl mb-8 leading-relaxed" // Reduced margin-bottom
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
@@ -164,7 +164,7 @@ export default function Home() {
             </motion.p>
 
             <motion.div
-              className="flex flex-wrap justify-center gap-4 mt-8"
+              className="flex flex-wrap justify-center gap-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
@@ -182,6 +182,77 @@ export default function Home() {
                 Online (GHS 1,000)
               </Link>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Speakers Section - Moved right after Hero */}
+      <section className="py-20 px-6 bg-[#0A1C63]">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl font-bold text-white mb-4">
+              Featured <span className="text-[#FF8C00]">Speakers</span>
+            </h2>
+            <p className="text-lg text-gray-200 max-w-3xl mx-auto">
+              Learn from industry leaders and HR experts at the forefront of workplace innovation
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {featuredSpeakers.map((speaker) => (
+              <motion.div
+                key={speaker.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-xl hover:scale-105"
+              >
+                <div className="relative aspect-[3/4] w-full">
+                  <Image
+                    src={speaker.imageUrl}
+                    alt={speaker.name}
+                    fill
+                    className="object-cover object-top"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+                    <div>
+                      <span className="bg-[#FF8C00] text-white text-xs font-semibold px-3 py-1 rounded-full mb-2 inline-block">
+                        {speaker.category}
+                      </span>
+                      <h3 className="text-xl font-bold text-white">{speaker.name}</h3>
+                      <p className="text-gray-200 text-sm">{speaker.title}</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <p className="text-gray-700 line-clamp-3 mb-4">
+                    {speaker.bio.slice(0, 150)}...
+                  </p>
+                  <Link href={`/speakers/${speaker.id}`} passHref>
+                    <div className="text-[#0A1C63] font-medium hover:underline">View Full Profile</div>
+                  </Link>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/speakers" passHref>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-[#FF8C00] text-white font-bold py-3 px-8 rounded-full border border-[#FF8C00] transition-colors hover:bg-[#FF8C00]/90"
+              >
+                View All Speakers
+              </motion.button>
+            </Link>
           </div>
         </div>
       </section>
@@ -222,77 +293,6 @@ export default function Home() {
                 <p className="text-gray-700">{feature.description}</p>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Speakers Section */}
-      <section className="py-20 px-6 bg-[#F9F9F9]">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl font-bold text-[#0A1C63] mb-4">
-              Featured <span className="text-[#FF8C00]">Speakers</span>
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Learn from industry leaders and HR experts at the forefront of workplace innovation
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {featuredSpeakers.map((speaker) => (
-              <motion.div
-                key={speaker.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-xl"
-              >
-                <div className="relative aspect-[3/4] w-full">
-                  <Image
-                    src={speaker.imageUrl}
-                    alt={speaker.name}
-                    fill
-                    className="object-cover object-top"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
-                    <div>
-                      <span className="bg-[#FF8C00] text-white text-xs font-semibold px-3 py-1 rounded-full mb-2 inline-block">
-                        {speaker.category}
-                      </span>
-                      <h3 className="text-xl font-bold text-white">{speaker.name}</h3>
-                      <p className="text-gray-200 text-sm">{speaker.title}</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <p className="text-gray-700 line-clamp-3 mb-4">
-                    {speaker.bio.slice(0, 150)}...
-                  </p>
-                  <Link href={`/speakers/${speaker.id}`} passHref>
-                    <div className="text-[#0A1C63] font-medium hover:underline">View Full Profile</div>
-                  </Link>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link href="/speakers" passHref>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-[#0A1C63] text-white font-bold py-3 px-8 rounded-full border border-[#0A1C63] transition-colors hover:bg-[#0A1C63]/90"
-              >
-                View All Speakers
-              </motion.button>
-            </Link>
           </div>
         </div>
       </section>
