@@ -97,8 +97,8 @@ const speakersByCategory = {
     {
       id: 30,
       name: 'Georgia Manfreda Appiah',
-      title: '????',
-      bio: `????`,
+      title: 'Managing Partner & Chief Operating Officer, Nuffield Clinic',
+      bio: `Giorgia Manfreda Appiah is a dynamic leader with over a decade of experience in human resource management, company operations, and strategic leadership. She is the Managing Partner and Chief Operating Officer of Nuffield Clinic, `,
       imageUrl: '/images/speakers/giorgia-manfreda-appiah.jpg',
       category: 'Panel Member'
     },
