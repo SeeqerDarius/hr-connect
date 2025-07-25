@@ -14,7 +14,7 @@ const sponsors = [
   { name: "Nuffield Clinic", logo: "/images/sponsors/nuffieldclin.png" },
   { name: "Movenpick", logo: "/images/sponsors/movenpick.png" },
   { name: "Sweet Melody", logo: "/images/sponsors/10th-Ann-Logo.png" },
-  { name: "Dalex", logo: "/images/sponsors/dalex-Logo.jpg" },
+  { name: "Dalex", logo: "/images/sponsors/SWIFT-Logo.png" },
   { name: "ICS Africa", logo: "/images/sponsors/icsafrica.png" },
   { name: "Black Boys Band", logo: "/images/sponsors/bbs.jpg" },
   { name: "Perbi Cubs", logo: "/images/sponsors/PC-peach.png" },
@@ -27,20 +27,12 @@ const sponsors = [
 // Featured speakers data (from speakers page)
 const featuredSpeakers = [
   {
-    id: 22,
-    name: 'Dr. Stella Agyenim-Boateng',
-    title: 'Vice Chairman, Public Services Commission',
-    bio: `Dr. (Mrs.) Irene Stella Agyenim-Boateng is a distinguished Ghanaian human resource management expert, transformational leader, and public sector executive with over three decades of experience spanning the education, telecommunications, insurance, consultancy, and energy sectors.`,
-    imageUrl: '/images/speakers/stella-agyenim-boateng.jpg',
-    category: 'Keynote Speaker'
-  },
-  {
-    id: 21,
-    name: 'Margaret Jackson',
-    title: 'Managing Partner, Rainbow Consult',
-    bio: `Margaret Jackson, FLPI is the Managing Partner of Rainbow Consult. She is a Fellow of the Learning and Performance Institute with extensive experience in HR leadership.`,
-    imageUrl: '/images/speakers/MJ-Headshot.png',
-    category: 'Keynote Speaker'
+    id: 32,
+    name: 'Cynthia Mawulawoe Kodowu',
+    title: 'Founder, HR Network',
+    bio: `Cynthia is a results and people driven C-Suite Leader with a proven track record of driving organizational growth, optimizing operations, and delivering exceptional results.`,
+    imageUrl: '/images/speakers/cynthia.jpg',
+    category: 'Convener'
   },
   {
     id: 1,
@@ -51,15 +43,22 @@ const featuredSpeakers = [
     category: 'Guest Speaker'
   },
   {
-    id: 2,
-    name: 'Oscar Bimpong',
-    title: 'Founder, Train2inspire Consultancy',
-    bio: `Oscar Bimpong is the Founder and CEO of Train2inspire Consultancy with operations in both the UK and Ghana. He is a Mindset Transformation Consultant with over 17 years of experience.`,
-    imageUrl: '/images/speakers/Oscar-Bimpong.jpg',
-    category: 'Masterclass Trainer'
+    id: 22,
+    name: 'Dr. Stella Agyenim-Boateng',
+    title: 'Vice Chairman, Public Services Commission',
+    bio: `Dr. (Mrs.) Irene Stella Agyenim-Boateng is a distinguished Ghanaian human resource management expert, transformational leader, and public sector executive.`,
+    imageUrl: '/images/speakers/stella-agyenim-boateng.jpg',
+    category: 'Keynote Speaker'
+  },
+  {
+    id: 5,
+    name: 'ERIC KOJO VAN-ESS KURANCHIE',
+    title: 'Strategic HR Leader & Group Head of HR',
+    bio: `Eric Kojo is a strategic HR expert with over 15 years experience in Talent and Change Management. He leads HR strategy at Bank of Africa Ghana.`,
+    imageUrl: '/images/speakers/ERIC-KOJO-VAN-ESS-KURANCHIE-1.jpg',
+    category: 'M.C'
   }
 ];
-
 export default function Home() {
   const backgroundImages = [
     '/images/conference.jpg',

@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const sponsorTiers = [
+const sponsorCategories = [
   {
-    name: "Platinum Sponsors",
-    description: "Our premier partners who make this event possible",
+    name: "Sponsors",
+    description: "Our valued sponsors who make this event possible",
     sponsors: [
       {
         name: "Nuffield Clinic",
@@ -16,52 +16,28 @@ const sponsorTiers = [
         description: "Bone, Joint & Muscle Specialist Clinic"
       },
       {
-        name: "Movenpick",
-        logo: "/images/sponsors/movenpick.png",
-        url: "https://movenpick.accor.com/en/africa/ghana/accra/moevenpick-ambassador-hotel-accra.html",
-        description: "5 Star Hotel in Accra, Ghana"
-      },
-      {
         name: "Channel One",
         logo: "/images/sponsors/c11.png",
         url: "https://channelonenewsonline.com/",
         description: "A privately owned TV Station based in Tesano..."
       },
-    ]
-  },
-  {
-    name: "Gold Sponsors",
-    description: "Key supporters of HR Connect 2025",
-    sponsors: [
       {
-        name: "Sweet Melody",
-        logo: "/images/sponsors/10th-Ann-Logo.png",
-        url: "https://sweet-muzic.com/",
-        description: "Ghana's leading Musical Instrument Store"
+        name: "Philips Outsourcing",
+        logo: "/images/sponsors/philips.jpg",
+        url: "https://phillipsoutsourcing.net/",
+        description: "With over 17 years of delivering innovative solutions..."
       },
       {
         name: "Dalex",
-        logo: "/images/sponsors/dalex-Logo.jpg",
+        logo: "/images/sponsors/SWIFT-Logo.png",
         url: "https://www.dalexswift.com",
         description: "Save yourself the heartache by investing your money where it gives back."
       },
       {
-        name: "ICS Africa",
-        logo: "/images/sponsors/icsafrica.png",
-        url: "https://www.icsafrica-sp.org/",
-        description: "Investing in Children and their Societies."
-      }
-    ]
-  },
-  {
-    name: "Silver Sponsors",
-    description: "Valuable contributors to our conference",
-    sponsors: [
-      {
-        name: "Black Boys Band",
-        logo: "/images/sponsors/bbs.jpg",
+        name: "Beyond Impact",
+        logo: "/images/sponsors/beyond.png",
         url: "#",
-        description: "Ghana's premier highlife band"
+        description: "HR consulting services"
       },
       {
         name: "Perbi Cubs",
@@ -70,16 +46,40 @@ const sponsorTiers = [
         description: "Children's literacy program"
       },
       {
+        name: "Black Boys Band",
+        logo: "/images/sponsors/bbs.jpg",
+        url: "#",
+        description: "Ghana's premier highlife band"
+      },
+      {
         name: "Pele",
         logo: "/images/sponsors/PELE-white.png",
         url: "https://perbiexecutive.com/",
         description: "Perbi Executive Leadership Education is an executive coaching firm"
+      }
+    ]
+  },
+  {
+    name: "Partners",
+    description: "Our trusted partners who support our mission",
+    sponsors: [
+      {
+        name: "Movenpick",
+        logo: "/images/sponsors/movenpick.png",
+        url: "https://movenpick.accor.com/en/africa/ghana/accra/moevenpick-ambassador-hotel-accra.html",
+        description: "5 Star Hotel in Accra, Ghana"
       },
       {
-        name: "Beyond Impact",
-        logo: "/images/sponsors/beyond.png",
-        url: "#",
-        description: "HR consulting services"
+        name: "Sweet Melody",
+        logo: "/images/sponsors/10th-Ann-Logo.png",
+        url: "https://sweet-muzic.com/",
+        description: "Ghana's leading Musical Instrument Store"
+      },
+      {
+        name: "ICS Africa",
+        logo: "/images/sponsors/icsafrica.png",
+        url: "https://www.icsafrica-sp.org/",
+        description: "Investing in Children and their Societies."
       },
       {
         name: "Silky Diva",
@@ -100,17 +100,17 @@ const sponsorTiers = [
         description: "We provide holisitic and specilized customer services..."
       },
       {
-        name: "Philips Outsourcing",
-        logo: "/images/sponsors/philips.jpg",
-        url: "https://phillipsoutsourcing.net/",
-        description: "With over 17 years of delivering innovative solutions..."
-      },
-      {
         name: "HH Factor",
         logo: "/images/sponsors/factor.jpg",
         url: "https://phillipsoutsourcing.net/",
         description: "..."
       },
+      {
+        name: "PCL",
+        logo: "/images/sponsors/pcl.jpg",
+        url: "https://pcl.net/",
+        description: "..."
+      }   
     ]
   }
 ];
@@ -127,9 +127,9 @@ export default function SponsorsPage() {
             transition={{ duration: 0.8 }}
             className="text-center px-4"
           >
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Our Sponsors</h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Our Sponsors & Partners</h1>
             <p className="text-xl text-white max-w-2xl mx-auto">
-              We&apos;re proud to partner with industry leaders who share our vision for transforming HR
+              We're proud to partner with industry leaders who share our vision for transforming HR
             </p>
           </motion.div>
         </div>
@@ -143,10 +143,10 @@ export default function SponsorsPage() {
         />
       </section>
 
-      {/* Sponsor Tiers */}
+      {/* Sponsor Categories */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-20">
-        {sponsorTiers.map((tier, tierIndex) => (
-          <section key={tier.name} className={`mb-20 ${tierIndex !== 0 ? 'mt-24' : ''}`}>
+        {sponsorCategories.map((category, categoryIndex) => (
+          <section key={category.name} className={`mb-20 ${categoryIndex !== 0 ? 'mt-24' : ''}`}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -154,14 +154,14 @@ export default function SponsorsPage() {
               viewport={{ once: true, margin: "-100px" }}
               className="text-center mb-16"
             >
-              <h2 className="text-3xl font-bold mb-4 text-[#0A1C63]">{tier.name}</h2>
+              <h2 className="text-3xl font-bold mb-4 text-[#0A1C63]">{category.name}</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                {tier.description}
+                {category.description}
               </p>
             </motion.div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-              {tier.sponsors.map((sponsor) => (
+              {category.sponsors.map((sponsor) => (
                 <motion.div
                   key={sponsor.name}
                   initial={{ opacity: 0, scale: 0.95 }}
@@ -217,9 +217,9 @@ export default function SponsorsPage() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl font-bold mb-6">Become a Sponsor</h2>
+              <h2 className="text-3xl font-bold mb-6">Become a Sponsor or Partner</h2>
               <p className="text-xl mb-8 max-w-2xl mx-auto">
-                Join our prestigious sponsor community and connect with HR leaders from across Africa
+                Join our prestigious community and connect with HR leaders from across Africa
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/sponsor" passHref>
@@ -228,7 +228,7 @@ export default function SponsorsPage() {
                     whileTap={{ scale: 0.95 }}
                     className="bg-transparent hover:bg-white/10 text-white font-bold py-3 px-8 rounded-full border border-white transition-colors"
                   >
-                    View Sponsorship Packages
+                    View Opportunities
                   </motion.button>
                 </Link>
                 <a href="mailto:info@hrnetworkafrica.org">

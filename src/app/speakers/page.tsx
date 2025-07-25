@@ -10,7 +10,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const speakerBackgrounds = [
-  '/images/IMG-20250610-WA0018.jpg',
+  '/images/banner.jpg',
+  
 ];
 
 // Helper function to handle "????" values
@@ -22,6 +23,14 @@ const handleComingSoon = (value: string) => {
 const speakersByCategory = {
   "Convener & Guest": [
     {
+      id: 1,
+      name: 'Patricia Obo-Nai',
+      title: 'CEO of Telecel Ghana',
+      bio: `Ing. Patricia Obo-Nai is an electrical engineer and the first Ghanaian CEO of Vodafone Ghana, now Telecel Ghana with over two decades of experience in IT and Telecommunications.`,
+      imageUrl: '/images/speakers/PATRICIA-OBO-NAI.jpg',
+      category: 'Guest Speaker'
+    },
+    {
       id: 32,
       name: 'Cynthia Mawulawoe Kodowu',
       title: 'Founder, HR Network',
@@ -29,14 +38,7 @@ const speakersByCategory = {
       imageUrl: '/images/speakers/cynthia.jpg',
       category: 'Convener'
     },
-    {
-      id: 1,
-      name: 'Patricia Obo-Nai',
-      title: 'CEO of Telecel Ghana',
-      bio: `Ing. Patricia Obo-Nai is an electrical engineer and the first Ghanaian CEO of Vodafone Ghana, now Telecel Ghana with over two decades of experience in IT and Telecommunications.`,
-      imageUrl: '/images/speakers/PATRICIA-OBO-NAI.jpg',
-      category: 'Guest Speaker'
-    }
+    
   ],
   "MCs": [
     {
@@ -57,6 +59,14 @@ const speakersByCategory = {
     }
   ],
   "Keynote Speakers": [
+      {
+      id: 10,
+      name: 'Dr. Cheryl Arutt',
+      title: 'Clinical & Forensic Psychologist',
+      bio: `Dr. Cheryl Arutt is a licensed clinical & forensic psychologist, TEDx speaker, media consultant and Certified EMDRIA Therapist & Consultant based in Los Angeles.`,
+      imageUrl: '/images/speakers/Dr.-Cheryl-Arutt.jpg',
+      category: 'Plenary Speaker'
+    },
     {
       id: 22,
       name: 'Dr. Stella Agyenim-Boateng',
@@ -80,7 +90,8 @@ const speakersByCategory = {
       bio: `Laury Georges-Lane, a former Human Resources executive and legal professional with 27 years of experience, is now at the helm of two consulting firms specializing in HR advisory services.`,
       imageUrl: '/images/speakers/laury-georges-lane.png',
       category: 'Keynote Speaker'
-    }
+    },
+  
   ],
   "Panel Members": [
     {
@@ -106,14 +117,6 @@ const speakersByCategory = {
       bio: `Rosie Ebe-Arthur is a Chartered Fellow of the Chartered Institute of Personnel and Development (CIPD) UK and Board Director on several boards in Ghana.`,
       imageUrl: '/images/speakers/Rosie Ebe-Arthur.jpg',
       category: 'Panel Member'
-    },
-    {
-      id: 10,
-      name: 'Dr. Cheryl Arutt',
-      title: 'Clinical & Forensic Psychologist',
-      bio: `Dr. Cheryl Arutt is a licensed clinical & forensic psychologist, TEDx speaker, media consultant and Certified EMDRIA Therapist & Consultant based in Los Angeles.`,
-      imageUrl: '/images/speakers/Dr.-Cheryl-Arutt.jpg',
-      category: 'Plenary Speaker'
     },
     {
       id: 13,
@@ -184,7 +187,7 @@ const speakersByCategory = {
       name: 'Dr. Francis Eduku',
       title: 'CEO, CIHRM',
       bio: `Dr. Francis Eduku is the Chief Executive Officer of the Chartered Institute of Human Resource Management, Ghana (CIHRM), with more than two decades of experience in HR leadership.`,
-      imageUrl: '/images/speakers/ddd.jpg',
+      imageUrl: '/images/speakers/dr-eduku.jpg',
       category: 'Panel Member'
     }
   ],
@@ -342,7 +345,7 @@ export default function SpeakersPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold mb-4 text-[#0A1C63]">Convener & Guest Speaker</h2>
+            <h2 className="text-3xl font-bold mb-4 text-[#0A1C63]">Guest Speaker & Convener</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">The visionary behind this event and our special guest</p>
           </motion.div>
 
@@ -458,68 +461,71 @@ export default function SpeakersPage() {
         </div>
       </section>
 
-      {/* Keynote Section */}
-      <section className="bg-[#F9F9F9] py-16 px-6">
-        <div className="max-w-6xl mx-auto">
+      // Keynote Section
+<section className="bg-[#F9F9F9] py-16 px-6">
+  <div className="max-w-6xl mx-auto">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className="text-center mb-12"
+    >
+      <h2 className="text-3xl font-bold mb-4 text-[#0A1C63]">Keynote & Plenary Speakers</h2>
+      <p className="text-lg text-gray-600 max-w-3xl mx-auto">Our headline speakers bringing transformative insights</p>
+    </motion.div>
+
+    <div className="grid md:grid-cols-4 gap-8">
+      {speakersByCategory["Keynote Speakers"].map((speaker) => {
+        const isComingSoon = speaker.title.trim() === '????' || speaker.bio.trim() === '????';
+        const displayTitle = handleComingSoon(speaker.title);
+        const displayBio = handleComingSoon(speaker.bio);
+        
+        // Determine badge color based on category
+        const badgeColor = speaker.category === 'Plenary Speaker' ? 'bg-blue-600' : 'bg-[#FF8C00]';
+        
+        return (
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            key={speaker.id}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-xl"
           >
-            <h2 className="text-3xl font-bold mb-4 text-[#0A1C63]">Keynote Speakers</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Our headline speakers bringing transformative insights</p>
+            <div className="relative aspect-[3/4] w-full">
+              <Image
+                src={speaker.imageUrl}
+                alt={speaker.name}
+                fill
+                className="object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+                <div>
+                  <span className={`${isComingSoon ? 'bg-gray-500' : badgeColor} text-white text-xs font-semibold px-3 py-1 rounded-full mb-2 inline-block`}>
+                    {isComingSoon ? 'Coming Soon' : speaker.category}
+                  </span>
+                  <h3 className="text-xl font-bold text-white">{speaker.name}</h3>
+                  <p className="text-gray-200 text-sm">{displayTitle}</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-6">
+              <p className="text-gray-700 line-clamp-4 mb-4">
+                {isComingSoon ? 'Details coming soon...' : displayBio}
+              </p>
+              {!isComingSoon && (
+                <Link href={`/speakers/${speaker.id}`} passHref>
+                  <div className="text-[#0A1C63] font-medium hover:underline">View Full Profile</div>
+                </Link>
+              )}
+            </div>
           </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {speakersByCategory["Keynote Speakers"].map((speaker) => {
-              const isComingSoon = speaker.title.trim() === '????' || speaker.bio.trim() === '????';
-              const displayTitle = handleComingSoon(speaker.title);
-              const displayBio = handleComingSoon(speaker.bio);
-
-              return (
-                <motion.div
-                  key={speaker.id}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5 }}
-                  viewport={{ once: true }}
-                  className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-xl"
-                >
-                  <div className="relative aspect-[3/4] w-full">
-                    <Image
-                      src={speaker.imageUrl}
-                      alt={speaker.name}
-                      fill
-                      className="object-cover object-top"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
-                      <div>
-                        <span className={`${isComingSoon ? 'bg-gray-500' : 'bg-[#FF8C00]'} text-white text-xs font-semibold px-3 py-1 rounded-full mb-2 inline-block`}>
-                          {isComingSoon ? 'Coming Soon' : speaker.category}
-                        </span>
-                        <h3 className="text-xl font-bold text-white">{speaker.name}</h3>
-                        <p className="text-gray-200 text-sm">{displayTitle}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <p className="text-gray-700 line-clamp-4 mb-4">
-                      {isComingSoon ? 'Details coming soon...' : displayBio}
-                    </p>
-                    {!isComingSoon && (
-                      <Link href={`/speakers/${speaker.id}`} passHref>
-                        <div className="text-[#0A1C63] font-medium hover:underline">View Full Profile</div>
-                      </Link>
-                    )}
-                  </div>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+        );
+      })}
+    </div>
+  </div>
+</section>
 
       {/* Grouped Speakers Sections - Panel Members, Masterclass Trainers, Panel Moderators, Speed Coaches */}
       {Object.entries(speakersByCategory).map(([category, speakers]) => {
