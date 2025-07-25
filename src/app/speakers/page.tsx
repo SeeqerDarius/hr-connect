@@ -18,10 +18,44 @@ const handleComingSoon = (value: string) => {
   return value.trim() === '????' ? 'Coming Soon' : value;
 };
 
-// Speakers grouped by category
+// Speakers grouped by category in the requested order
 const speakersByCategory = {
-
-  
+  "Convener & Guest": [
+    {
+      id: 32,
+      name: 'Cynthia Mawulawoe Kodowu',
+      title: 'Founder, HR Network',
+      bio: `Cynthia is a results and people driven C-Suite Leader with a proven track record of driving organizational growth, optimizing operations, and delivering exceptional results. She is a strategic thinker with a passion for innovation and a commitment to excellence. Her 15+ year career has dedicated her attention to positively impacting medium businesses, HR professionals and departments. She is especially skilled in Strategic Leadership, Risk Management, Change Management, Financial Management, P & L Management, Business Development, Stakeholder Relations, Team Building, and Human Resource Management.`,
+      imageUrl: '/images/speakers/cynthia.jpg',
+      category: 'Convener'
+    },
+    {
+      id: 1,
+      name: 'Patricia Obo-Nai',
+      title: 'CEO of Telecel Ghana',
+      bio: `Ing. Patricia Obo-Nai is an electrical engineer and the first Ghanaian CEO of Vodafone Ghana, now Telecel Ghana with over two decades of experience in IT and Telecommunications.`,
+      imageUrl: '/images/speakers/PATRICIA-OBO-NAI.jpg',
+      category: 'Guest Speaker'
+    }
+  ],
+  "MCs": [
+    {
+      id: 5,
+      name: 'ERIC KOJO VAN-ESS KURANCHIE',
+      title: 'Strategic HR Leader & Group Head of HR, Bank of Africa Ghana',
+      bio: `Eric Kojo is a strategic HR expert with over 15 years experience in Talent and Change Management. He leads HR strategy at Bank of Africa Ghana.`,
+      imageUrl: '/images/speakers/ERIC-KOJO-VAN-ESS-KURANCHIE-1.jpg',
+      category: 'M.C'
+    },
+    {
+      id: 34,
+      name: 'Eunice Dede Tornyi',
+      title: 'Public Relations Professional',
+      bio: `Eunice Dede Tornyi is the award winning host of the African Women's Voices Show with 17 years of experience in TV presenting and production.`,
+      imageUrl: '/images/speakers/co-mc.jpg',
+      category: 'Co M.C'
+    }
+  ],
   "Keynote Speakers": [
     {
       id: 22,
@@ -46,117 +80,6 @@ const speakersByCategory = {
       bio: `Laury Georges-Lane, a former Human Resources executive and legal professional with 27 years of experience, is now at the helm of two consulting firms specializing in HR advisory services.`,
       imageUrl: '/images/speakers/laury-georges-lane.png',
       category: 'Keynote Speaker'
-    },
-    {
-      id: 32,
-      name: 'Cynthia Mawulawoe Kodowu',
-      title: 'Founder, HR Network',
-      bio: `Cynthia is a results and people driven C-Suite Leader with a proven track record of driving organizational growth, optimizing operations, and delivering exceptional results. She is a strategic thinker with a passion for innovation and a commitment to excellence. Her 15+ year career has dedicated her attention to positively impacting medium businesses, HR professionals and departments. She is especially skilled in Strategic Leadership, Risk Management, Change Management, Financial Management, P & L Management, Business Development, Stakeholder Relations, Team Buildi`,
-      imageUrl: '/images/speakers/cynthia.jpg',
-      category: 'Convener'
-    }
-  ],
-  "Guest Speakers": [
-    {
-      id: 1,
-      name: 'Patricia Obo-Nai',
-      title: 'CEO of Telecel Ghana',
-      bio: `Ing. Patricia Obo-Nai is an electrical engineer and the first Ghanaian CEO of Vodafone Ghana, now Telecel Ghana with over two decades of experience in IT and Telecommunications.`,
-      imageUrl: '/images/speakers/PATRICIA-OBO-NAI.jpg',
-      category: 'Guest Speaker'
-    },
-    
-  ],
-  "Masterclass Trainers": [
-    {
-      id: 2,
-      name: 'Oscar Bimpong',
-      title: 'Founder, Train2inspire Consultancy',
-      bio: `Oscar Bimpong is the Founder and CEO of Train2inspire Consultancy with operations in both the UK and Ghana. He is a Mindset Transformation Consultant with over 17 years of experience.`,
-      imageUrl: '/images/speakers/Oscar-Bimpong.jpg',
-      category: 'Masterclass Trainer'
-    },
-    {
-      id: 4,
-      name: 'Patricia Ama Kissi',
-      title: 'CEO SEDAT Consult',
-      bio: `Patricia Ama Kissi has over 15 years in artificial intelligence research with multiple publications. She leads AI accessibility and ethics initiatives.`,
-      imageUrl: '/images/speakers/Patricia-Ama-Kissi.jpg',
-      category: 'Masterclass Trainer'
-    },
-    {
-      id: 9,
-      name: 'Yvonne Wiredu-Akpabli',
-      title: 'HR Consultant/ Corporate Trainer-SHRM',
-      bio: `Yvonne is a highly trained HR professional with over 16 years of experience in the practice of managing a broad spectrum of human resources programs and services.`,
-      imageUrl: '/images/speakers/Yvone-Wiredu.jpg',
-      category: 'Masterclass Trainer'
-    },
-    {
-      id: 24,
-      name: 'Yvonne Ohui MacCarthy',
-      title: 'CEO, Institute of Customer Service Professionals',
-      bio: `Yvonne Ohui MacCarthy is a visionary leader and the driving force behind the Institute of Customer Service Professionals (ICSP).`,
-      imageUrl: '/images/speakers/yvonne-ohui-mccarthy.jpg',
-      category: 'Masterclass Trainer'
-    },
-    {
-      id: 28,
-      name: 'Patience Osekre',
-      title: 'Managing Director, Supreme Healthcare Management Services',
-      bio: `Patience Osekre is a Consultant Psychotherapist and a Wellness Expert trained in the UK with a wealth of experience in providing Health and Well-being Services.`,
-      imageUrl: '/images/speakers/patience-osekre.jpg',
-      category: 'Masterclass Trainer'
-    }
-  ],
-  "Panel Moderators": [
-    {
-      id: 5,
-      name: 'ERIC KOJO VAN-ESS KURANCHIE',
-      title: 'Strategic HR Leader & Group Head of HR, Bank of Africa Ghana',
-      bio: `Eric Kojo is a strategic HR expert with over 15 years experience in Talent and Change Management. He leads HR strategy at Bank of Africa Ghana.`,
-      imageUrl: '/images/speakers/ERIC-KOJO-VAN-ESS-KURANCHIE-1.jpg',
-      category: 'M.C'
-    },
-    {
-      id: 34,
-      name: 'Eunice Dede Tornyi',
-      title: 'Public Relations Professional',
-      bio: `Eunice Dede Tornyi is the award winning host of the African Women’s Voices Show with 17 years of experience in TV presenting and production.`,
-      imageUrl: '/images/speakers/co-mc.jpg',
-      category: 'Co M.C'
-    },
-    {
-      id: 3,
-      name: 'Kojo Amissah',
-      title: 'Strategy & Performance Consultant - CITAM',
-      bio: `Kojo Amissah is a Strategy and Performance Consultant at CITAM, where he leads high-impact training, consulting, and staffing services.`,
-      imageUrl: '/images/speakers/Mr-Kojo-Amissah.jpg',
-      category: 'Panel Moderator'
-    },
-    {
-      id: 8,
-      name: 'Paa Kwesi-Barnes',
-      title: 'Moderator',
-      bio: `Paa Kwesi Barnes stands as a seasoned Digital Technology Expert, boasting over 15 years of immersive experience across diverse roles in technology strategy and consulting.`,
-      imageUrl: '/images/speakers/Paa-Kwesi-Barnes-moderator.jpg',
-      category: 'Panel Moderator'
-    },
-    {
-      id: 11,
-      name: 'Mary Bennett',
-      title: 'Learning and Organizational Transition Manager, Pecan Energies',
-      bio: `Mary Bennett is a globally experienced professional specializing in Organizational Development, Learning & Development, and Human Resource Management.`,
-      imageUrl: '/images/speakers/Mary-Bennett.jpg',
-      category: 'Panel Moderator'
-    },
-    {
-      id: 12,
-      name: 'Isidore Kpotufe',
-      title: 'Founder and CEO, RiviaCo (Rivia)',
-      bio: `Isidore is a technology entrepreneur with a track record in building ventures across finance, transportation, and healthcare in Africa.`,
-      imageUrl: '/images/speakers/isidore-kpotufe.jpg',
-      category: 'Panel Moderator'
     }
   ],
   "Panel Members": [
@@ -190,7 +113,7 @@ const speakersByCategory = {
       title: 'Clinical & Forensic Psychologist',
       bio: `Dr. Cheryl Arutt is a licensed clinical & forensic psychologist, TEDx speaker, media consultant and Certified EMDRIA Therapist & Consultant based in Los Angeles.`,
       imageUrl: '/images/speakers/Dr.-Cheryl-Arutt.jpg',
-      category: 'Panel Member'
+      category: 'Plenary Speaker'
     },
     {
       id: 13,
@@ -241,12 +164,89 @@ const speakersByCategory = {
       category: 'Panel Member'
     },
     {
+      id: 12,
+      name: 'Isidore Kpotufe',
+      title: 'Founder and CEO, RiviaCo (Rivia)',
+      bio: `Isidore is a technology entrepreneur with a track record in building ventures across finance, transportation, and healthcare in Africa.`,
+      imageUrl: '/images/speakers/isidore-kpotufe.jpg',
+      category: 'Panel Member'
+    },
+    {
+      id: 28,
+      name: 'Patience Osekre',
+      title: 'Managing Director, Supreme Healthcare Management Services',
+      bio: `Patience Osekre is a Consultant Psychotherapist and a Wellness Expert trained in the UK with a wealth of experience in providing Health and Well-being Services.`,
+      imageUrl: '/images/speakers/patience-osekre.jpg',
+      category: 'Panel Member'
+    },
+    {
       id: 29,
       name: 'Dr. Francis Eduku',
       title: 'CEO, CIHRM',
       bio: `Dr. Francis Eduku is the Chief Executive Officer of the Chartered Institute of Human Resource Management, Ghana (CIHRM), with more than two decades of experience in HR leadership.`,
       imageUrl: '/images/speakers/ddd.jpg',
       category: 'Panel Member'
+    }
+  ],
+  "Masterclass Trainers": [
+    {
+      id: 2,
+      name: 'Oscar Bimpong',
+      title: 'Founder, Train2inspire Consultancy',
+      bio: `Oscar Bimpong is the Founder and CEO of Train2inspire Consultancy with operations in both the UK and Ghana. He is a Mindset Transformation Consultant with over 17 years of experience.`,
+      imageUrl: '/images/speakers/Oscar-Bimpong.jpg',
+      category: 'Masterclass Trainer'
+    },
+    {
+      id: 4,
+      name: 'Patricia Ama Kissi',
+      title: 'CEO SEDAT Consult',
+      bio: `Patricia Ama Kissi has over 15 years in artificial intelligence research with multiple publications. She leads AI accessibility and ethics initiatives.`,
+      imageUrl: '/images/speakers/Patricia-Ama-Kissi.jpg',
+      category: 'Masterclass Trainer'
+    },
+    {
+      id: 9,
+      name: 'Yvonne Wiredu-Akpabli',
+      title: 'HR Consultant/ Corporate Trainer-SHRM',
+      bio: `Yvonne is a highly trained HR professional with over 16 years of experience in the practice of managing a broad spectrum of human resources programs and services.`,
+      imageUrl: '/images/speakers/Yvone-Wiredu.jpg',
+      category: 'Masterclass Trainer'
+    },
+    {
+      id: 24,
+      name: 'Yvonne Ohui MacCarthy',
+      title: 'CEO, Institute of Customer Service Professionals',
+      bio: `Yvonne Ohui MacCarthy is a visionary leader and the driving force behind the Institute of Customer Service Professionals (ICSP).`,
+      imageUrl: '/images/speakers/yvonne-ohui-mccarthy.jpg',
+      category: 'Masterclass Trainer'
+    },
+    
+  ],
+  "Panel Moderators": [
+    {
+      id: 3,
+      name: 'Kojo Amissah',
+      title: 'Strategy & Performance Consultant - CITAM',
+      bio: `Kojo Amissah is a Strategy and Performance Consultant at CITAM, where he leads high-impact training, consulting, and staffing services.`,
+      imageUrl: '/images/speakers/Mr-Kojo-Amissah.jpg',
+      category: 'Panel Moderator'
+    },
+    {
+      id: 8,
+      name: 'Paa Kwesi-Barnes',
+      title: 'Moderator',
+      bio: `Paa Kwesi Barnes stands as a seasoned Digital Technology Expert, boasting over 15 years of immersive experience across diverse roles in technology strategy and consulting.`,
+      imageUrl: '/images/speakers/Paa-Kwesi-Barnes-moderator.jpg',
+      category: 'Panel Moderator'
+    },
+    {
+      id: 11,
+      name: 'Mary Bennett',
+      title: 'Learning and Organizational Transition Manager, Pecan Energies',
+      bio: `Mary Bennett is a globally experienced professional specializing in Organizational Development, Learning & Development, and Human Resource Management.`,
+      imageUrl: '/images/speakers/Mary-Bennett.jpg',
+      category: 'Panel Moderator'
     }
   ],
   "Speed Coaches": [
@@ -256,14 +256,6 @@ const speakersByCategory = {
       title: 'CEO, ICS Africa',
       bio: `Emmaline Datey is a Public Speaker, Brands Influencer, HR Strategist, Leadership and Personal Development Coach with up to 15 years' of Human Resource general practice.`,
       imageUrl: '/images/speakers/emmaline-datey.jpg',
-      category: 'Speed Coach'
-    },
-    {
-      id: 33,
-      name: 'Paul Opoku',
-      title: '????',
-      bio: `????.`,
-      imageUrl: '/images/speakers/paul.jpg',
       category: 'Speed Coach'
     },
     {
@@ -340,6 +332,132 @@ export default function SpeakersPage() {
         </div>
       </section>
 
+      {/* Convener & Guest Speaker Section */}
+      <section className="bg-[#F9F9F9] py-16 px-6">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-bold mb-4 text-[#0A1C63]">Convener & Guest Speaker</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">The visionary behind this event and our special guest</p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {speakersByCategory["Convener & Guest"].map((speaker) => {
+              const isComingSoon = speaker.title.trim() === '????' || speaker.bio.trim() === '????';
+              const displayTitle = handleComingSoon(speaker.title);
+              const displayBio = handleComingSoon(speaker.bio);
+
+              return (
+                <motion.div
+                  key={speaker.id}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-xl"
+                >
+                  <div className="relative aspect-[3/4] w-full">
+                    <Image
+                      src={speaker.imageUrl}
+                      alt={speaker.name}
+                      fill
+                      className="object-cover object-top"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+                      <div>
+                        <span className={`${isComingSoon ? 'bg-gray-500' : speaker.category === 'Convener' ? 'bg-purple-600' : 'bg-blue-600'} text-white text-xs font-semibold px-3 py-1 rounded-full mb-2 inline-block`}>
+                          {isComingSoon ? 'Coming Soon' : speaker.category}
+                        </span>
+                        <h3 className="text-xl font-bold text-white">{speaker.name}</h3>
+                        <p className="text-gray-200 text-sm">{displayTitle}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <p className="text-gray-700 line-clamp-4 mb-4">
+                      {isComingSoon ? 'Details coming soon...' : displayBio}
+                    </p>
+                    {!isComingSoon && (
+                      <Link href={`/speakers/${speaker.id}`} passHref>
+                        <div className="text-[#0A1C63] font-medium hover:underline">View Full Profile</div>
+                      </Link>
+                    )}
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* MCs Section */}
+      <section className="bg-white py-16 px-6">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-bold mb-4 text-[#0A1C63]">Event MCs</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Our masters of ceremony guiding the event</p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {speakersByCategory["MCs"].map((speaker) => {
+              const isComingSoon = speaker.title.trim() === '????' || speaker.bio.trim() === '????';
+              const displayTitle = handleComingSoon(speaker.title);
+              const displayBio = handleComingSoon(speaker.bio);
+
+              return (
+                <motion.div
+                  key={speaker.id}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-xl"
+                >
+                  <div className="relative aspect-[3/4] w-full">
+                    <Image
+                      src={speaker.imageUrl}
+                      alt={speaker.name}
+                      fill
+                      className="object-cover object-top"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+                      <div>
+                        <span className={`${isComingSoon ? 'bg-gray-500' : speaker.category === 'M.C' ? 'bg-green-600' : 'bg-teal-600'} text-white text-xs font-semibold px-3 py-1 rounded-full mb-2 inline-block`}>
+                          {isComingSoon ? 'Coming Soon' : speaker.category}
+                        </span>
+                        <h3 className="text-xl font-bold text-white">{speaker.name}</h3>
+                        <p className="text-gray-200 text-sm">{displayTitle}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <p className="text-gray-700 line-clamp-4 mb-4">
+                      {isComingSoon ? 'Details coming soon...' : displayBio}
+                    </p>
+                    {!isComingSoon && (
+                      <Link href={`/speakers/${speaker.id}`} passHref>
+                        <div className="text-[#0A1C63] font-medium hover:underline">View Full Profile</div>
+                      </Link>
+                    )}
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Keynote Section */}
       <section className="bg-[#F9F9F9] py-16 px-6">
         <div className="max-w-6xl mx-auto">
@@ -350,7 +468,7 @@ export default function SpeakersPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold mb-4 text-[#0A1C63]">Featured Keynote Speakers</h2>
+            <h2 className="text-3xl font-bold mb-4 text-[#0A1C63]">Keynote Speakers</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">Our headline speakers bringing transformative insights</p>
           </motion.div>
 
@@ -403,12 +521,12 @@ export default function SpeakersPage() {
         </div>
       </section>
 
-      {/* Grouped Speakers Sections */}
+      {/* Grouped Speakers Sections - Panel Members, Masterclass Trainers, Panel Moderators, Speed Coaches */}
       {Object.entries(speakersByCategory).map(([category, speakers]) => {
-        if (category === "Keynote Speakers") return null;
+        if (["Convener & Guest", "MCs", "Keynote Speakers"].includes(category)) return null;
         
         return (
-          <section key={category} className="py-16 px-6 bg-white">
+          <section key={category} className={`py-16 px-6 ${category === "Panel Members" ? "bg-white" : category === "Masterclass Trainers" ? "bg-[#F9F9F9]" : category === "Panel Moderators" ? "bg-white" : "bg-[#F9F9F9]"}`}>
             <div className="max-w-7xl mx-auto">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -419,10 +537,9 @@ export default function SpeakersPage() {
               >
                 <h2 className="text-3xl font-bold mb-4 text-[#0A1C63]">{category}</h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  {category === "Guest Speakers" ? "Special guests joining our conference" : 
+                  {category === "Panel Members" ? "Distinguished professionals sharing their insights" :
                    category === "Masterclass Trainers" ? "Experts leading our intensive training sessions" :
                    category === "Panel Moderators" ? "Facilitators guiding our panel discussions" :
-                   category === "Panel Members" ? "Distinguished professionals sharing their insights" :
                    category === "Speed Coaches" ? "Coaches providing rapid mentoring sessions" : ""}
                 </p>
               </motion.div>
