@@ -21,6 +21,14 @@ const handleComingSoon = (value: string) => {
 // Speakers grouped by category in the requested order
 const speakersByCategory = {
   "Convener & Guest": [
+     {
+      id: 32,
+      name: 'Cynthia Mawulawoe Kodowu',
+      title: 'Founder, HR Network',
+      bio: 'Cynthia is a results and people driven C-Suite Leader with a proven track record of driving organizational growth, optimizing operations, and delivering exceptional results. She is a strategic thinker with a passion for innovation and a commitment to excellence. Her 15+ year career has dedicated her attention to positively impacting medium businesses, HR professionals and departments. She is especially skilled in Strategic Leadership, Risk Management, Change Management, Financial Management, P & L Management, Business Development, Stakeholder Relations, Team Building, and Human Resource Management.',
+      imageUrl: '/images/speakers/cynthia.jpg',
+      category: 'Convener'
+    },
     {
       id: 1,
       name: 'Patricia Obo-Nai',
@@ -29,14 +37,7 @@ const speakersByCategory = {
       imageUrl: '/images/speakers/PATRICIA-OBO-NAI.jpg',
       category: 'Guest Speaker'
     },
-    {
-      id: 32,
-      name: 'Cynthia Mawulawoe Kodowu',
-      title: 'Founder, HR Network',
-      bio: 'Cynthia is a results and people driven C-Suite Leader with a proven track record of driving organizational growth, optimizing operations, and delivering exceptional results. She is a strategic thinker with a passion for innovation and a commitment to excellence. Her 15+ year career has dedicated her attention to positively impacting medium businesses, HR professionals and departments. She is especially skilled in Strategic Leadership, Risk Management, Change Management, Financial Management, P & L Management, Business Development, Stakeholder Relations, Team Building, and Human Resource Management.',
-      imageUrl: '/images/speakers/cynthia.jpg',
-      category: 'Convener'
-    },
+   
   ],
   "MCs": [
     {
