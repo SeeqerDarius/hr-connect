@@ -92,8 +92,13 @@ export const speakers: Speaker[] = [
     id: 4,
     name: 'Patricia Abena Kissi',
     title: 'CEO SEDAT Consult',
-    bio: `Patricia Ama Kissi has over 15 years in artificial intelligence research with multiple publications. 
-          She leads AI accessibility and ethics initiatives and is a regular speaker at international tech conferences.`,
+    bio: `Patricia is the Founder, Lead Consultant, and CEO of SEDAT Consult Ltd., a leading HR consulting firm based in Ghana. With over 18 years of experience in human resource consulting and practice, Patricia is known for delivering practical, results-driven solutions that empower organisations to align people strategies with workplace needs and business outcomes.
+
+Patricia is a highly skilled strategist with deep expertise in strategic human resource management, talent acquisition and development, performance management, employee engagement, organisational restructuring and development, and change management. Her strength lies in transforming complex workforce challenges into clear, actionable strategies that align people with purpose, processes with performance, and talent with long-term value.
+
+Patricia is an IFC-certified trainer with a passion for capacity building. She has successfully worked with organisations across diverse sectors—including banking, insurance, healthcare, manufacturing, technology, and hospitality—helping them navigate workforce dynamics, improve organisational performance, and drive sustainable growth. Her approach is people-centred, business-focused, and grounded in a deep understanding of Ghana's evolving workplace landscape.
+
+Patricia holds a Master’s degree in Human Resource Development and a Bachelor’s degree in Educational Foundations from the University of Cape Coast. She also has an Executive Master’s in Organisational Development from AMPRO. At her core, Patricia is passionate about helping people and businesses thrive―empowering teams, leaders, and institutions to unlock their full potential.`,
     imageUrl: '/images/speakers/Patricia-Ama-Kissi.jpg',
     category: 'Technology'
   },
@@ -392,11 +397,8 @@ Summit, 2024, Kigali, Rwanda.
     title: 'Associate Professor, University of Ghana Business School',
     linkedin: 'https://www.linkedin.com/in/eric-afful-dadzie-b8748338/',
     bio: `Prof. Eric Afful-Dadzie is a distinguished academic and consultant specializing in Decision Sciences, Business Intelligence, Analytics, and Information Systems. With a deep-seated passion for leveraging data-driven methodologies to solve complex organizational challenges, he has established himself as a leading authority in the application of artificial intelligence (AI), machine learning (ML), and data analytics to enhance decision-making processes across industries.
-
 Prof. E. Afful-Dadzie was a Queen Elizabeth II fellow at McGill University, Canada and the 2016/2017 most promising researcher at University of Ghana Business School. With over 50 research articles in top tier journals such as Government Information Quarterly, International Journal of Information Management, Management Decision, Applied Energy, Applied artificial Intelligence, Quality & Quantity, Kybernetes, Multi-Criteria Decision Analysis among others, Prof. E. Afful-Dadzie continues to make significant contributions to the fields of Decision Sciences and Information Systems. He has supervised and mentored numerous postgraduate students in PhD and MPhil works. Some of his mentees have become lecturers in public universities in Ghana.
-
 Beyond academia, Prof. Afful-Dadzie is a sought-after consultant, advising organizations on digital transformation, AI-driven decision support and business analytics strategies. He has trained or consulted for major brands including the Bank of Ghana (BoG), Tullow Oil, University of Ghana Medical Centre (UGMC), GLICOHealth, Marie Stopes International, ABSA Bank, the Jospong Group, CalBank, GRIDCO, BOST, Ghana Ports and Harbours Authority, Subah Info Solutions, HPW Fresh & Dry Ltd, Bunge Loders Croklaan Ltd, Accra Compost and Recycling Plant (ACARP), Kofi Annan International Peacekeeping Training Centre (KAIPTC), Precious Minerals Marketing Company (PMMC), GCNET among others. Prof. is the brain behind the sought after HR Analytics and Health Analytics Training programmes in Ghana. He was the leader behind the 2022 HR Outlook and Benchmarking Survey, a collaboration between KPMG, CIHRM and HR Network Africa.
-
 Prof. Afful-Dadzie is a regular speaker at international conferences and industry summits, where he shares insights on the evolving landscape of AI in business strategy. His ability to translate complex analytical models into practical business solutions has made him a trusted advisor to executives and policymakers. With a career dedicated to advancing knowledge and practical applications in analytics and information systems, Prof. Eric Afful-Dadzie continues to shape the future of data-driven decision-making, empowering businesses and institutions to thrive in the digital age.
 `,
     imageUrl: '/images/speakers/afful-dadzie.jpg',
@@ -407,7 +409,7 @@ Prof. Afful-Dadzie is a regular speaker at international conferences and industr
     name: 'Dr. Theo Tackie',
     linkedin: 'https://www.linkedin.com/in/theo-welbeck-tackie-dm-odc-409a84199/',
     title: 'Author/Transformational Speaker/Certified Life Empoerment Coach',
-    bio: `Change Expert/Senior Scrum Master with over 10+ years of top-notch knowledge and experience in facilitation and coaching Agile Team, Skilled in stimulating teams to meet deadlines on projects. Ready for a new scrum-oriented role with a progressive organization that will challenge my knowledge.`,
+    bio:`Change Expert/Senior Scrum Master with over 10+ years of top-notch knowledge and experience in facilitation and coaching Agile Team, Skilled in stimulating teams to meet deadlines on projects. Ready for a new scrum-oriented role with a progressive organization that will challenge my knowledge.`,
     imageUrl: '/images/speakers/theo-tackie.jpg',
     category: 'Panel Member'
   },

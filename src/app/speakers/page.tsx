@@ -185,7 +185,7 @@ const speakersByCategory = {
       name: 'Dr. Francis Eduku',
       title: 'CEO, CIHRM',
       bio: 'Dr. Francis Eduku is the Chief Executive Officer of the Chartered Institute of Human Resource Management, Ghana (CIHRM), with more than two decades of experience in HR leadership.',
-      imageUrl: '/images/speakers/dr-eduku.jpg',
+      imageUrl: '/images/speakers/dadadad.jpg',
       category: 'Panel Member'
     }
   ],
@@ -200,7 +200,7 @@ const speakersByCategory = {
     },
     {
       id: 4,
-      name: 'Patricia Ama Kissi',
+      name: 'Patricia Abena Kissi',
       title: 'CEO SEDAT Consult',
       bio: 'Patricia Ama Kissi has over 15 years in artificial intelligence research with multiple publications. She leads AI accessibility and ethics initiatives.',
       imageUrl: '/images/speakers/Patricia-Ama-Kissi.jpg',
