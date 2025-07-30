@@ -185,7 +185,7 @@ const speakersByCategory = {
       name: 'Dr. Francis Eduku',
       title: 'CEO, CIHRM',
       bio: 'Dr. Francis Eduku is the Chief Executive Officer of the Chartered Institute of Human Resource Management, Ghana (CIHRM), with more than two decades of experience in HR leadership.',
-      imageUrl: '/images/speakers/cynthia.jpg',
+      imageUrl: '/images/speakers/francis-eduku.jpg',
       category: 'Panel Member'
     }
   ],

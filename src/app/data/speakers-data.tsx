@@ -655,7 +655,7 @@ Dr. Agyenim-Boateng is celebrated for her affable, approachable, and people-cent
           Dr. Eduku holds a PhD with Distinction in Human Resource Management. He also has an MBA with a specialty in Human Resource Management and an Executive Master’s Degree in Alternative Dispute Resolution (ADR). He is a Fellow of CIHRM, a Chartered HR Professional (CIPD, UK), and a Certified Balanced Scorecard Professional of the Balanced Scorecard Institute and George Washington University College of Professional Studies, USA. 
           He is a regular speaker at high-profile HR conferences and currently champions effective human resource management practices and standards in Ghana through collaborations with international and local organizations and tertiary institutions.
           Dr. Eduku is an alumnus of Saïd Business School, University of Oxford, UK, and a lecturer at the University of Ghana, Legon.`,
-    imageUrl: '/images/speakers/dr-eduku.jpg',
+    imageUrl: '/images/speakers/francis-eduku.jpg',
     category: 'Panelist and Speaker'
   },
   {
