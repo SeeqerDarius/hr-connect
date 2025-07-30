@@ -263,7 +263,7 @@ export default function PlanningCommittee() {
               Want to join our volunteer team?
             </h2>
             <p className="text-xl mb-8">
-              We're looking for passionate professionals to contribute to making HR Connect 2025 a success.
+              We&apos;re looking for passionate professionals to contribute to making HR Connect 2025 a success.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
