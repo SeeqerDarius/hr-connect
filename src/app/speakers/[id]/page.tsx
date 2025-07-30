@@ -6,7 +6,7 @@ import { useParams } from 'next/navigation';
 import { speakers } from '../../data/speakers-data'; 
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaLinkedin, FaGlobe } from 'react-icons/fa';
+import { FaLinkedin, FaGlobe, FaFacebook } from 'react-icons/fa';
 import { SiX } from 'react-icons/si';
 import { useEffect, useState } from 'react';
 
@@ -73,7 +73,7 @@ export default function SpeakerPage() {
               </div>
             )}
             
-            {(speaker.linkedin || speaker.twitter || speaker.website) && (
+            {(speaker.linkedin || speaker.twitter || speaker.website || speaker.facebook) && (
               <div className="bg-white p-4 rounded-lg border-l-4 border-[#FF8C00] shadow-sm">
                 <h3 className="text-sm font-semibold text-[#0A1C63] mb-2">Connect</h3>
                 <div className="flex space-x-4">
@@ -108,6 +108,17 @@ export default function SpeakerPage() {
                       aria-label="Website"
                     >
                       <FaGlobe className="text-2xl" />
+                    </a>
+                  )}
+                  {speaker.facebook && (
+                    <a 
+                      href={speaker.facebook} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-[#0A1C63] hover:text-[#FF8C00] transition-colors"
+                      aria-label="Facebook"
+                    >
+                      <FaFacebook className="text-2xl" />
                     </a>
                   )}
                 </div>
