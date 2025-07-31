@@ -22,6 +22,11 @@ const sponsors = [
   { name: "Philips Outsourcing", logo: "/images/sponsors/philips.jpg" },
   { name: "HH Factor", logo: "/images/sponsors/factor.jpg" },
   { name: "ICSP", logo: "/images/sponsors/icsp.jpg" },
+  { name: "Channel One", logo: "/images/sponsors/c11.png" },
+  { name: "PCL", logo: "/images/sponsors/pcl.jpg" },
+  { name: "Beyond Impact", logo: "/images/sponsors/beyond.png" },
+  //{ name: "Dalex Swift", logo: "/images/sponsors/SWIFT-Logo.png" },
+  { name: "2840 Digital Solutions", logo: "/images/sponsors/2842.jpg" },
 ];
 
 // Featured speakers data (from speakers page)

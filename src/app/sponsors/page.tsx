@@ -16,12 +16,6 @@ const sponsorCategories = [
         description: "Bone, Joint & Muscle Specialist Clinic"
       },
       {
-        name: "Channel One",
-        logo: "/images/sponsors/c11.png",
-        url: "https://channelonenewsonline.com/",
-        description: "A privately owned TV Station based in Tesano..."
-      },
-      {
         name: "Philips Outsourcing",
         logo: "/images/sponsors/philips.jpg",
         url: "https://phillipsoutsourcing.net/",
@@ -33,24 +27,20 @@ const sponsorCategories = [
         url: "https://www.dalexswift.com",
         description: "Save yourself the heartache by investing your money where it gives back."
       },
-      {
-        name: "Beyond Impact",
-        logo: "/images/sponsors/beyond.png",
-        url: "#",
-        description: "HR consulting services"
-      },
+      
       {
         name: "Perbi Cubs",
         logo: "/images/sponsors/PC-peach.png",
         url: "#",
         description: "Children's literacy program"
       },
-      {
-        name: "Black Boys Band",
-        logo: "/images/sponsors/bbs.jpg",
-        url: "#",
-        description: "Ghana's premier highlife band"
-      },
+      
+       {
+        name: "PCL",
+        logo: "/images/sponsors/pcl.jpg",
+        url: "https://pcl.net/",
+        description: "..."
+      },  
       {
         name: "Pele",
         logo: "/images/sponsors/PELE-white.png",
@@ -88,6 +78,24 @@ const sponsorCategories = [
         description: "Fashion and beauty brand"
       },
       {
+        name: "2840 Digital Solutions",
+        logo: "/images/sponsors/2842.jpg",
+        url: "https://2840digitalsolutions.com/",
+        description: "Complete IT Solutions For Optimal Performance"
+      },
+      {
+        name: "Black Boys Band",
+        logo: "/images/sponsors/bbs.jpg",
+        url: "#",
+        description: "Ghana's premier highlife band"
+      },
+      {
+        name: "Beyond Impact",
+        logo: "/images/sponsors/beyond.png",
+        url: "#",
+        description: "HR consulting services"
+      },
+      {
         name: "Sedat Consult",
         logo: "/images/sponsors/sedat.jpg",
         url: "https://sedatconsultlimited.com/",
@@ -100,17 +108,18 @@ const sponsorCategories = [
         description: "We provide holisitic and specilized customer services..."
       },
       {
+        name: "Channel One",
+        logo: "/images/sponsors/c11.png",
+        url: "https://channelonenewsonline.com/",
+        description: "A privately owned TV Station based in Tesano..."
+      },
+      {
         name: "HH Factor",
         logo: "/images/sponsors/factor.jpg",
         url: "https://phillipsoutsourcing.net/",
         description: "..."
       },
-      {
-        name: "PCL",
-        logo: "/images/sponsors/pcl.jpg",
-        url: "https://pcl.net/",
-        description: "..."
-      }   
+      
     ]
   }
 ];

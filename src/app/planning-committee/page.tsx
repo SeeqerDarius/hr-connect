@@ -16,7 +16,7 @@ const subcommittees = [
         organization: 'HR Network Africa',
         bio: 'Cynthia leads the overall planning and execution of HR Connect 2025 with extensive experience in conference organization and HR leadership.',
         imageUrl: '/images/planning-committee/cynthia.jpg',
-        socials: { linkedin: '#' }
+        socials: { linkedin: 'https://www.linkedin.com/in/cynthiamawulawoekodowu/' }
       },
       {
         id: 2,
@@ -25,7 +25,7 @@ const subcommittees = [
         organization: 'HR Network Africa',
         bio: 'Emaline supports the committee lead in coordinating all aspects of the conference planning and execution.',
         imageUrl: '/images/planning-committee/emmaline-datey.jpg',
-        socials: { linkedin: '#' }
+        socials: { linkedin: 'https://www.linkedin.com/in/emmaline-datey-69083547/' }
       },
       {
         id: 3,
@@ -42,7 +42,7 @@ const subcommittees = [
         title: 'Admin Lead',
         organization: 'HR Network Africa',
         bio: 'Oversees all administrative functions and logistics for the conference planning.',
-        imageUrl: '/images/planning-committee/Angela.jpg',
+        imageUrl: '/images/planning-committee/annn.jpg',
         socials: {}
       }
     ]
@@ -57,7 +57,7 @@ const subcommittees = [
         title: 'Sponsorship Committee',
         organization: 'HR Network Africa',
         bio: 'Works on securing sponsorships and partnerships for the conference.',
-        imageUrl: '/images/planning-committee/Esther.jpg',
+        imageUrl: '/images/planning-committee/estee.jpg',
         socials: {}
       },
       {
@@ -66,7 +66,7 @@ const subcommittees = [
         title: 'Sponsorship Committee Chair',
         organization: 'HR Network Africa',
         bio: 'Leads the sponsorship team in securing financial support and partnerships.',
-        imageUrl: '/images/planning-committee/Nii.jpeg',
+        imageUrl: '/images/planning-committee/gyampo.jpg',
         socials: {}
       },
       {
@@ -75,7 +75,7 @@ const subcommittees = [
         title: 'Sponsorship Committee Deputy & Media',
         organization: 'HR Network Africa',
         bio: 'Supports sponsorship efforts and coordinates media relations.',
-        imageUrl: '/images/planning-committee/kk.jpg',
+        imageUrl: '/images/planning-committee/load.jpg',
         socials: {}
       },
       {
@@ -84,7 +84,7 @@ const subcommittees = [
         title: 'Sponsorship Committee Member',
         organization: 'HR Network Africa',
         bio: 'Assists in securing sponsorships and managing sponsor relationships.',
-        imageUrl: '/images/planning-committee/Paul.jpg',
+        imageUrl: '/images/planning-committee/op.jpg',
         socials: {}
       },
       {
@@ -108,7 +108,7 @@ const subcommittees = [
         title: 'Media and Publications Lead',
         organization: 'HR Network Africa',
         bio: 'Oversees all media relations and conference publications.',
-        imageUrl: '/images/planning-committee/kk.jpg',
+        imageUrl: '/images/planning-committee/load.jpg',
         socials: {}
       },
       {
@@ -141,7 +141,7 @@ const subcommittees = [
         title: 'Creative',
         organization: 'HR Network Africa',
         bio: 'Leads the creative direction and design elements for the conference.',
-        imageUrl: '/images/planning-committee/victor.jpg',
+        imageUrl: '/images/planning-committee/Victor.jpg',
         socials: {}
       }
     ]
@@ -250,7 +250,7 @@ export default function PlanningCommittee() {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* Call to Action 
       <section className="py-20 px-6 bg-gradient-to-r from-[#FF8C00] to-[#FFA500] text-white">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
@@ -265,16 +265,9 @@ export default function PlanningCommittee() {
             <p className="text-xl mb-8">
               We&apos;re looking for passionate professionals to contribute to making HR Connect 2025 a success.
             </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-white text-[#0A1C63] font-bold py-3 px-8 rounded-full"
-            >
-              Apply to Volunteer
-            </motion.button>
           </motion.div>
         </div>
-      </section>
+      </section>*/}
     </main>
   );
 }
