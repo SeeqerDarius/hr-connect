@@ -60,7 +60,7 @@ const sponsorCategories = [
         description: "5 Star Hotel in Accra, Ghana"
       },
       {
-        name: "Sweet Melody",
+        name: "Sweet Muzic Pro Audio",
         logo: "/images/sponsors/10th-Ann-Logo.png",
         url: "https://sweet-muzic.com/",
         description: "Ghana's leading Musical Instrument Store"
