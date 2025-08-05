@@ -1,6 +1,6 @@
 'use client';
 
-import { FaCoffee, FaPrayingHands, FaMusic, FaUtensils, FaChalkboardTeacher, FaHandshake, FaUsers, FaMicrophone, FaVideo, FaComments, FaMapMarkerAlt, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaCoffee, FaPrayingHands, FaMusic, FaUtensils, FaChalkboardTeacher, FaHandshake, FaUsers, FaMicrophone, FaVideo, FaComments, FaMapMarkerAlt, FaExternalLinkAlt, FaPhone } from 'react-icons/fa';
 import { ReactNode } from 'react';
 
 
@@ -53,27 +53,27 @@ export default function AgendaPage() {
                 />
                 
                 <AgendaItem 
-                  time="9:35 AM - 9:55 AM"
+                  time="9:15 AM - 9:35 AM"
                   title="Special Guest Speaker"
                   speaker="Patricia Obo-Nai"
                   variant="primary"
                 />
                 
                 <AgendaItem 
-                  time="9:40 AM - 9:45 AM"
+                  time="9:35 AM - 9:40 AM"
                   title="Sponsor Videos"
                   icon={<FaVideo className="text-[#0A1C63]" />}
                 />
                 
                 <AgendaItem 
-                  time="10:00 AM - 10:20 AM"
+                  time="9:40 AM - 10:00 AM"
                   title="Keynote: Leadership & Resilience"
                   speaker="Laury Georges-Lane (Virtual)"
                   variant="primary"
                 />
                 
                 <AgendaItem 
-                  time="10:40 AM - 11:20 AM"
+                  time="10:00 AM - 10:40 AM"
                   title="Panel Discussion: Leadership & Resilience"
                   speaker="Dr. Theo (Virtual) & Panelists"
                   icon={<FaUsers className="text-[#0A1C63]" />}
@@ -81,7 +81,7 @@ export default function AgendaPage() {
                 />
                 
                 <AgendaItem 
-                  time="10:50 AM - 11:00 AM"
+                  time="10:40 AM - 10:50 AM"
                   title="Music Interlude"
                   description="Jackson Band Performance"
                   icon={<FaMusic className="text-[#0A1C63]" />}
@@ -96,26 +96,26 @@ export default function AgendaPage() {
               </h3>
               <div className="space-y-6 pl-6 border-l-2 border-[#0A1C63]">
                 <AgendaItem 
-                  time="11:00 AM - 11:10 AM"
+                  time="10:50 AM - 11:00 AM"
                   title="Sponsor Advertisement"
                 />
                 
                 <AgendaItem 
-                  time="11:20 AM - 11:40 AM"
+                  time="11:00 AM - 11:20 AM"
                   title="Keynote: Workplace Wellness"
                   speaker="Dr. Stella Agyenim Boateng"
                   variant="primary"
                 />
                 
                 <AgendaItem 
-                  time="12:00 PM - 12:40 PM"
+                  time="11:20 AM - 12:00 PM"
                   title="Panel Discussion: Wellness Strategies"
                   icon={<FaUsers className="text-[#0A1C63]" />}
                   variant="secondary"
                 />
                 
                 <AgendaItem 
-                  time="1:00 PM - 2:00 PM"
+                  time="12:00 PM - 1:00 PM"
                   title="Lunch Break & Networking"
                   icon={<FaUtensils className="text-[#0A1C63]" />}
                 />
@@ -129,7 +129,7 @@ export default function AgendaPage() {
               </h3>
               <div className="space-y-6 pl-6 border-l-2 border-[#0A1C63]">
                 <AgendaItem 
-                  time="1:15 PM - 1:30 PM"
+                  time="1:00 PM - 1:15 PM"
                   title="Speed Coaching"
                   description="My HealthCorp Ice Breaker"
                   variant="secondary"
@@ -143,39 +143,39 @@ export default function AgendaPage() {
                 />
                 
                 <AgendaItem 
-                  time="2:15 PM - 3:00 PM"
+                  time="1:30 PM - 2:15 PM"
                   title="Panel Discussion: HR Analytics"
                   icon={<FaUsers className="text-[#0A1C63]" />}
                   variant="secondary"
                 />
                 
                 <AgendaItem 
-                  time="2:25 PM - 2:35 PM"
+                  time="2:15 PM - 2:25 PM"
                   title="Music Interlude"
                   icon={<FaMusic className="text-[#0A1C63]" />}
                 />
                 
                 <AgendaItem 
-                  time="3:00 PM - 3:45 PM"
+                  time="2:25 PM - 3:10 PM"
                   title="Masterclass Session"
                   icon={<FaChalkboardTeacher className="text-[#0A1C63]" />}
                   variant="primary"
                 />
                 
                 <AgendaItem 
-                  time="3:45 PM - 4:00 PM"
+                  time="3:10 PM - 3:15 PM"
                   title="Sponsor Videos"
                   icon={<FaVideo className="text-[#0A1C63]" />}
                 />
                 
                 <AgendaItem 
-                  time="4:00 PM - 4:15 PM"
+                  time="3:15 PM - 3:30 PM"
                   title="Closing Ceremony"
                   description="Vote of Thanks & Remarks"
                 />
                 
                 <AgendaItem 
-                  time="4:15 PM Onwards"
+                  time="3:30 PM Onwards"
                   title="Networking & Coffee Break"
                   description="Exhibitor Engagement"
                   icon={<FaCoffee className="text-[#0A1C63]" />}
@@ -199,8 +199,9 @@ export default function AgendaPage() {
                       <span>5.5544022° N, -0.2026381° W</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <FaMapMarkerAlt className="text-[#FF8C00]" />
-                      <span>+233 30 221 5000</span>
+                      <FaPhone className="text-[#FF8C00]" />
+                      <span>+233 20 5756709</span>/
+                      <span>+233 54 1222365</span>
                     </div>
                   </div>
                   <div>

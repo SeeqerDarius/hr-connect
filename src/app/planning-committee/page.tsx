@@ -2,7 +2,8 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
+import Link from 'next/link';
 
 const subcommittees = [
   {
@@ -154,7 +155,7 @@ export default function PlanningCommittee() {
     <main className="min-h-screen bg-[#F9F9F9] text-[#0A1C63]">
       {/* Hero Section */}
       <section className="relative h-96 bg-[#0A1C63] text-white flex items-center justify-center">
-        <div className="absolute inset-0 bg-[url('/images/conference.jpg')] bg-cover bg-center opacity-30" />
+        <div className="absolute inset-0 bg-[url('/images/IMG-20250610-WA0142.jpg')] opacity-30 bg-cover"></div>
         <div className="relative z-10 text-center px-6 max-w-4xl">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
@@ -268,6 +269,49 @@ export default function PlanningCommittee() {
           </motion.div>
         </div>
       </section>*/}
+
+      
+      {/* Footer Section */}
+      <footer className="bg-[#0A1C63] text-white py-12 px-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="md:col-span-2">
+            <h3 className="text-2xl font-bold mb-4">About Us</h3>
+            <p className="mb-6">
+              The HR Network is an association and community of high-performing and credible people management professionals who are focused on accelerating business results through strategic human capital best practices.</p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold mb-4">Info</h3>
+            <ul className="space-y-2">
+              <li><Link href="/" className="hover:text-[#FF8C00]">Home</Link></li>
+              <li><Link href="/speakers" className="hover:text-[#FF8C00]">Speakers</Link></li>
+              <li><Link href="/sponsors" className="hover:text-[#FF8C00]">Sponsors</Link></li>
+              <li><Link href="/contact" className="hover:text-[#FF8C00]">Contact</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+            <div className="space-y-3">
+              <div className="flex items-start">
+                <FaPhone className="mt-1 mr-2 text-[#FF8C00]" />
+                <div>
+                  <p>(+233) 54 122 2365</p>
+                  <p>(+233) 20 575 6709</p>
+                  <p>(+233) 26 337 4641</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <FaEnvelope className="mt-1 mr-2 text-[#FF8C00]" />
+                <p>info@hrnetworkafrica.org</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-6xl mx-auto pt-8 mt-8 border-t border-white/20 text-center">
+        </div>
+      </footer>
     </main>
   );
 }

@@ -25,8 +25,15 @@ const sponsors = [
   { name: "Channel One", logo: "/images/sponsors/c11.png" },
   { name: "PCL", logo: "/images/sponsors/pcl.jpg" },
   { name: "Beyond Impact", logo: "/images/sponsors/beyond.png" },
-  //{ name: "Dalex Swift", logo: "/images/sponsors/SWIFT-Logo.png" },
+  { name: "MX24 ", logo: "/images/sponsors/MX24LOGO-02.png" },
   { name: "2840 Digital Solutions", logo: "/images/sponsors/2842.jpg" },
+  { name: "Citi FM", logo: "/images/sponsors/citi.png" },
+  //{ name: "Woezor TV", logo: "/images/sponsors/woezor.png" },
+  { name: "Sweet Melody", logo: "/images/sponsors/logog.webp" },
+  { name: "Axis Human Capital", logo: "/images/sponsors/axis.jpg" },
+  //{ name: "HR Network Africa", logo: "/images/sponsors/hrnetworkafrica.png" },
+  //{ name: "HR Focus Magazine", logo: "/images/sponsors/hrfocus.jpg" },
+  //{ name: "Ghana HR Awards", logo: "/images/sponsors/ghawards.png" }
 ];
 
 // Featured speakers data (from speakers page)
