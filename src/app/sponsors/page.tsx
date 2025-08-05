@@ -4,48 +4,93 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const sponsorCategories = [
+// Define types
+type Tier = 'Platinum' | 'Gold' | 'Silver' | 'Bronze' | 'Media Partners' | 'Partners' | 'Ads';
+
+interface Sponsor {
+  name: string;
+  logo: string;
+  url: string;
+  description: string;
+  tier: Tier;
+}
+
+interface SponsorCategory {
+  name: string;
+  description: string;
+  sponsors: Sponsor[];
+}
+
+const tierColors: Record<Tier, string> = {
+  Platinum: "from-purple-600 to-blue-500",
+  Gold: "from-yellow-600 to-yellow-400",
+  Silver: "from-gray-400 to-gray-200",
+  Bronze: "from-amber-700 to-amber-500",
+  'Media Partners': "from-blue-400 to-blue-600",
+  Partners: "from-green-500 to-green-700",
+  Ads: "from-red-500 to-red-700"
+};
+
+const sponsorCategories: SponsorCategory[] = [
   {
     name: "Sponsors",
     description: "Our valued sponsors who make this event possible",
     sponsors: [
       {
-        name: "Nuffield Clinic",
-        logo: "/images/sponsors/nuffieldclin.png",
-        url: "https://nuffieldclinic.com",
-        description: "Bone, Joint & Muscle Specialist Clinic"
+        name: "Sweet Music",
+        logo: "/images/sponsors/10th-Ann-Logo.png",
+        url: "https://sweet-muzic.com/",
+        description: "Ghana's leading Musical Instrument Store",
+        tier: "Silver"
+      },
+      {
+        name: "Philips Consulting",
+        logo: "/images/sponsors/pcl.jpg",
+        url: "https://phillipsconsulting.net/",
+        description: "Business consulting, with a difference.",
+        tier: "Silver"
       },
       {
         name: "Philips Outsourcing",
         logo: "/images/sponsors/philips.jpg",
         url: "https://phillipsoutsourcing.net/",
-        description: "With over 17 years of delivering innovative solutions..."
+        description: "With over 17 years of delivering innovative solutions...",
+        tier: "Ads"
       },
       {
-        name: "Dalex",
+        name: "Dalex Finance",
         logo: "/images/sponsors/SWIFT-Logo.png",
-        url: "https://www.dalexswift.com",
-        description: "Save yourself the heartache by investing your money where it gives back."
+        url: "https://www.dalexfinance.com/",
+        description: "Financial services provider",
+        tier: "Bronze"
       },
-      
+      {
+        name: "Nuffield Clinic",
+        logo: "/images/sponsors/nuffieldclin.png",
+        url: "https://nuffieldclinic.com",
+        description: "Bone, Joint & Muscle Specialist Clinic",
+        tier: "Bronze"
+      },
+      {
+        name: "Axis Human Capital",
+        logo: "/images/sponsors/axis.jpg",
+        url: "#",
+        description: "We continue to recruit people who are both competent...",
+        tier: "Bronze"
+      },
       {
         name: "Perbi Cubs",
-        logo: "/images/sponsors/PC-peach.png",
+        logo: "/images/sponsors/PC-turquoise.png",
         url: "#",
-        description: "Children's literacy program"
+        description: "Children's literacy program",
+        tier: "Bronze"
       },
-      
-       {
-        name: "PCL",
-        logo: "/images/sponsors/pcl.jpg",
-        url: "https://pcl.net/",
-        description: "..."
-      },  
       {
-        name: "Pele",
+        name: "PELE",
         logo: "/images/sponsors/PELE-white.png",
         url: "https://perbiexecutive.com/",
-        description: "Perbi Executive Leadership Education is an executive coaching firm"
+        description: "Perbi Executive Leadership Education",
+        tier: "Bronze"
       }
     ]
   },
@@ -54,72 +99,88 @@ const sponsorCategories = [
     description: "Our trusted partners who support our mission",
     sponsors: [
       {
-        name: "Movenpick",
-        logo: "/images/sponsors/movenpick.png",
-        url: "https://movenpick.accor.com/en/africa/ghana/accra/moevenpick-ambassador-hotel-accra.html",
-        description: "5 Star Hotel in Accra, Ghana"
-      },
-      {
-        name: "Sweet Muzic Pro Audio",
-        logo: "/images/sponsors/10th-Ann-Logo.png",
-        url: "https://sweet-muzic.com/",
-        description: "Ghana's leading Musical Instrument Store"
-      },
-      {
         name: "ICS Africa",
         logo: "/images/sponsors/icsafrica.png",
         url: "https://www.icsafrica-sp.org/",
-        description: "Investing in Children and their Societies."
-      },
-      {
-        name: "Silky Diva",
-        logo: "/images/sponsors/silky.png",
-        url: "#",
-        description: "Fashion and beauty brand"
-      },
-      {
-        name: "2840 Digital Solutions",
-        logo: "/images/sponsors/2842.jpg",
-        url: "https://2840digitalsolutions.com/",
-        description: "Complete IT Solutions For Optimal Performance"
+        description: "Investing in Children and their Societies",
+        tier: "Partners"
       },
       {
         name: "Black Boys Band",
         logo: "/images/sponsors/bbs.jpg",
         url: "#",
-        description: "Ghana's premier highlife band"
+        description: "Ghana's premier highlife band",
+        tier: "Partners"
       },
       {
-        name: "Beyond Impact",
+        name: "Impact Solutions",
         logo: "/images/sponsors/beyond.png",
         url: "#",
-        description: "HR consulting services"
+        description: "HR consulting services",
+        tier: "Partners"
       },
       {
-        name: "Sedat Consult",
-        logo: "/images/sponsors/sedat.jpg",
-        url: "https://sedatconsultlimited.com/",
-        description: "We help you grow your business to create wealth"
+        name: "2480 Digital Solutions",
+        logo: "/images/sponsors/2842.jpg",
+        url: "https://2840digitalsolutions.com/",
+        description: "Complete IT Solutions For Optimal Performance",
+        tier: "Partners"
       },
       {
-        name: "ICSP",
-        logo: "/images/sponsors/icsp.jpg",
-        url: "https://icspghana.com/",
-        description: "We provide holisitic and specilized customer services..."
+        name: "Silky Diva Cosmetics and More",
+        logo: "/images/sponsors/silky.png",
+        url: "#",
+        description: "Fashion and beauty brand",
+        tier: "Partners"
       },
       {
-        name: "Channel One",
-        logo: "/images/sponsors/c11.png",
+        name: "Movenpick",
+        logo: "/images/sponsors/movenpick.png",
+        url: "https://movenpick.accor.com",
+        description: "5 Star Hotel in Accra, Ghana",
+        tier: "Bronze"
+      }
+    ]
+  },
+  {
+    name: "Media Partners",
+    description: "Our media partners helping amplify our message",
+    sponsors: [
+      {
+        name: "Channel 1 TV",
+        logo: "/images/sponsors/C1.jpg",
         url: "https://channelonenewsonline.com/",
-        description: "A privately owned TV Station based in Tesano..."
+        description: "Leading television station",
+        tier: "Media Partners"
       },
       {
-        name: "HH Factor",
-        logo: "/images/sponsors/factor.jpg",
-        url: "https://phillipsoutsourcing.net/",
-        description: "..."
+        name: "Citi 97.3fm",
+        logo: "/images/sponsors/citi.png",
+        url: "https://citinewsroom.com/",
+        description: "Citi FM 97.3 is an award-winning English-speaking radio station based in Accra",
+        tier: "Media Partners"
       },
-      
+      {
+        name: "Woezor TV",
+        logo: "/images/sponsors/woezor.png",
+        url: "#",
+        description: "Television network",
+        tier: "Media Partners"
+      },
+      {
+        name: "MX24 TV",
+        logo: "/images/sponsors/MX24LOGO-02.png",
+        url: "#",
+        description: "Media company",
+        tier: "Media Partners"
+      },
+      {
+        name: "Sweet Melodies",
+        logo: "/images/sponsors/logog.webp",
+        url: "#",
+        description: "Music and entertainment",
+        tier: "Media Partners"
+      }
     ]
   }
 ];
@@ -138,7 +199,7 @@ export default function SponsorsPage() {
           >
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Our Sponsors & Partners</h1>
             <p className="text-xl text-white max-w-2xl mx-auto">
-              We&apos;re proud to partner with industry leaders who share our vision for transforming HR
+              We're proud to partner with industry leaders who share our vision for transforming HR
             </p>
           </motion.div>
         </div>
@@ -152,16 +213,51 @@ export default function SponsorsPage() {
         />
       </section>
 
+      {/* Value Proposition
+      <section className="py-16 px-6 bg-[#F9F9F9]">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#0A1C63]">
+            Why <span className="text-[#FF8C00]">Partner</span> With Us?
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <motion.div
+              whileHover={{ y: -5 }}
+              className="bg-white p-6 rounded-xl shadow-md border-t-4 border-[#FF8C00]"
+            >
+              <div className="text-[#FF8C00] text-4xl mb-4">👥</div>
+              <h3 className="text-xl font-bold mb-2 text-[#0A1C63]">Premium Audience</h3>
+              <p className="text-gray-700">Connect with 500+ HR professionals, executives, and decision-makers from across Africa.</p>
+            </motion.div>
+            <motion.div
+              whileHover={{ y: -5 }}
+              className="bg-white p-6 rounded-xl shadow-md border-t-4 border-[#FF8C00]"
+            >
+              <div className="text-[#FF8C00] text-4xl mb-4">📢</div>
+              <h3 className="text-xl font-bold mb-2 text-[#0A1C63]">Brand Visibility</h3>
+              <p className="text-gray-700">Amplify your brand through multi-channel marketing before, during, and after the event.</p>
+            </motion.div>
+            <motion.div
+              whileHover={{ y: -5 }}
+              className="bg-white p-6 rounded-xl shadow-md border-t-4 border-[#FF8C00]"
+            >
+              <div className="text-[#FF8C00] text-4xl mb-4">💡</div>
+              <h3 className="text-xl font-bold mb-2 text-[#0A1C63]">Thought Leadership</h3>
+              <p className="text-gray-700">Position your company as an industry leader through speaking opportunities and content.</p>
+            </motion.div>
+          </div>
+        </div>
+      </section> */}
+
       {/* Sponsor Categories */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
         {sponsorCategories.map((category, categoryIndex) => (
-          <section key={category.name} className={`mb-20 ${categoryIndex !== 0 ? 'mt-24' : ''}`}>
+          <section key={category.name} className={`mb-20 ${categoryIndex !== 0 ? 'mt-16' : ''}`}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true, margin: "-100px" }}
-              className="text-center mb-16"
+              className="text-center mb-12"
             >
               <h2 className="text-3xl font-bold mb-4 text-[#0A1C63]">{category.name}</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -169,12 +265,13 @@ export default function SponsorsPage() {
               </p>
             </motion.div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {category.sponsors.map((sponsor) => (
                 <motion.div
                   key={sponsor.name}
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
+                  whileHover={{ y: -5 }}
                   transition={{ duration: 0.5 }}
                   viewport={{ once: true }}
                   className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-xl h-full flex flex-col"
@@ -197,18 +294,32 @@ export default function SponsorsPage() {
                           />
                         </div>
                       </div>
+                      <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${tierColors[sponsor.tier]}`}></div>
                     </div>
                     <div className="p-6 flex flex-col flex-grow">
-                      <h3 className="text-xl font-bold text-[#0A1C63] mb-2">{sponsor.name}</h3>
+                      <div className="flex justify-between items-start mb-2">
+                        <h3 className="text-xl font-bold text-[#0A1C63]">{sponsor.name}</h3>
+                        <span className={`px-3 py-1 rounded-full text-xs font-bold ${
+                          sponsor.tier === "Platinum" ? "bg-gradient-to-r from-purple-600 to-blue-500 text-white" :
+                          sponsor.tier === "Gold" ? "bg-gradient-to-r from-yellow-600 to-yellow-400 text-white" :
+                          sponsor.tier === "Silver" ? "bg-gradient-to-r from-gray-400 to-gray-200 text-gray-800" :
+                          sponsor.tier === "Bronze" ? "bg-gradient-to-r from-amber-700 to-amber-500 text-white" :
+                          sponsor.tier === "Media Partners" ? "bg-gradient-to-r from-blue-400 to-blue-600 text-white" :
+                          sponsor.tier === "Partners" ? "bg-gradient-to-r from-green-500 to-green-700 text-white" :
+                          "bg-gradient-to-r from-red-500 to-red-700 text-white"
+                        }`}>
+                          {sponsor.tier}
+                        </span>
+                      </div>
                       <p className="text-gray-700 mb-4 flex-grow">{sponsor.description}</p>
-                      {sponsor.url && sponsor.url !== '#' && (
-                        <div className="text-[#0A1C63] font-medium hover:underline flex items-center mt-auto">
-                          Visit Website
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                            <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                          </svg>
-                        </div>
-                      )}
+                     {sponsor.url && sponsor.url !== '#' && (
+  <div className="text-[#0A1C63] font-medium no-underline flex items-center mt-auto">
+    Visit Website
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+      <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+    </svg>
+  </div>
+)}
                     </div>
                   </a>
                 </motion.div>
@@ -217,8 +328,43 @@ export default function SponsorsPage() {
           </section>
         ))}
 
+        {/* Testimonials 
+        <section className="py-16 px-6 bg-[#F9F9F9] rounded-xl my-12">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12 text-[#0A1C63]">
+              What Our <span className="text-[#FF8C00]">Partners</span> Say
+            </h2>
+            <div className="space-y-8">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#FF8C00]"
+              >
+                <p className="italic mb-4 text-gray-700">
+                  "Sponsoring HR Connect was one of our best marketing decisions last year. The quality of attendees and networking opportunities exceeded our expectations."
+                </p>
+                <p className="font-bold text-[#0A1C63]">— HR Director, Leading Tech Company</p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#FF8C00]"
+              >
+                <p className="italic mb-4 text-gray-700">
+                  "The visibility we gained through our partnership translated directly into new business opportunities. The team was professional and delivered on all promises."
+                </p>
+                <p className="font-bold text-[#0A1C63]">— CEO, HR Solutions Provider</p>
+              </motion.div>
+            </div>
+          </div>
+        </section>*/}
+
         {/* CTA Section */}
-        <section className="bg-[#0A1C63] text-white py-20 px-6 rounded-xl mt-24">
+        <section className="bg-[#0A1C63] text-white py-20 px-6 rounded-xl mt-12">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -231,13 +377,13 @@ export default function SponsorsPage() {
                 Join our prestigious community and connect with HR leaders from across Africa
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/sponsor" passHref>
+                <Link href="/sponsor#packages" passHref>
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="bg-transparent hover:bg-white/10 text-white font-bold py-3 px-8 rounded-full border border-white transition-colors"
                   >
-                    View Opportunities
+                    View Packages
                   </motion.button>
                 </Link>
                 <a href="mailto:info@hrnetworkafrica.org">

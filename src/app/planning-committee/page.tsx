@@ -108,7 +108,7 @@ const subcommittees = [
         title: 'Media and Publications Lead',
         organization: 'HR Network Africa',
         bio: 'Oversees all media relations and conference publications.',
-        imageUrl: '/images/planning-committee/load.jpg',
+        imageUrl: '/images/planning-committee/jenn.jpg',
         socials: {}
       },
       {
