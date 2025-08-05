@@ -106,6 +106,13 @@ const sponsorCategories: SponsorCategory[] = [
         tier: "Partners"
       },
       {
+        name: "ICSP",
+        logo: "/images/sponsors/icsp.jpg",
+        url: "https://https://icspghana.com/",
+        description: "ICSP is an independent institute solely dedicated to training and providing ...",
+        tier: "Partners"
+      },
+      {
         name: "Black Boys Band",
         logo: "/images/sponsors/bbs.jpg",
         url: "#",
@@ -199,7 +206,7 @@ export default function SponsorsPage() {
           >
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Our Sponsors & Partners</h1>
             <p className="text-xl text-white max-w-2xl mx-auto">
-              We're proud to partner with industry leaders who share our vision for transforming HR
+              We&apos;re proud to partner with industry leaders who share our vision for transforming HR
             </p>
           </motion.div>
         </div>
@@ -312,14 +319,14 @@ export default function SponsorsPage() {
                         </span>
                       </div>
                       <p className="text-gray-700 mb-4 flex-grow">{sponsor.description}</p>
-                     {sponsor.url && sponsor.url !== '#' && (
-  <div className="text-[#0A1C63] font-medium no-underline flex items-center mt-auto">
-    Visit Website
-    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-      <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-    </svg>
-  </div>
-)}
+                      {sponsor.url && sponsor.url !== '#' && (
+                        <div className="text-[#0A1C63] font-medium flex items-center mt-auto">
+                          Visit Website
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                      )}
                     </div>
                   </a>
                 </motion.div>
