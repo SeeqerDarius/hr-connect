@@ -167,7 +167,7 @@ export default function SponsorsPage() {
           >
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Our Sponsors & Partners</h1>
             <p className="text-xl text-white max-w-2xl mx-auto">
-              We're proud to partner with industry leaders who share our vision for transforming HR
+              We&apos;re proud to partner with industry leaders who share our vision for transforming HR
             </p>
           </motion.div>
         </div>
