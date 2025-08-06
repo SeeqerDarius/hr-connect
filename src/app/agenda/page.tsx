@@ -3,7 +3,6 @@
 import { FaCoffee, FaPrayingHands, FaMusic, FaUtensils, FaChalkboardTeacher, FaHandshake, FaUsers, FaMicrophone, FaVideo, FaComments, FaMapMarkerAlt, FaExternalLinkAlt, FaPhone } from 'react-icons/fa';
 import { ReactNode } from 'react';
 
-
 interface AgendaItemProps {
   time: string;
   title: string;
@@ -32,9 +31,9 @@ export default function AgendaPage() {
               </h3>
               <div className="space-y-6 pl-6 border-l-2 border-[#0A1C63]">
                 <AgendaItem 
-                  time="8:00 AM - 9:00 AM"
+                  time="7:45 AM - 9:00 AM"
                   title="Arrival & Registration"
-                  description="Cultural Performance"
+                  description="Cultural Performance | Networking & Coffee break"
                   icon={<FaHandshake className="text-[#0A1C63]" />}
                   variant="primary"
                 />
@@ -46,14 +45,14 @@ export default function AgendaPage() {
                 />
                 
                 <AgendaItem 
-                  time="9:05 AM - 9:15 AM"
+                  time="9:05 AM - 9:10 AM"
                   title="Welcome Address"
                   speaker="Cynthia Kodowu"
                   variant="primary"
                 />
                 
                 <AgendaItem 
-                  time="9:15 AM - 9:35 AM"
+                  time="9:10 AM - 9:35 AM"
                   title="Special Guest Speaker"
                   speaker="Patricia Obo-Nai"
                   variant="primary"
@@ -66,25 +65,34 @@ export default function AgendaPage() {
                 />
                 
                 <AgendaItem 
-                  time="9:40 AM - 10:00 AM"
-                  title="Keynote: Leadership & Resilience"
+                  time="9:40 AM - 9:55 AM"
+                  title="Keynote: Resilience By Design"
+                  description="Future Proofing HR Strategies for a Dynamic Workforce"
                   speaker="Laury Georges-Lane (Virtual)"
                   variant="primary"
                 />
                 
                 <AgendaItem 
-                  time="10:00 AM - 10:40 AM"
-                  title="Panel Discussion: Leadership & Resilience"
-                  speaker="Dr. Theo (Virtual) & Panelists"
+                  time="9:55 AM - 10:35 AM"
+                  title="Panel: Resilience in Leadership"
+                  description="Navigating Uncertainty & Change in the workplace"
+                  speaker="Rosie Ebe Arthur, Dr. Francis Eduku, Giorgia Manfreda Appiah, Arthi Rabikrisson (Online), Dr. Theo Tackie (Online), Kojo Amissah (Moderator)"
                   icon={<FaUsers className="text-[#0A1C63]" />}
                   variant="secondary"
                 />
                 
                 <AgendaItem 
-                  time="10:40 AM - 10:50 AM"
+                  time="10:35 AM - 10:40 AM"
                   title="Music Interlude"
                   description="Jackson Band Performance"
                   icon={<FaMusic className="text-[#0A1C63]" />}
+                />
+                
+                <AgendaItem 
+                  time="10:40 AM - 10:50 AM"
+                  title="Goodwill Message from CIHRM"
+                  speaker="Dr. Eduku"
+                  variant="primary"
                 />
               </div>
             </div>
@@ -96,28 +104,48 @@ export default function AgendaPage() {
               </h3>
               <div className="space-y-6 pl-6 border-l-2 border-[#0A1C63]">
                 <AgendaItem 
-                  time="10:50 AM - 11:00 AM"
-                  title="Sponsor Advertisement"
-                />
-                
-                <AgendaItem 
-                  time="11:00 AM - 11:20 AM"
-                  title="Keynote: Workplace Wellness"
+                  time="10:50 AM - 11:10 AM"
+                  title="Keynote: Empathy in Action"
+                  description="Positioning HR as Wellbeing Ambassadors in the Modern Workplace"
                   speaker="Dr. Stella Agyenim Boateng"
                   variant="primary"
                 />
                 
                 <AgendaItem 
-                  time="11:20 AM - 12:00 PM"
-                  title="Panel Discussion: Wellness Strategies"
+                  time="11:10 AM - 11:50 AM"
+                  title="Panel: HR as Champions for Workplace Well-Being"
+                  description="Driving Productivity Through Innovative Employee Well-being Strategies"
+                  speaker="CDR (Dr) Jek Aggrey, Daniel Delasie Dogbey (Virtual), Isidore Kpotufe, Patience Oskere (Virtual), Dr. Irene Stella Agyenim Boateng, Mary Bennet (Moderator)"
                   icon={<FaUsers className="text-[#0A1C63]" />}
                   variant="secondary"
                 />
                 
                 <AgendaItem 
-                  time="12:00 PM - 1:00 PM"
-                  title="Lunch Break & Networking"
-                  icon={<FaUtensils className="text-[#0A1C63]" />}
+                  time="11:50 AM - 11:55 AM"
+                  title="Spoken Word Performance"
+                />
+                
+                <AgendaItem 
+                  time="11:55 AM - 12:10 PM"
+                  title="Keynote: Beyond the Numbers"
+                  description="Using people Analytics to Shape Culture, Retention, and Human Centered Strategy"
+                  speaker="Margaret Jackson"
+                  variant="primary"
+                />
+                
+                <AgendaItem 
+                  time="12:10 PM - 12:50 PM"
+                  title="Panel: The Power of Data in HR"
+                  description="Transforming Talent Acquisition & Workforce Optimization"
+                  speaker="Deborah Asmah, Anita Waife, Prof Eric Afful-Dadzie, Marc Voi-Chuili, Paa Kwesi Barnes (Moderator)"
+                  icon={<FaUsers className="text-[#0A1C63]" />}
+                  variant="secondary"
+                />
+                
+                <AgendaItem 
+                  time="12:50 PM - 12:55 PM"
+                  title="Ice Breaker"
+                  description="My HealthCorp"
                 />
               </div>
             </div>
@@ -129,53 +157,51 @@ export default function AgendaPage() {
               </h3>
               <div className="space-y-6 pl-6 border-l-2 border-[#0A1C63]">
                 <AgendaItem 
-                  time="1:00 PM - 1:15 PM"
-                  title="Speed Coaching"
-                  description="My HealthCorp Ice Breaker"
-                  variant="secondary"
+                  time="12:55 PM - 1:35 PM"
+                  title="Lunch Break"
+                  description="Sponsors Video | Speed Coaching"
+                  icon={<FaUtensils className="text-[#0A1C63]" />}
                 />
                 
                 <AgendaItem 
-                  time="1:15 PM - 1:30 PM"
-                  title="Keynote: Data-Driven HR"
-                  speaker="Margaret Jackson"
-                  variant="primary"
-                />
-                
-                <AgendaItem 
-                  time="1:30 PM - 2:15 PM"
-                  title="Panel Discussion: HR Analytics"
-                  icon={<FaUsers className="text-[#0A1C63]" />}
-                  variant="secondary"
-                />
-                
-                <AgendaItem 
-                  time="2:15 PM - 2:25 PM"
-                  title="Music Interlude"
-                  icon={<FaMusic className="text-[#0A1C63]" />}
-                />
-                
-                <AgendaItem 
-                  time="2:25 PM - 3:10 PM"
-                  title="Masterclass Session"
+                  time="1:35 PM - 2:20 PM"
+                  title="Masterclass"
+                  speaker="Yvonne Wiredu Akpabli, Patricia Abena Kissi, Oscar Bimpong, Yvonne Ohui McCarthy"
                   icon={<FaChalkboardTeacher className="text-[#0A1C63]" />}
                   variant="primary"
                 />
                 
                 <AgendaItem 
-                  time="3:10 PM - 3:15 PM"
-                  title="Sponsor Videos"
-                  icon={<FaVideo className="text-[#0A1C63]" />}
+                  time="2:20 PM - 2:35 PM"
+                  title="Plenary Speaker"
+                  description="Beyond Titles & Talent: Building Emotionally Intelligent and Psychologically Safe Workplaces"
+                  speaker="Dr Cheryl Arutt"
+                  variant="primary"
                 />
                 
                 <AgendaItem 
-                  time="3:15 PM - 3:30 PM"
+                  time="2:35 PM - 2:40 PM"
+                  title="Philips Consult"
+                />
+                
+                <AgendaItem 
+                  time="2:40 PM - 2:42 PM"
+                  title="Nuffield Clinic"
+                />
+                
+                <AgendaItem 
+                  time="2:42 PM - 2:57 PM"
+                  title="Performance"
+                />
+                
+                <AgendaItem 
+                  time="2:57 PM - 3:02 PM"
                   title="Closing Ceremony"
-                  description="Vote of Thanks & Remarks"
+                  description="Vote of Thanks & Closing Remarks"
                 />
                 
                 <AgendaItem 
-                  time="3:30 PM Onwards"
+                  time="3:02 PM Onwards"
                   title="Networking & Coffee Break"
                   description="Exhibitor Engagement"
                   icon={<FaCoffee className="text-[#0A1C63]" />}

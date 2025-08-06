@@ -13,7 +13,7 @@ interface Sponsor {
   logo: string;
   url: string;
   description: string;
-  tier: Tier;
+  //tier: Tier;
 }
 
 interface SponsorCategory {
@@ -42,56 +42,56 @@ const sponsorCategories: SponsorCategory[] = [
         logo: "/images/sponsors/10th-Ann-Logo.png",
         url: "https://sweet-muzic.com/",
         description: "Ghana's leading Musical Instrument Store",
-        tier: "Silver"
+        //tier: "Silver"
       },
       {
         name: "Philips Consulting",
         logo: "/images/sponsors/pcl.jpg",
         url: "https://phillipsconsulting.net/",
         description: "Business consulting, with a difference.",
-        tier: "Silver"
+        //tier: "Silver"
       },
       {
         name: "Philips Outsourcing",
         logo: "/images/sponsors/philips.jpg",
         url: "https://phillipsoutsourcing.net/",
         description: "With over 17 years of delivering innovative solutions...",
-        tier: "Ads"
+        //tier: "Ads"
       },
       {
         name: "Dalex Finance",
         logo: "/images/sponsors/SWIFT-Logo.png",
         url: "https://www.dalexfinance.com/",
         description: "Financial services provider",
-        tier: "Bronze"
+        //tier: "Bronze"
       },
       {
         name: "Nuffield Clinic",
         logo: "/images/sponsors/nuffieldclin.png",
         url: "https://nuffieldclinic.com",
         description: "Bone, Joint & Muscle Specialist Clinic",
-        tier: "Bronze"
+        //tier: "Bronze"
       },
       {
         name: "Axis Human Capital",
         logo: "/images/sponsors/axis.jpg",
         url: "#",
         description: "We continue to recruit people who are both competent...",
-        tier: "Bronze"
+       //tier: "Bronze"
       },
       {
         name: "Perbi Cubs",
         logo: "/images/sponsors/PC-turquoise.png",
         url: "#",
         description: "Children's literacy program",
-        tier: "Bronze"
+        //tier: "Bronze"
       },
       {
         name: "PELE",
-        logo: "/images/sponsors/PELE-white.png",
+        logo: "/images/sponsors/pelepele.png",
         url: "https://perbiexecutive.com/",
         description: "Perbi Executive Leadership Education",
-        tier: "Bronze"
+        //tier: "Bronze"
       }
     ]
   },
@@ -104,49 +104,49 @@ const sponsorCategories: SponsorCategory[] = [
         logo: "/images/sponsors/icsafrica.png",
         url: "https://www.icsafrica-sp.org/",
         description: "Investing in Children and their Societies",
-        tier: "Partners"
+        //tier: "Partners"
       },
       {
         name: "ICSP",
         logo: "/images/sponsors/icsp.jpg",
         url: "https://https://icspghana.com/",
         description: "ICSP is an independent institute solely dedicated to training and providing ...",
-        tier: "Partners"
+        //tier: "Partners"
       },
       {
         name: "Black Boys Band",
         logo: "/images/sponsors/bbs.jpg",
         url: "#",
         description: "Ghana's premier highlife band",
-        tier: "Partners"
+        //tier: "Partners"
       },
       {
         name: "Impact Solutions",
         logo: "/images/sponsors/beyond.png",
         url: "#",
         description: "HR consulting services",
-        tier: "Partners"
+        //tier: "Partners"
       },
       {
         name: "2480 Digital Solutions",
         logo: "/images/sponsors/2842.jpg",
         url: "https://2840digitalsolutions.com/",
         description: "Complete IT Solutions For Optimal Performance",
-        tier: "Partners"
+        //tier: "Partners"
       },
       {
         name: "Silky Diva Cosmetics and More",
         logo: "/images/sponsors/silky.png",
         url: "#",
         description: "Fashion and beauty brand",
-        tier: "Partners"
+        //tier: "Partners"
       },
       {
         name: "Movenpick",
         logo: "/images/sponsors/movenpick.png",
         url: "https://movenpick.accor.com",
         description: "5 Star Hotel in Accra, Ghana",
-        tier: "Bronze"
+        //tier: "Bronze"
       }
     ]
   },
@@ -159,14 +159,14 @@ const sponsorCategories: SponsorCategory[] = [
         logo: "/images/sponsors/C1.jpg",
         url: "https://channelonenewsonline.com/",
         description: "Leading television station",
-        tier: "Media Partners"
+        //tier: "Media Partners"
       },
       {
         name: "Citi 97.3fm",
         logo: "/images/sponsors/citi.png",
         url: "https://citinewsroom.com/",
         description: "Citi FM 97.3 is an award-winning English-speaking radio station based in Accra",
-        tier: "Media Partners"
+        //tier: "Media Partners"
       },
       
       {
@@ -174,14 +174,14 @@ const sponsorCategories: SponsorCategory[] = [
         logo: "/images/sponsors/MX24LOGO-02.png",
         url: "#",
         description: "Media company",
-        tier: "Media Partners"
+        //tier: "Media Partners"
       },
       {
         name: "Sweet Melodies",
         logo: "/images/sponsors/logog.webp",
         url: "#",
         description: "Music and entertainment",
-        tier: "Media Partners"
+        //tier: "Media Partners"
       }
     ]
   }
@@ -296,12 +296,12 @@ export default function SponsorsPage() {
                           />
                         </div>
                       </div>
-                      <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${tierColors[sponsor.tier]}`}></div>
+                      <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r `}></div>
                     </div>
                     <div className="p-6 flex flex-col flex-grow">
                       <div className="flex justify-between items-start mb-2">
                         <h3 className="text-xl font-bold text-[#0A1C63]">{sponsor.name}</h3>
-                        <span className={`px-3 py-1 rounded-full text-xs font-bold ${
+                        {/*<span className={`px-3 py-1 rounded-full text-xs font-bold ${
                           sponsor.tier === "Platinum" ? "bg-gradient-to-r from-purple-600 to-blue-500 text-white" :
                           sponsor.tier === "Gold" ? "bg-gradient-to-r from-yellow-600 to-yellow-400 text-white" :
                           sponsor.tier === "Silver" ? "bg-gradient-to-r from-gray-400 to-gray-200 text-gray-800" :
@@ -311,7 +311,7 @@ export default function SponsorsPage() {
                           "bg-gradient-to-r from-red-500 to-red-700 text-white"
                         }`}>
                           {sponsor.tier}
-                        </span>
+                        </span>*/}
                       </div>
                       <p className="text-gray-700 mb-4 flex-grow">{sponsor.description}</p>
                       {sponsor.url && sponsor.url !== '#' && (
