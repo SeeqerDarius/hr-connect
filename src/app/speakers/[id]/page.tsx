@@ -6,8 +6,7 @@ import { useParams } from 'next/navigation';
 import { speakers } from '../../data/speakers-data'; 
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaLinkedin, FaGlobe, FaFacebook, FaInstagram} from 'react-icons/fa';
-import { FaCalendarAlt, FaMapMarkerAlt, FaUsers, FaChartLine, FaHandshake, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaGlobe, FaFacebook, FaInstagram, FaPhone, FaEnvelope} from 'react-icons/fa';
 import { SiX } from 'react-icons/si';
 import { useEffect, useState } from 'react';
 
