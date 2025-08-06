@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaCalendarAlt, FaMapMarkerAlt, FaUsers, FaChartLine, FaHandshake, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaPhone, FaEnvelope } from 'react-icons/fa';
 
 // Define types
 type Tier = 'Platinum' | 'Gold' | 'Silver' | 'Bronze' | 'Media Partners' | 'Partners' | 'Ads';

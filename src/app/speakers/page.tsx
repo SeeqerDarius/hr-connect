@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaCalendarAlt, FaMapMarkerAlt, FaUsers, FaChartLine, FaHandshake, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaPhone, FaEnvelope } from 'react-icons/fa';
 
 const speakerBackgrounds = [
   '/images/banner.jpg',
