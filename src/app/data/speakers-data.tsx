@@ -658,51 +658,11 @@ Dr. Agyenim-Boateng is celebrated for her affable, approachable, and people-cent
     imageUrl: '/images/speakers/francis-eduku.jpg',
     category: 'Panelist and Speaker'
   },
-  {
-    id: 29,
-    name: 'Georgia Manfreda Appiah',
-    linkedin: 'https://www.linkedin.com/in/deborah-asmah-cipm-8524585a/',
-    title: 'coming soon',
-    bio: `Ms. Deborah Asmah is an expert in AI, digital governance, privacy, and compliance, 
-whose contributions have significantly shaped Ghana's digital landscape. Her innovative 
-approaches have enabled seamless access to digital tools, promoted financial inclusion, and 
-driven digital transformation across multiple sectors. Deborah is the co-founder of Npontu 
-Technologies Ltd, a technology company specializing in the use of Artificial Intelligence 
-(AI) and software development to provide digital solutions and lead transformation 
-initiatives. Under her leadership, Npontu Technologies has scaled from a startup to a thriving 
-technology powerhouse serving over 20k clients across Ghana. In addition to its national 
-footprint, she has driven market expansion into other geographic regions including Nigeria, 
-Côte d'Ivoire and United Kingdom(UK). 
-She holds a Master of Law from Queen Mary University of London. She is a licensed Certified 
-Information Privacy Manager (CIPM) with the International Association of Privacy 
-Professionals (IAPP) and a certified Data Protection Officer (DPO). She is an ardent advocate 
-for Public Policy, with extensive research experience at the intersection of technology, AI, and 
-compliance. Ms. Deborah Asmah’s work has directly led to MSME digitization 
-transformation opportunities for over 23k+ businesses in Ghana, contributing to business 
-growth, job creation and strong Partnerships with Organizations such as MTN Ghana, 
-Association of Ghana Industries(AGI), Ghana Enterprise Agency (GEA), MasterCard 
-foundation amongst others.  
-Deborah Asmah believes that when AI and digital technologies are used responsibly, they can 
-be powerful catalysts for social and economic progress. She is deeply committed to advancing 
-women’s empowerment, fostering business growth and championing global ESG objectives. 
-Deborah is a frequent speaker at leading conferences across Africa, where she shares her 
-insights on the future of AI, privacy and compliance, and digital governance. She has recently 
-spoken at: 
-• Africa AI Stakeholder Meeting on Innovative Governance and Capacity Building, 2024, 
-Kigali, Rwanda. 
-• SheTrades Ghana Hub, Ghana Export Promotion Authority – 2024, Accra, Ghana. 
-• Digital Governance for Social Inclusion and Sustainable Development, AfreGov, 2024, 
-Kigali, Rwanda. 
-• Navigating Digital Frontiers: Legal Considerations and Tech Innovations, ALT Network 
-Summit, 2024, Kigali, Rwanda. 
-• The Global Conference on Human Resources in Africa (GCHRA), 2024, Accra, Ghana.`,
-    imageUrl: '/images/speakers/giorgia-manfreda-appiah.jpg',
-    category: 'coming soon'
-  },
+
   {
     id: 30,
     name: 'Georgia Manfreda Appiah',
-    title: 'coming soon',
+    title: 'Managing Partner and Cheif Operating officer, Nuffield Clinic',
     linkedin: 'https://www.linkedin.com/in/giorgia-manfreda-10465bb/',
     bio: `Giorgia Manfreda Appiah is a dynamic leader with over a decade of experience in human resource management, company operations, and strategic leadership. She is the Managing Partner and Chief Operating Officer of Nuffield Clinic, a specialist healthcare facility in Accra, Ghana, where she has led the clinic’s transformation and expansion in orthopaedics, rheumatology, physiotherapy, and family medicine.
 She holds a degree in Healthcare Management from the University of Minnesota and currently serves as the company lead for Nuffield Clinic’s participation in the Stanford Seed Transformation Program. Giorgia is known for her hands-on leadership style and commitment to building systems that empower teams and deliver quality care.
