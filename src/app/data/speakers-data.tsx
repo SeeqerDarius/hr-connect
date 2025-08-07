@@ -44,7 +44,7 @@ export const speakers: Speaker[] = [
         She is married with 3 children.`,
 
     imageUrl: '/images/speakers/PATRICIA-OBO-NAI.jpg',
-    category: 'Leadership'
+    category: 'Guest Speaker'
   },
   {
     id: 2,
@@ -75,18 +75,18 @@ export const speakers: Speaker[] = [
         business professionals. His work also extends deeply into Africa, where he continues to lead 
         initiatives aimed at promoting mindset transformation across the continent.`,
     imageUrl: '/images/speakers/Oscar-Bimpong.jpg',
-    category: 'Mindset'
+    category: 'Masterclass Trainer'
   },
   {
     id: 3,
     name: 'Kojo Amissah',
-    title: 'Strategy & Performance Consultant - CITAM',
+    title: 'Strategy & Performance Consultant | Lead Instructor, CITAM',
     bio: `Kojo Amissah is a Strategy and Performance Consultant at CITAM, where he leads high-impact training, consulting, and staffing services. He also serves as the lead instructor for the SHRM-CP and SHRM-SCP certification prep courses.
         Kojo brings extensive consulting and training experience in areas such as strategic planning, leadership and change management, performance management, competency management, and compensation and benefits. He has worked across various sectors, including oil and gas, mining, manufacturing, finance, and the public sector, supporting a wide range of organizational development initiatives.
         He holds a BS in Computer Science, an MBA in Entrepreneurship, and professional certifications including SHRM-SCP and SPHR.
         Kojo simply loves all things HR.`,
     imageUrl: '/images/speakers/Mr-Kojo-Amissah.jpg',
-    category: 'HR Strategy'
+    category: 'Panel Moderator'
   },
   {
     id: 4,
@@ -100,12 +100,12 @@ Patricia is an IFC-certified trainer with a passion for capacity building. She h
 
 Patricia holds a Master’s degree in Human Resource Development and a Bachelor’s degree in Educational Foundations from the University of Cape Coast. She also has an Executive Master’s in Organisational Development from AMPRO. At her core, Patricia is passionate about helping people and businesses thrive―empowering teams, leaders, and institutions to unlock their full potential.`,
     imageUrl: '/images/speakers/Patricia-Ama-Kissi.jpg',
-    category: 'Technology'
+    category: 'Masterclass Trainer'
   },
   {
     id: 5,
     name: 'ERIC KOJO VAN-ESS KURANCHIE',
-    title: 'AI Research Lead, TechFuture',
+    title: 'Group Head, HR & Administration, Bank of Africa Ghana | Strategic HR Leader | Corporate MC & HR Educator',
     bio: `Kojo is a Strategic Human Resources Management, Recruitment, Talent & Competency Management, Performance Management and Learning & Development expert. He has over 15 years’ experience and mastery in Change Management, Strategy & Policy Development, Coaching & Mentorship, Diversity Management and International Human Resources Management, Compensation & Benefits, Labour & Industrial Relations, and Succession Planning.
 He currently is the Group Head, Human Resources and Administration at the Bank of Africa Ghana where he has been responsible for the entire strategic direction of the Bank’s human resources and physical assets and security. 
 Kojo is responsible for the drafting and development of the Strategic HR and Administration plan, Capital and Operating Expenditure Budget for the Bank.
@@ -118,56 +118,32 @@ He is among the Bank’s C-Suite decision makers.
 He holds an MSc certificate in Development Management from the Kwame Nkrumah University of Science and Technology (KNUST), and an Executive MBA certificate in Human Resources Management from the University of Ghana. He also has a BSc. Business Management and Administration (HRM OPTION) from the Central University and an HND Mechanical Engineering certificate from the Takoradi Polytechnic.
 `,
     imageUrl: '/images/speakers/ERIC-KOJO-VAN-ESS-KURANCHIE-1.jpg',
-    category: 'Technology'
+    category: 'M.C'
   },
   {
     id: 6,
     name: 'Commander James Emmanuel Kwegyir Aggrey-Orleans',
-    title: 'Trauma & Orthopaedic Surgeon',
-    bio: `Commander James Emmanuel Kwegyir Aggrey-Orleans
-          Ghanaian Navy
-          Trauma & Orthopaedic Surgeon
-          Commander James Emmanuel Kwegyir Aggrey-Orleans is a
-          senior officer of the Ghana Navy and is organic to Ghana
-          Armed Forces Medical Services where he serves as a
-          Trauma and Orthopaedic surgeon, Medical Support planner
-          and instructor.`,
+    title: 'Trauma & Orthopaedic Surgeon | Ghana Navy | UN Peacekeeping Medical Expert',
+    bio: `Commander Aggrey-Orleans is a senior officer in the Ghana Navy and a distinguished trauma and orthopaedic surgeon serving with the Ghana Armed Forces Medical Services. He is renowned for his expertise in battlefield trauma care, medical support planning, and surgical leadership at the 37 Military Hospital.
+With over a decade of experience, he has led medical support for international tactical exercises such as MEDREX and FLINTLOCK and served in multiple United Nations peacekeeping missions across Libya, Côte d’Ivoire, South Sudan, and the Democratic Republic of Congo.
+He holds advanced qualifications in trauma life support, public health, and higher education, and is a certified instructor in Tactical Combat Casualty Care (TCCC). Fluent in English and intermediate in French, Commander Aggrey-Orleans is a committed educator, planner, and mentor, passionate about systems thinking and medical resilience in austere environments.`,
     imageUrl: '/images/speakers/comander.jpg',
-    category: 'Healthcare'
+    category: 'Panel Member'
   },
   {
     id: 7,
     name: 'Rosie Ebe-Arthur',
-    title: 'Chartered Fellow of the Chartered Institute of Personnel and Development (CIPD)',
-    bio: ` Rosie 
-Ebe-Arthur is a Chartered Fellow of the Chartered Institute of Personnel and Development (CIPD) UK and 
-Board Director on a couple of Boards in Ghana.  She brings with her a plethora of experience from the United 
-Kingdom and Africa.  Rosie joined Ernst & Young Ghana in 2003 on her return from the UK and moved to South 
-Africa in 2006 to take up the role of Associate Director of People Services, Africa Projects with responsibility for 
-HR across EY’s 19 countries in Sub Saharan Africa.  Ms. Ebe-Arthur then worked with Ecobank Transnational 
-Incorporated as Group Human Resources Business Partner for Domestic Bank working across 33 countries.  Rosie 
-moved to Standard Chartered Bank, Ghana and rose to Head of Human Resources, West Africa with 
-responsibility for Nigeria, Ghana, Cote D’Ivoire, Cameroun, Gambia and Sierra Leone and was based out of 
-Nigeria.  In 2018, Rosie joined First Bank Nigeria & Subsidiaries as Group Head, Human Capital Management & 
-Development with accountability for setting the People Strategy across the Bank’s footprint in Africa, United 
-Kingdom and the representative offices in France and China. Rosie left FirstBank at the end of 2021.
- • Having left corporate life at the end of 2021, Rosie continues to contribute to Africa, as Board Director on 
-Scancom Plc. (MTN) FirstBank Ghana Ltd. and Petra Trust; and through speaking engagements across Africa.   
-Rosie runs RE-HR, a forward-looking HR Consultancy with a focus on shifting culture to deliver organizational 
-strategy and optimum productivity . Rosie is passionate about people development and to deepen this 
-competency, she has embarked on the ICF coaching certification. This Results Coaching approach will ensure she 
-continues to contribute to her community.   Rosie currently works with individuals as well as organizations e.g. 
-Diageo.
- • Rosie walks at least 5km a day, spends time in the gym consistently, loves dancing, entertaining at home and 
-gardening however, her best times are with her creative son and together, they challenge each other on their 
-career journeys.`,
+    title: 'Board Director | Former Group Head of Human Capital, FirstBank Nigeria & Subsidiaries',
+    bio: ` Rosie Ebe-Arthur is a Chartered Fellow of the CIPD (UK) and a distinguished HR leader with extensive experience across the UK and Africa. She has held senior HR roles at Ernst & Young, Ecobank, Standard Chartered Bank, and FirstBank Nigeria, where she led people strategy across multiple countries including the UK, France, and China.
+Currently, Rosie serves several corporate boards and leads RE-HR, a consultancy focused on transforming workplace culture to drive strategic outcomes. Passionate about people development, she is pursuing ICF coaching certification and continues to work with individuals and organizations to enhance productivity and well-being.
+Rosie is a sought-after speaker across Africa and is known for her commitment to leadership, wellness, and organizational excellence.`,
     imageUrl: '/images/speakers/Rosie Ebe-Arthur.jpg',
-    category: 'Leadership'
+    category: 'Panel Member'
   },
   {
     id: 8,
     name: 'Paa Kwesi-Barnes',
-    title: 'Moderator',
+    title: 'Tech Expert',
     linkedin: 'https://web.facebook.com/paakwesi.barnes',
     bio: `Paa Kwesi Barnes stands as a seasoned Digital Technology Expert, boasting over 15 years of immersive experience across diverse roles encompassing information technology strategy and consulting, sales, and business management. His extensive journey has equipped him with formidable skills and insights, particularly in domains like core banking transformation, digital engagement, credit origination and appraisal, customer experience solutions, human capital solutions, quality assurance, and software testing. With a track record spanning the Telecom, Banking, and other financial sectors, Paa Kwesi has been deeply involved in mentorship, coaching, and training initiatives, not only within finance but also extending his reach into the HR sector.
 
@@ -176,32 +152,32 @@ Throughout his career, Paa Kwesi has consistently assumed leadership positions, 
 He is currently the Director for Business Development and Managing Consultant at Senrab ConsulTech Limited in Ghana. Paa Kwesi spearheads strategic initiatives and consultancy efforts, driving the company towards new heights of innovation and impact. Beyond his professional endeavours, Paa Kwesi finds fulfilment in his role as a devoted husband and father to three wonderful children.
 .`,
     imageUrl: '/images/speakers/Paa-Kwesi-Barnes-moderator.jpg',
-    category: 'PR'
+    category: 'Moderator'
   },
   {
     id: 9,
     name: 'Yvonne Wiredu-Akpabli',
-    title: 'HR Consultant/ Coporate Trainer-SHRM',
+    title: 'HR Legal Specialist | Strategic People Leader',
     linkedin: 'https://www.linkedin.com/in/mary-bennett-chartered-mcipd-73382656/',
     bio: `Yvonne is a highly trained HR professional with over 16years of experience in the practice of managing a broad spectrum of human resources programs, services, and functions; She possesses a strong command on performance management, employment laws, recruitment & selection, benefit plans, training and development; and compliance issues.
 She has significant experience managing various HR assignments for public sector organisations, NGOs, Telecommunication, financial, national, shipping, and multinational companies. 
 Yvonne holds an MBA in Human Resource Management from the Ghana Institute of Management and Public Administration (GIMPA). She also has a BA in English and French from the University of Cape Coast. In 2017, she was certified as a global HR professional after passing her SPHRi from HRCI. HR Focus also adjudged her as one of the top 40 HR Practitioners in Ghana in the same year. She also holds an LLB from GIMPA and an LLM in Labour Law from the University of Ghana Law School. She is a member of SHRM, a global HR forum, ACHR Ghana and a Fellow at CIHRP Ghana. She is a facilitator of HR courses at the HR Certification Centre and the Chartered Institute of Human Resource Managers (CIHRM) Ghana. She was adjudged the HR Personality of the year by the HRCC in 2023.
 `,
     imageUrl: '/images/speakers/yvonne.jpg',
-    category: 'PR'
+    category: 'Masterclass Trainer'
   },
   {
     id: 10,
     name: 'Dr. Cheryl Arutt',
-    title: 'Moderator',
+    title: 'Clinical & Forensic Psychologist | Trauma & Resilience Expert | TEDx Speaker | Certified EMDRIA Consultant',
     bio: `Dr. Cheryl Arutt is a licensed clinical & forensic psychologist, TEDx speaker, media consultant and Certified EMDRIA Therapist & Consultant based in Los Angeles. A specialist in creative resilience & post-traumatic growth, Dr. Cheryl offers EMDR Intensives & Adjunct EMDR via telehealth. She graduated summa cum laude from UCLA and holds a Doctor of Psychology (PsyD) degree from CSPP-LA, where she was awarded Outstanding Clinical Dissertation. A passionate advocate for survivors of trauma, Dr. Cheryl has served on several Boards dedicated to helping survivors, and consults with clinicians and organizations about effectively treating complex and developmental trauma. Dr. Cheryl is Access Hollywood’s go-to psychologist for trauma issues, a frequent psychological expert on networks including CNN, HLN and DiscoveryID, and speaks internationally about trauma, creativity and post-traumatic growth. For more information, please visit askdrcheryl.com and CreativeEMDR.com .`,
     imageUrl: '/images/speakers/Dr.-Cheryl-Arutt.jpg',
-    category: 'PR'
+    category: 'Speed Coach'
   },
   {
     id: 11,
     name: 'Mary Bennett',
-    title: 'Moderator',
+    title: 'Organizational Development | Learning Specialist',
     linkedin: 'https://www.linkedin.com/in/mary-bennett-chartered-mcipd-73382656/',
     bio: `Mary Bennett is a globally experienced professional specializing in Organizational Development, Learning & Development, and Human Resource Management. Her diverse certifications include being an IFC-LPI TPMA Certified Trainer, an ILM Certified Training & Development Professional, and a qualified Insights Discovery Practitioner. She is also an active member of the Chartered Institute of Personnel and Development (CIPD).
 Mary’s cross-industry expertise spans Oil and Gas, Telecommunications, IT, Health, Education, and Government sectors, where she has consistently advised and influenced leadership from mid-level management to the boardroom. Her professional journey includes roles at notable organizations such as Tullow Oil, Ericsson AB, iBurst Africa, Finsbury Orthopedics, and Age Concern, among others.
@@ -213,36 +189,13 @@ With a passion for human-centered growth, Mary is committed to helping individua
   {
     id: 12,
     name: 'Isidore Kpotufe',
-    title: 'Founder and CEO, RiviaCo (Rivia)',
-    bio: ` Isidore is a technology entrepreneur with a track record in building ventures across
- finance, transportation, and healthcare in Africa.
- He is one of the few technology founders in Africa to have exited their startup in a
- million-dollar deal through the sale of his startup, stabus, to Canada-based company
- Treepz.
- As the Founder and CEO of RiviaCo (Rivia), Isidore leads a healthcare venture that
- operates a network of “smart clinics” offering differentiated primary care services in
- Ghana. Rivia uses technology to personalise patient treatment and broaden access to
- quality healthcare services. Rivia currently operates 6 clinics in Ghana serving th
- Before his role at Rivia, Isidore served as the Chief Marketing Officer of Treepz, a
- Canadian-based mobility startup specialising in developing technology solutions for
- various use cases, including rentals, ticketing, payment, and fleet management. This
- position followed the sale of Isidore's company, Stabus, to Treepz in a million-dollar
- deal. Isidore also founded Westacpe, which provides a platform for consumers to
- compare financial services like insurance. Westcape’s assets were sold to a local
- microfinance institution in Ghana.
- Isidore's diverse background also includes a stint as the Director of Communications at
- IMANI Africa, one of Ghana's esteemed think tanks. He is a founding member of the
- Alliance for the Future of Healthcare in Africa (AFHA), which advocates for quality
- healthcare in Africa through resource mobilisation, stakeholder engagements and
- clinical research.
- As afirmbeliever in the catalytic power of education, Isidore runs book donations and
- scholarship to primary-JHS pupils, yearly on his birthday, which falls on the 4th
- Driven by a firm belief in the power of technology, Isidore is dedicated to scaling the
- impact of innovative business models that address Africa's most pressing challenges,
- while simultaneously advancing the frontiers of innovation through rigorous scientific
- research`,
+    title: 'Founder & CEO, RiviaCo | Technology Entrepreneur',
+    bio: ` Isidore Kpotufe is a seasoned technology entrepreneur with a proven track record in building ventures across finance, transportation, and healthcare in Africa. He is one of the few African tech founders to have successfully exited a startup in a million-dollar deal, following the acquisition of his mobility company, Stabus, by Canada-based Treepz.
+Currently, Isidore leads RiviaCo, a healthcare venture operating a network of smart clinics in Ghana that leverage technology to deliver personalized primary care. His previous roles include Chief Marketing Officer at Treepz and founder of Westcape, a financial services comparison platform.
+Isidore is a founding member of the Alliance for the Future of Healthcare in Africa (AFHA) and a passionate advocate for innovation, education, and healthcare equity. His work is driven by a commitment to solving Africa’s most pressing challenges through scalable, tech-enabled solutions.
+`,
     imageUrl: '/images/speakers/isidore-kpotufe.jpg',
-    category: 'Entrepreneurship'
+    category: 'Panel Member'
   },
    {
     id: 13,
@@ -270,14 +223,11 @@ Canada and Japan.`,
   {
     id: 14,
     name: 'Dr. George Ayee',
-    title: 'Organisation Change Enabling Expert',
+    title: 'Organizational Development & Change Management Expert | International Speaker',
     linkedin: 'https://www.linkedin.com/in/george-ayee/',
-    bio: `George Ayee is an organizational development/effectiveness, change enablement and business transformation consultant, transformational speaker, corporate trainer, facilitator, and certified coach. He worked with Price Waterhouse as Senior Consultant, Deloitte an Associate Consultant, Managing Consultant with Achievement Motivation Group in East Africa, International Director of Media Productions, Deputy Vice Chancellor of Kampala International University and Director of Kampala University in East Africa. 
-George has facilitated various meetings and provided consulting services to corporate bodies and organizations including International Conference for International Union for Conservation of Nature (IUCN), World Bank, Ecotrust, African Wildlife Foundation, Financial Institutions, The Ministry of Water, Lands and Environment, Oxfam, Kisoro District Local Administration, Care International, ActionAid, on-site and off-site meetings for Senior Leadership teams, Boards, and many others. George spends his time facilitating change and transformation programs, coaching leaders to work through change and transformation successfully. George has facilitated meetings in Canada, Australia, USA, England, Uganda, Kenya, Tanzania, Rwanda, Malawi, Zimbabwe, and Ghana. 
-George was the architect behind the setup of the Change Management and Business Transformation office at Husky Energy where he led the function and provided oversight for all change and business transformation initiatives. He also led the organizational change management function at the Calgary Board of Education specifically ensuring the successful rollout of the Enterprise Portal. 
-George is a Certified Professional Coach (CPC) Leadership Circle Profile 360, Collective Leadership Assessment, Lumina Leader and Lumina Spark, Certified Change Management Professional (CCMP), Master Change Management Professional (MCMP) and Prosci ADKAR Change Management.
-George provides leadership and oversight in Organizational Development in People Strategy and Partnerships at the City of Calgary, Alberta, Canada. He travels internationally to give talks on Transformation, Change, and Resilience. 
-George holds a Doctor of Business Administration degree from Australia; Master of Business Administration (MBA) from London, England; Bachelor of Science in International Business from USA.  
+    bio: `Dr. George Ayee is a seasoned consultant in organizational development, change enablement, and business transformation. With a global footprint spanning Canada, the UK, USA, Australia, and multiple African countries, he has led strategic initiatives for institutions such as Price Waterhouse, Deloitte, the World Bank, and the African Wildlife Foundation.
+George has held leadership roles in academia and corporate settings, including Deputy Vice Chancellor of Kampala International University and Director of Change Management at Husky Energy and the Calgary Board of Education. He currently provides strategic oversight in People Strategy and Partnerships at the City of Calgary, Alberta.
+A certified coach and change management professional, George holds a Doctor of Business Administration from Australia, an MBA from London, and a BSc in International Business from the USA. He is a sought-after speaker on transformation, resilience, and leadership across continents.
 `,
     imageUrl: '/images/speakers/dr-george-ayee.jpg',
     category: 'Speed Coach'
@@ -285,57 +235,19 @@ George holds a Doctor of Business Administration degree from Australia; Master o
   {
     id: 15,
     name: 'Laury-Georges-Lane',
-    title: 'Legal and Human Resources Executive',
+    title: 'CEO, LGL Consulting & Executive Advisory Group | Global HR & Mediation Expert',
     linkedin: 'https://www.linkedin.com/in/laury-georges-lane-21998917/',
-    bio: `Laury Georges-Lane, a former Human Resources executive and legal professional with 27 
-years of experience, is now at the helm of two consulting firms: LGL Consulting & Executive 
-Advisory Group, LLC, and its international subsidiary, LGL Consulting & Executive Advisory 
-Group - International. Over the course of her career, she has delivered impactful results 
-across multiple industries, including: 
-• Energy 
-• Government  
-• Healthcare 
-• International Business Trade & Development 
-• Non-Profit 
-Laury provides consultative and mediation services domestically and abroad, emphasizing 
-workforce development, leadership training, and HR policy matters.  She has served as an 
-expert HR panelist on topics including: 
-• International Trade in the Global Marketplace 
-• HR in the Artificial Intelligence era 
-• Post Secondary Training and Workforce Development 
-• Global HR: Executive People Services and its Impact 
-Laury continues to make an indelible impact on people and systems through her civic 
-contributions on both public and private sector boards, as well as her active involvement in 
-community service organizations. In both 2020 and 2021, she was honored by her city’s 
-Commission Board as a Women’s History Month Honoree. More recently, in 2025, the Southern 
-Region of Delta Sigma Theta Sorority, Incorporated recognized her globally for her contributions 
-to international awareness and involvement. 
-She has been prominently featured in multiple magazine publications, showcasing her 
-impact on business and philanthropy both domestically and internationally. 
-Laury’s philanthropic efforts extend far beyond the United States, reaching into West 
-Africa, where she has adopted the Village of Sipane in the Thies region near Dakar, 
-Senegal. Her mission focuses on championing education reform, bridging the gender 
-education gap, and addressing poverty and economic inequality to drive lasting, 
-transformative change. Laury has recently been appointed to the advisory board of the 
-Heritage and Cultural Society of Africa Foundation (HACSA-USA), where she supports 
-initiatives that advance STEM education, particularly technology, for girls and women 
-across Africa. HACSA was founded by Ambassador Johanna Svanikier, former Ghanaian 
-Ambassador to France and Portugal, and Permanent Delegate to UNESCO and La 
-Francophonie. 
-She holds degrees from the University of Florida, Nova Southeastern Shepard Broad 
-College of Law, Nova Southeastern H. Wayne Huizenga College of Business, 
-and an executive certification through the Harvard Extension School of Business. 
-Equally notable, she has earned her Florida Supreme Circuit Civil Mediator credentialing 
-that continues to allow her to contend for the best and align herself with excellence.  As a 
-Florida Supreme Court Mediator, Laury is retained to mitigate risk by helping foster an 
-increasingly collaborative work culture through mutual resolution.`,
+    bio: `Dr. Laury Georges-Lane is a seasoned HR executive, legal professional, and international mediator with over 27 years of experience across industries including energy, healthcare, government, and international trade. She leads LGL Consulting & Executive Advisory Group, LLC, and its international subsidiary, delivering strategic HR, leadership development, and mediation services globally.
+She has served as an expert panelist on topics such as HR in the AI era, global executive services, and workforce development. Her civic contributions span public and private boards, and she has been honored for her impact on international awareness and community service.
+Dr. Laury’s philanthropic work includes adopting a village in Senegal to champion education reform and gender equity. She also serves on the advisory board of the Heritage and Cultural Society of Africa Foundation (HACSA-USA), supporting STEM initiatives for girls and women.
+She holds degrees from the University of Florida, Nova Southeastern University, and Harvard Extension School, and is a certified Florida Supreme Court Civil Mediator. Her work continues to shape inclusive, collaborative, and high-performing organizational cultures across continents.`,
     imageUrl: '/images/speakers/laury-georges-lane.png',
     category: 'Keynote Speaker'
   },
   {
     id: 16,
     name: 'Anita Wiafe',
-    title: 'CEO, OML Africa',
+    title: 'CEO OML Africa | Executive Secretary of the eCommerce Association of Ghana',
     linkedin: 'https://www.linkedin.com/in/anita-wiafe-94bb115/',
     instagram: 'https://www.instagram.com/anitawiafe_/',
     facebook: 'https://web.facebook.com/anita.wiafeasinor',
@@ -353,7 +265,7 @@ Anita Wiafe’s work continues to shape the future of HR and organizational lead
   {
     id: 17,
     name: 'Deborah Asmah',
-    title: 'Co-Founder, Npontu Technologies',
+    title: 'Co-Founder & CEO, Npontu Technologies Ltd',
     linkedin: 'https://www.linkedin.com/in/deborah-asmah-cipm-8524585a/',
     bio: `Ms. Deborah Asmah is an expert in AI, digital governance, privacy, and compliance, 
 whose contributions have significantly shaped Ghana's digital landscape. Her innovative 
@@ -394,7 +306,7 @@ Summit, 2024, Kigali, Rwanda.
   {
     id: 19,
     name: 'Prof. E. Afful-Dadzie',
-    title: 'Associate Professor, University of Ghana Business School',
+    title: 'Associate Professor, University of Ghana Business School | Lead Data Scientist at MData Consult',
     linkedin: 'https://www.linkedin.com/in/eric-afful-dadzie-b8748338/',
     bio: `Prof. Eric Afful-Dadzie is a distinguished academic and consultant specializing in Decision Sciences, Business Intelligence, Analytics, and Information Systems. With a deep-seated passion for leveraging data-driven methodologies to solve complex organizational challenges, he has established himself as a leading authority in the application of artificial intelligence (AI), machine learning (ML), and data analytics to enhance decision-making processes across industries.
 Prof. E. Afful-Dadzie was a Queen Elizabeth II fellow at McGill University, Canada and the 2016/2017 most promising researcher at University of Ghana Business School. With over 50 research articles in top tier journals such as Government Information Quarterly, International Journal of Information Management, Management Decision, Applied Energy, Applied artificial Intelligence, Quality & Quantity, Kybernetes, Multi-Criteria Decision Analysis among others, Prof. E. Afful-Dadzie continues to make significant contributions to the fields of Decision Sciences and Information Systems. He has supervised and mentored numerous postgraduate students in PhD and MPhil works. Some of his mentees have become lecturers in public universities in Ghana.
@@ -408,7 +320,7 @@ Prof. Afful-Dadzie is a regular speaker at international conferences and industr
     id: 20,
     name: 'Dr. Theo Tackie',
     linkedin: 'https://www.linkedin.com/in/theo-welbeck-tackie-dm-odc-409a84199/',
-    title: 'Author/Transformational Speaker/Certified Life Empoerment Coach',
+    title: 'Change Management Consultant | Growth Strategist',
     bio:`Change Expert/Senior Scrum Master with over 10+ years of top-notch knowledge and experience in facilitation and coaching Agile Team, Skilled in stimulating teams to meet deadlines on projects. Ready for a new scrum-oriented role with a progressive organization that will challenge my knowledge.`,
     imageUrl: '/images/speakers/theo-tackie.jpg',
     category: 'Panel Member'
@@ -416,52 +328,14 @@ Prof. Afful-Dadzie is a regular speaker at international conferences and industr
   {
     id: 21,
     name: 'Margaret Jackson',
-    title: 'Managing Partner, Rainbow Consult',
+    title: 'Managing Partner, Rainbow Consult | Board Chair, HR Network Africa',
     linkedin: 'https://www.linkedin.com/in/margaret-jackson/',
     instagram: 'https://www.instagram.com/margaret_jacksongh/',
     facebook: 'https://web.facebook.com/margaret.jackson.7946',
-    bio: `Margaret Jackson, FLPI is the Managing Partner of Rainbow 
-Consult. She is a Fellow of the Learning and Performance 
-Institute, UK.  A Member of  the Aspen Network of Development 
-Entrepreneurs (ANDE), Society for Human Resource 
-Management, USA and a member of Institute of Human 
-Resource Management, Ghana. She is also a member of the core 
-faculty of the West African Civil Society Institute. Margaret is an 
-accomplished Management Consultant and Human Resource 
-Practitioner. She has superior skills in the areas of Research and 
-Compliance, Adult Learning, and Instructional Design. Margaret 
-has proven herself in institutional development and has 
-exceptional research, training, facilitation and public speaking 
-skills. 
-She is a Learning and Performance Institute (LPI) Expert 
-Facilitator, Face-to Face and Online Facilitator, Certified Online 
-Learning Designer, as well as a Certified Assessor in addition to being an International Finance Corporation 
-(IFC) Certified Master Trainer, IFC Master Trainer in Designing and Developing for Learning and 
-Instructional Designer. She has designed training manuals for organisations across Africa and the Middle 
-East and has led teams to develop e-learning courses for organisations. She has led various research 
-projects for organisations like SNV Netherlands Organisation, IFC, Dalex Finance and Leasing Company, and 
-has trained over five hundred (500) trainers under the IFC program. She is also a provisional anti-corruption 
-compliance trainer for Center for International Private Enterprise (CIPE).  She has facilitated retreats for 
-numerous organisations including SNV, West Africa Civil Society Institute (WACSI), FORD Foundation, 
-Amnesty International, GRIDCO, NSIA Insurance, DALEX Finance and Leasing Company among others. 
-Margaret is a resourceful and open-minded leader with an optimistic outlook. She has led various 
-successful SME capacity building projects in Ghana, Nigeria, Liberia, Sierra Leone, South Sudan, Guinea, 
-Senegal and Mozambique, and has trained over 500 heads of SMEs over the years. Her work in post-Ebola 
-Sierra Leone and Liberia has received critical commendation from the IFC. 
-Margaret Jackson collaborated with Fidelity Bank to set up the SME Business Academy. This SME Academy 
-thrived, and Margaret once again teamed up with Fidelity Bank and SNV to create the Possible to Profitable 
-(P2P) Business Academy for SMEs in the Water and Sanitation Sector. She also teamed up with UNICEF to 
-set up a Micro Small and Medium Enterprises (MSMEs) Academy for the Water and Sanitation Sector. 
-Margaret is passionate about the development of women and has been instrumental in the development 
-of Financial Literacy programmes impacting over 1,500 illiterate and semi-illiterate women in Ghana. She 
-Margaret Jackson - Personal Profile 
-also led the team that created, designed courses for and executed the Access Bank Mini -MBA Program. 
-The Mini-MBA equipped 50 women entrepreneurs in Nigeria with business skills to scale up their 
-businesses. She also led the team that designed a course o mentorship, and a handbook for mentors for 
-the Millennium Development Agency’s (MiDA) Ghana Power Compact Internship and Mentoring 
-Programme. This programme seeks to provide mentorship opportunities for young girls in STEM. A prolific 
-public speaker, Margaret is a coach and mentor on the Mandela Washington Fellowship and Moremi 
-Initiative programs.  She loves to coach and mentor young women.`,
+    bio: `Margaret Jackson is a seasoned Learning & Development (L&D) strategist, credentialed coach, and organizational transformation expert with over 30 years of experience. She is a Fellow of the Learning and Performance Institute (LPI), an Associate Certified Coach (ACC) with the International Coaching Federation (ICF), and a certified instructional designer and master trainer with the IFC.
+Margaret has led impactful initiatives across Africa, including the UNDP Market Women Financial Literacy Project and the Access Bank Mini-MBA, empowering thousands of women entrepreneurs. Her work spans crisis response, post-Ebola recovery, and SME capacity building in collaboration with global institutions like the IFC and Millennium Development Authority.
+She serves on advisory boards for LPI UK and ANDE West Africa, and chairs both HR Network Africa and Leaders Fort Institute. A passionate advocate for women’s development, Margaret is known for her rapid-response learning interventions, mentorship programs, and strategic coaching.
+Outside of work, she enjoys gardening and swimming, drawing inspiration from her family. Margaret brings purpose, care, and excellence to every engagement, whether coaching a team, designing a program, or speaking on global platforms.`,
     imageUrl: '/images/speakers/MJ-Headshot.png',
     category: 'Keynote Speaker'
   },
@@ -477,70 +351,19 @@ Initiative programs.  She loves to coach and mentor young women.`,
   {
     id: 24,
     name: 'Yvonne Ohui MacCarthy',
-    title: 'Customer Service Consultant',
+    title: 'Vice Chairman, Public Services Commission | HR Transformation Expert',
     facebook: 'https://web.facebook.com/yvonneomaccarthy',
     linkedin: 'https://www.linkedin.com/in/yvonne-ohui-maccarthy-13aa2057/',
     twitter: 'https://twitter.com/YvonneMcCarthy',
-    bio: `Meet Yvonne Ohui MacCarthy, CSP, a visionary leader and the 
-driving force behind the Institute of Customer Service Professionals 
-(ICSP), where she serves as the Founder and Head Consultant. With 
-an unwavering commitment to service excellence, Yvonne is also 
-the esteemed Chair of both the West African Association of 
-Customer Service Professionals (WAACSP) and the University of 
-Ghana Medical Center (UGMC) Client Service Committee. She is 
-also a board member of Electrochem Ghana. Her expertise is 
-further recognized as an Advisory Board Member of the Customer 
-Experience Evolution Africa (CEEA). 
-A trailblazer in her field, Yvonne holds a prestigious Customer Service Professional (CSP) qualification from 
-the London Institute of Banking and Finance (LIBF). Her journey from a seasoned banker, authorized by 
-the FCA in the UK and working with leading banks like Natwest and Santander, to a luminary in customer 
-service, is nothing short of inspiring. Yvonne’s academic accolades include banking qualifications from the 
-Chartered Insurance Institute (CII) UK, the Professional Award in Training The Trainer from the London 
-Institute of Public Speaking and an award for the Advanced Training The Trainer from the Institute of 
-Leadership and Management (ILM) UK. She is also an alumna of the Harvard Business School Executive 
-Education. 
-With over 15 years experience as a customer service consultant, Yvonne’s passion for education extends to 
-her role as a top-rated Udemy instructor, where she creates impactful online customer service courses for a 
-global audience. Her expertise has empowered individuals and organisation's across Ghana, Sierra Leone, 
-Liberia, Eswatini, UK, Côte D’Ivoire, USA, South Africa,  transforming customer service standards and 
-practices.  As the Board Chair for WAACSP, Yvonne is at the forefront of developing a customer service 
-blueprint for West Africa and, eventually, the entire African continent. Her vision for ICSP is to revolutionise 
-the customer service culture among businesses and introduce aspiring professionals to the field, ensuring 
-a robust customer service foundation across the region. 
-Yvonne’s dedication to enhancing customer service extends beyond her professional roles. As an advocate 
-for online training, she has launched www.icspcourses.com, a platform dedicated to virtual customer 
-service education. Her influence as a public speaker is profound, addressing key topics like education, 
-personal development, and customer service to empower the youth. 
-Yvonne is currently the CX leader for 2024 awarded by the CX 
-Transformation Summit. Recognised for her contributions, 
-Yvonne was awarded by CXPGhana for her unflinching efforts in 
-customer service in 2021. She was a 40under40 nominee under 
-education for two consecutive years and was named the 
-Customer Service Consultant of the Year for 2018 - 2019 by the 
-Ghana Customer Service Awards. Her achievements also include 
-induction into the Ada Hall of Fame and receiving the Special 
-Gems Honors in 2020. Her work in customer service also gained 
-her an award in Eswatini in 2020. She is the creator and 
-organiser of the Ghana Customer Service Index (GCSI),  the only 
-data collection, analysis and publication of customer service 
-performance for 11 different sectors in ghana (www.ghanacsi.org). Because of the success of the GCSI, the 
-Nigeria Customer Service Index has also been created and launched.  
-She is trusted and has consulted and trained for companies such as Versus Bank (Cote D’Ivoire), Access 
-Bank, Janel, Hollard, UGMC, CFAO, KPMG, Fidelity Bank, Orca Deco, British Council, NYEA, BROLL, 
-Metropolitan Pensions Trust, Sandbox, Groupe Sebastien, Enterprise Life, Transitions Funeral Home, DVLA, 
-HairSenta, Enterprise Group to mention a few.  
-The  creation of the Ghana Customer Service Index (GCSI) underscore her commitment to elevating 
-customer service standards across Africa. 
-Yvonne MacCarthy is not just a consultant, she is a thought leader determined to position Africa at the 
-pinnacle of global customer service excellence.  Yvonne MacCarthy is not just shaping customer service in 
-Africa; she’s setting a global benchmark.`,
+    bio: `Yvonne is a leading customer service strategist with over 15 years of experience in transforming service cultures across Africa. She is the Chair of the West African Association of Customer Service Professionals (WAACSP), Board Member of Electrochem Ghana, and Advisory Board Member of Customer Experience Evolution Africa (CEEA). A certified Customer Service Professional (CSP) from the London Institute of Banking and Finance, Yvonne’s career spans banking, consulting, and education.
+She is the creator of the Ghana Customer Service Index (GCSI) and has trained and consulted for top organizations including Access Bank, KPMG, Fidelity Bank, and UGMC. A Harvard Business School alumna and award-winning CX leader, Yvonne is passionate about elevating customer service standards and empowering professionals through education and advocacy.`,
     imageUrl: '/images/speakers/yvonne-ohui-mccarthy.jpg',
     category: 'Masterclass Trainer'
   },
   {
     id: 25,
     name: 'Emmaline Datey',
-    title: 'CEO, ICS Africa',
+    title: 'Maxwell Leadership Certified Coach | HR Strategist | CEO, ICS Africa',
     linkedin: 'https://www.linkedin.com/in/emmaline-datey-69083547/',
     facebook: 'https://web.facebook.com/EmaDateyOfficial',
     instagram: 'https://www.instagram.com/emativator_gh/',
@@ -555,23 +378,20 @@ Africa; she’s setting a global benchmark.`,
   {
     id: 27,
     name: 'Delasie Dogbey',
-    title: 'Life Coach - Mental Health and well being Advocate, Author',
+    title: 'Mental Health Advocate | Entrepreneur | Rotary Chapter President | Relationships Strategist',
     linkedin: 'https://www.linkedin.com/in/delasie-dogbey-69371651/',
     instagram: 'https://www.instagram.com/togbuigadelasie/',
     facebook: 'https://web.facebook.com/torgbi.dogbey',
-    bio: `Delasie Dogbey is a dynamic Relationship Strategist, Life Coach, Business Development Coach, Author, Ghostwriter, and Project & Marketing Strategist. He holds a Master’s degree in Business Administration and has collaborated with some of Ghana’s most prominent brands, including Ghana Telecom, Vodafone, TV3 Network, SIC Insurance, UT Group, FirstBanc Financial Services, Allianz Insurance International, Africa SME Organization, and Enterprise Group.
-A passionate advocate for personal and professional growth, Delasie has spearheaded numerous trainings and seminars on topics such as public speaking, authorpreneurship, confidence building, business networking, mindset transformation, purpose discovery, and emotional wellness. He is a nominee for the prestigious 40 Under 40 Awards for emerging leaders and currently serves as President of the Rotary Club of Accra-Legon District.
-As a prolific writer, Delasie is the author of several inspiring books, including Allow God to Be God—Our Testimony, It Is Well, Not Easily Broken, and Depression: Don’t Suffer in Silence. His thought-provoking articles have appeared in the Business and Financial Times (B&FT) and Rotary District Magazine, and he has been featured on the cover of FGBMFI Voice Magazine. He also serves as an expert panelist on radio and television platforms.
-Delasie is the founder and CEO of the Ladies War Room Organization, an initiative dedicated to empowering women to become the best version of themselves through support for maternal health, emotional wellness, and the cultivation of meaningful relationships. Through this platform, he has provided over 200 women and young girls with free counseling and mental health support.
-Driven by a mission to inspire positive change, Delasie is widely recognized as a motivational speaker, idea generator, self-starter, and compassionate leader who believes in service that transforms lives.
-`,
+    bio: `Delasie Daniel Dogbey is a dynamic Relationship Strategist, Life Coach, Business Development Coach, and Author with a Master’s degree in Business Administration. He has worked with leading Ghanaian brands such as Vodafone, TV3, SIC Insurance, and Enterprise Group, and has led impactful seminars on public speaking, emotional wellness, and business networking.
+Currently serving as President of the Rotary Club of Accra-Legon, Delasie is also the founder and CEO of the Ladies War Room Organization, which empowers women through maternal health support and mental wellness initiatives. A nominee for the 40 Under 40 Awards, he has authored several inspirational books including books that address employee mental health and wellbeing in organizations and contributes regularly to media platforms as a panelist and columnist.
+Delasie is widely recognized for his motivational leadership, commitment to service, and passion for helping individuals and organizations unlock their full potential.`,
     imageUrl: '/images/speakers/Delassie-Dogbe.jpg',
     category: 'Panel Member'
   },
   {
     id: 28,
     name: 'Patience Osekre',
-    title: 'Managing Director, Supreme Healthcare Management Services',
+    title: 'Managing Director, Supreme Healthcare Management Services | Licensed Psychotherapist',
     linkedin: 'https://www.linkedin.com/in/patience-osekre-b874888b/',
     facebook: '',
     instagram: 'https://www.instagram.com/patience.osekre.therapist/',
@@ -615,40 +435,23 @@ UK and a registered member of HCPC (Health &Care Professionals Council) UK.`,
   {
     id: 22,
     name: 'Dr. Stella Agyenim-Boateng',
-    title: 'Vice Chairman. Public Services Commission',
+    title: 'Vice Chairman, Public Services Commission | HR Transformation Expert',
     instagram: 'https://www.instagram.com/drstellaab/',
     twitter: 'https://x.com/drstellaab',
     facebook: 'https://web.facebook.com/irenestella.agyenimboateng',
     linkedin: 'https://www.linkedin.com/in/dr-mrs-irene-stella-agyenim-boateng-dba-d-litt-hc-mabr-mba-hrm-19840018b/',
-    bio: `Dr. (Mrs.) Irene Stella Agyenim-Boateng is a distinguished Ghanaian human resource management expert, transformational leader, and public sector executive with over three decades of experience spanning the education, telecommunications, insurance, consultancy, and energy sectors.
-Renowned for her visionary leadership and people-centered approach, Dr. Agyenim-Boateng has held several high-impact roles across both public and private institutions, consistently driving organizational transformation, strategic growth, and operational excellence.
-Key Roles & Achievements
-•	Current Vice Chairman, Public Services Commission of Ghana (appointed October 2023)
-•	Former Deputy Chief Executive (Services), Volta River Authority (VRA) – led HR, legal, real estate, corporate affairs, and more
-•	HR Director at Vodafone Ghana, Ghana Telecom, and GLICO Group
-•	Strategic Advisor to the CEO of VRA post-retirement, contributing to executive leadership and institutional development
-Professional Expertise
-Dr. Agyenim-Boateng is a C-suite HR executive with senior leadership and board-level experience across multinational corporations and public institutions. Her expertise includes:
-•	Strategy formulation & execution
-•	Labour-union management, employment law, and international labour standards
-•	Active engagement with the International Labour Organization (ILO) and the Ghana Employers’ Association (GEA)
-•	Recruitment, talent management, diversity & inclusion
-•	Business partnering, development & relief management
-•	Learning & development, stakeholder engagement, and performance management
-•	Reward, compensation & recognition systems
-•	Property & facilities management, fleet operations
-•	Occupational health, safety & employee wellbeing
-•	Event coordination, crisis communication, and organizational development
-•	Security operations, school administration, negotiation, and policy implementation
-Leadership Style
-Dr. Agyenim-Boateng is celebrated for her affable, approachable, and people-centered leadership, paired with a structured, diligent, and results-oriented mindset. Her ability to navigate complex organizational landscapes with clarity and compassion has made her a trusted voice in HR transformation and public sector reform.`,
+    bio: `Dr. Stella Agyenim-Boateng is a distinguished C-suite executive and transformational HR leader with extensive experience across the public and private sectors. She currently serves as Vice Chairman of the Public Services Commission (PSC) and has held senior roles including Deputy Chief Executive (Services) and Director of Human Resources at the Volta River Authority (VRA), as well as HR Director at Vodafone Ghana and Ghana Telecom.
+Her career spans industries such as education, telecommunications, insurance, energy, and consultancy. Known for her people-centered leadership and strategic vision, Dr. Stella has led successful organizational transformations, structural realignments, and innovation programs that have repositioned institutions for performance and cultural agility.
+She holds a Doctor of Business Administration from the Swiss Business School, an LLM in Labour Law, and multiple postgraduate qualifications in public administration, business research, and dispute resolution. She is a Fellow of CIHRMP, IoD Ghana, and CILG Ghana, and serves on several boards and committees.
+Dr. Stella is also an author, mentor, and public speaker, passionate about career development, leadership, and supporting marginalized communities. Her book, 100 Career Nuggets – Keeping It Punchy, reflects her commitment to empowering professionals with practical insights for success.
+`,
     imageUrl: '/images/speakers/stella-agyenim-boateng.jpg',
     category: 'Keynote Speaker'
   },
   {
     id: 29,
     name: 'Dr.Francis Eduku',
-    title: 'CEO,CIHRM',
+    title: 'Chief Executive Officer, Chartered Institute of Human Resource Management, Ghana (CIHRM)',
     linkedin: 'https://www.linkedin.com/in/feduku-b1b817b4/',
     twitter: '',
     bio: `Dr. Francis Eduku is the Chief Executive Officer of the Chartered Institute of Human Resource Management, Ghana (CIHRM), and has more than two decades of experience in HR leadership and organizational effectiveness. He specializes in strategic human resource management, culture and transformation, and organizational resilience. He has worked extensively with multinational gold mining firms such as Gold Fields and Golden Star Resources and occupied various executive roles, including Vice President of Human Resources and Corporate Affairs, Vice President of Human Resources, and Acting Vice President of Sustainable Development. 
@@ -671,6 +474,15 @@ Giorgia brings to every space a powerful blend of operational excellence, empath
     imageUrl: '/images/speakers/giorgia-manfreda-appiah.jpg',
     category: 'Panel Member'
   },
+ {
+      id: 35,
+      name: 'Arthi Rabikrisson',
+      title: 'Founder and Managing Director of Prerna Advisory',
+      bio: 'Arthi Rabikrisson is the Founder and Managing Director of Prerna Advisory, based in South Africa. The firm specializes in neuroscience-based coaching and assessment for individuals, teams, and corporates; strategic business consulting for SMEs; and capital introduction to alternative funding sources, primarily from UHNWIs, family offices, DFIs, and SWFs. Arthi is a multi-global award-winning coach and strategy consultant, recognized as Top Leadership Coach of the Year 2023 by the International Association of Top Professionals. Her firm has been awarded Best Corporate Coaching & Strategic Advisory Firm of The Year - South Africa in The International Elite Magazine Global 100 awards for multiple years, including 2025. She is also an Amazon best-selling author, podcaster, keynote speaker, and independent Non-executive director. Arthi holds accreditations and certifications from the highest coaching bodies globally, including the ICF and EMCC. She contributes to thought leadership as a member of the Forbes Coaches Council and the Harvard Business Review Advisory Council. ',
+      imageUrl: '/images/speakers/HR-network.png',
+      category: 'Panel Member',
+    },
+
   {
     id: 31,
     name: 'Grace Krobo-Edusei',
@@ -722,32 +534,14 @@ Cynthis is a member of several laudable networks including but not limited to th
 Overall, Cynthia has proven herself to be of value to organizations she has worked through her will to improve, implementation of innovative solutions and interpersonal skills. She is a woman rising in the C-Suite level proving to women that the highest position in any organization is also available for women to venture into. Furthermore, she has proven an asset to business organizations through her leadership and visionary skills as well as to her fellow HR practitioners as she has displayed through the work of the HR Network and through her coaching and mentoring programs.
 .`,
     imageUrl: '/images/speakers/cynthia.jpg',
-    category: 'Guest Speaker'
+    category: 'Convener'
   },
-   {
-      id: 33,
-      name: 'Paul Opoku',
-      title: '????',
-      bio: `????.`,
-      imageUrl: '/images/speakers/paul.jpg',
-      category: 'Speed Coach'
-    },
+  
     {
       id: 34,
       name: 'Eunice Dede Tornyi',
-      title: 'Public Relations Professional',
-      bio: `Format 1
-
-Eunice Dede Tornyi is the award winning host of the African Women’s Voices Show with 17 years of experience in TV presenting and production.
-
-She is a public relations professional with Global Media Alliance and Business lead for E-productions, a first class production company in Ghana, and a member of the Global Media Alliance subsidiaries.
-
-She has a Masters in International Relations & Diplomacy and was former executive director of the Ghana Nigeria Business Council steering committee. She is currently the president of the  International Relations & Diplomacy Network Ghana and a member of its governing council 
-
-Eunice Tornyi is also a stage actress, professional Event MC, voice actor/voice over artist & and voice coach who speaks fluent English, Fante, and Igbo, with a working knowledge of French and Yoruba
- 
-With her extensive experience and diverse skill set, Eunice Dede Tornyi is a respected figure in Media, Diplomacy and Public Relations
-`,
+      title: 'Award-Winning Media Professional | Diplomacy Expert | Host, African Women’s Voices Show',
+      bio: `Eunice Dede Tornyi is a seasoned media personality with over 17 years of experience in TV presenting and production. She is the celebrated host of the African Women’s Voices Show and a respected diplomacy expert. As President of the International Relations & Diplomacy Network Ghana (IRDN Ghana), Eunice brings charisma, professionalism, and a deep understanding of public engagement to every stage she graces. Fluent in multiple languages and skilled in public relations, voice acting, and event hosting, she is a dynamic force in both media and international relations.`,
       imageUrl: '/images/speakers/co-mc.jpg',
       category: 'Co M.C'
     },

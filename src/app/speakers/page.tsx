@@ -44,7 +44,7 @@ const speakersByCategory = {
     {
       id: 5,
       name: 'ERIC KOJO VAN-ESS KURANCHIE',
-      title: 'Strategic HR Leader & Group Head of HR, Bank of Africa Ghana',
+      title: 'Group Head, HR & Administration, Bank of Africa Ghana | Strategic HR Leader | Corporate MC & HR Educator',
       bio: 'Eric Kojo is a strategic HR expert with over 15 years experience in Talent and Change Management. He leads HR strategy at Bank of Africa Ghana.',
       imageUrl: '/images/speakers/ERIC-KOJO-VAN-ESS-KURANCHIE-1.jpg',
       category: 'M.C'
@@ -52,7 +52,7 @@ const speakersByCategory = {
     {
       id: 34,
       name: 'Eunice Dede Tornyi',
-      title: 'Public Relations Professional',
+      title: 'Award-Winning Media Professional | Diplomacy Expert | Host, African Women’s Voices Show',
       bio: 'Eunice Dede Tornyi is the award winning host of the African Women&apos;s Voices Show with 17 years of experience in TV presenting and production.',
       imageUrl: '/images/speakers/co-mc.jpg',
       category: 'Co M.C'
@@ -62,7 +62,7 @@ const speakersByCategory = {
     {
       id: 10,
       name: 'Dr. Cheryl Arutt',
-      title: 'Clinical & Forensic Psychologist',
+      title: 'Clinical & Forensic Psychologist | Trauma & Resilience Expert | TEDx Speaker | Certified EMDRIA Consultant ',
       bio: 'Dr. Cheryl Arutt is a licensed clinical & forensic psychologist, TEDx speaker, media consultant and Certified EMDRIA Therapist & Consultant based in Los Angeles.',
       imageUrl: '/images/speakers/Dr.-Cheryl-Arutt.jpg',
       category: 'Plenary Speaker'
@@ -70,7 +70,7 @@ const speakersByCategory = {
     {
       id: 22,
       name: 'Dr. Stella Agyenim-Boateng',
-      title: 'Vice Chairman, Public Services Commission',
+      title: 'Vice Chairman, Public Services Commission | HR Transformation Expert',
       bio: 'Dr. (Mrs.) Irene Stella Agyenim-Boateng is a distinguished Ghanaian human resource management expert, transformational leader, and public sector executive with over three decades of experience spanning the education, telecommunications, insurance, consultancy, and energy sectors.',
       imageUrl: '/images/speakers/stella-agyenim-boateng.jpg',
       category: 'Keynote Speaker'
@@ -78,7 +78,7 @@ const speakersByCategory = {
     {
       id: 21,
       name: 'Margaret Jackson',
-      title: 'Managing Partner, Rainbow Consult',
+      title: 'Managing Partner, Rainbow Consult | Board Chair, HR Network Africa',
       bio: 'Margaret Jackson, FLPI is the Managing Partner of Rainbow Consult. She is a Fellow of the Learning and Performance Institute with extensive experience in HR leadership.',
       imageUrl: '/images/speakers/MJ-Headshot.png',
       category: 'Keynote Speaker'
@@ -86,7 +86,7 @@ const speakersByCategory = {
     {
       id: 15,
       name: 'Laury-Georges-Lane',
-      title: 'Legal and Human Resources Executive',
+      title: 'CEO, LGL Consulting & Executive Advisory Group | Global HR & Mediation Expert',
       bio: 'Laury Georges-Lane, a former Human Resources executive and legal professional with 27 years of experience, is now at the helm of two consulting firms specializing in HR advisory services.',
       imageUrl: '/images/speakers/laury-georges-lane.png',
       category: 'Keynote Speaker'
@@ -101,10 +101,20 @@ const speakersByCategory = {
       imageUrl: '/images/speakers/giorgia-manfreda-appiah.jpg',
       category: 'Panel Member'
     },
+     {
+      id: 34,
+      name: 'Arthi Rabikrisson',
+      title: 'Founder and Managing Director of Prerna Advisory',
+      bio: 'Arthi Rabikrisson is the Founder and Managing Director of Prerna Advisory, based in South Africa. The firm specializes in neuroscience-based coaching and assessment for individuals, teams, and corporates; strategic business consulting for SMEs; ',
+      imageUrl: '/images/speakers/HR-network.png',
+
+      category: 'Panel Member',
+    },
+
     {
       id: 6,
       name: 'Commander James Emmanuel Kwegyir Aggrey-Orleans',
-      title: 'Trauma & Orthopaedic Surgeon',
+      title: 'Trauma & Orthopaedic Surgeon | Ghana Navy | UN Peacekeeping Medical Expert',
       bio: 'Commander James Emmanuel Kwegyir Aggrey-Orleans is a senior officer of the Ghana Navy and serves as a Trauma and Orthopaedic surgeon.',
       imageUrl: '/images/speakers/healthline.jpg',
       category: 'Panel Member'
@@ -112,7 +122,7 @@ const speakersByCategory = {
     {
       id: 7,
       name: 'Rosie Ebe-Arthur',
-      title: 'HR Consultant & Board Director',
+      title: 'Founder, RE-HR | Board Director, MTN Ghana, FirstBank Ghana & Petra Trust',
       bio: 'Rosie Ebe-Arthur is a Chartered Fellow of the Chartered Institute of Personnel and Development (CIPD) UK and Board Director on several boards in Ghana.',
       imageUrl: '/images/speakers/Rosie Ebe-Arthur.jpg',
       category: 'Panel Member'
@@ -128,7 +138,7 @@ const speakersByCategory = {
     {
       id: 16,
       name: 'Anita Wiafe',
-      title: 'CEO, OML Africa',
+      title: 'CEO OML Africa | Executive Secretary of the eCommerce Association of Ghana',
       bio: 'Anita Wiafe is a seasoned expert in strategic human resources management and organizational development, with over three decades of consulting experience.',
       imageUrl: '/images/speakers/anita-wiafe.jpg',
       category: 'Panel Member'
@@ -136,7 +146,7 @@ const speakersByCategory = {
     {
       id: 17,
       name: 'Deborah Asmah',
-      title: 'Co-Founder, Npontu Technologies',
+      title: 'Co-Founder & CEO, Npontu Technologies Ltd',
       bio: 'Ms. Deborah Asmah is an expert in AI, digital governance, privacy, and compliance, whose contributions have significantly shaped Ghana&apos;s digital landscape.',
       imageUrl: '/images/speakers/debora-asmah.jpg',
       category: 'Panel Member'
@@ -144,7 +154,7 @@ const speakersByCategory = {
     {
       id: 19,
       name: 'Prof. E. Afful-Dadzie',
-      title: 'Associate Professor, University of Ghana Business School',
+      title: 'Associate Professor, University of Ghana Business School | Lead Data Scientist at MData Consult',
       bio: 'Prof. Eric Afful-Dadzie is a distinguished academic and consultant specializing in Decision Sciences, Business Intelligence, Analytics, and Information Systems.',
       imageUrl: '/images/speakers/afful-dadzie.jpg',
       category: 'Panel Member'
@@ -152,7 +162,7 @@ const speakersByCategory = {
     {
       id: 20,
       name: 'Dr. Theo Tackie',
-      title: 'Author/Transformational Speaker/Certified Life Empowerment Coach',
+      title: 'Change Management Consultant | Growth Strategist',
       bio: 'Change Expert/Senior Scrum Master with over 10+ years of top-notch knowledge and experience in facilitation and coaching Agile Teams.',
       imageUrl: '/images/speakers/theo-tackie.jpg',
       category: 'Panel Member'
@@ -160,7 +170,7 @@ const speakersByCategory = {
     {
       id: 27,
       name: 'Delasi Dogbe',
-      title: 'Life Coach - Mental Health and Wellbeing Advocate, Author',
+      title: 'Mental Health Advocate | Entrepreneur | Rotary Chapter President | Relationships Strategist',
       bio: 'Delasie Dogbey is a dynamic Relationship Strategist, Life Coach, Business Development Coach, Author, Ghostwriter, and Project & Marketing Strategist.',
       imageUrl: '/images/speakers/Delassie-Dogbe.jpg',
       category: 'Panel Member'
@@ -168,7 +178,7 @@ const speakersByCategory = {
     {
       id: 12,
       name: 'Isidore Kpotufe',
-      title: 'Founder and CEO, RiviaCo (Rivia)',
+      title: 'Founder & CEO, RiviaCo | Technology Entrepreneur',
       bio: 'Isidore is a technology entrepreneur with a track record in building ventures across finance, transportation, and healthcare in Africa.',
       imageUrl: '/images/speakers/isidore-kpotufe.jpg',
       category: 'Panel Member'
@@ -176,7 +186,7 @@ const speakersByCategory = {
     {
       id: 28,
       name: 'Patience Osekre',
-      title: 'Managing Director, Supreme Healthcare Management Services',
+      title: 'Managing Director, Supreme Healthcare Management Services | Licensed Psychotherapist',
       bio: 'Patience Osekre is a Consultant Psychotherapist and a Wellness Expert trained in the UK with a wealth of experience in providing Health and Well-being Services.',
       imageUrl: '/images/speakers/patience-osekre.jpg',
       category: 'Panel Member'
@@ -184,7 +194,7 @@ const speakersByCategory = {
     {
       id: 29,
       name: 'Dr. Francis Eduku',
-      title: 'CEO, CIHRM',
+      title: 'Chief Executive Officer, Chartered Institute of Human Resource Management, Ghana (CIHRM)',
       bio: 'Dr. Francis Eduku is the Chief Executive Officer of the Chartered Institute of Human Resource Management, Ghana (CIHRM), with more than two decades of experience in HR leadership.',
       imageUrl: '/images/speakers/francis-eduku.jpg',
       category: 'Panel Member'
@@ -210,7 +220,7 @@ const speakersByCategory = {
     {
       id: 9,
       name: 'Yvonne Wiredu-Akpabli',
-      title: 'HR Consultant/ Corporate Trainer-SHRM',
+      title: 'Vice Chairman, Public Services Commission | HR Transformation Expert',
       bio: 'Yvonne is a highly trained HR professional with over 16 years of experience in the practice of managing a broad spectrum of human resources programs and services.',
       imageUrl: '/images/speakers/Yvone-Wiredu.jpg',
       category: 'Masterclass Trainer'
@@ -218,7 +228,7 @@ const speakersByCategory = {
     {
       id: 24,
       name: 'Yvonne Ohui MacCarthy',
-      title: 'CEO, Institute of Customer Service Professionals',
+      title: 'Founder & Head Consultant, Institute of Customer Service Professionals (ICSP)',
       bio: 'Yvonne Ohui MacCarthy is a visionary leader and the driving force behind the Institute of Customer Service Professionals (ICSP).',
       imageUrl: '/images/speakers/yvonne-ohui-mccarthy.jpg',
       category: 'Masterclass Trainer'
@@ -228,7 +238,7 @@ const speakersByCategory = {
     {
       id: 3,
       name: 'Kojo Amissah',
-      title: 'Strategy & Performance Consultant - CITAM',
+      title: 'Strategy & Performance Consultant | Lead Instructor, CITAM',
       bio: 'Kojo Amissah is a Strategy and Performance Consultant at CITAM, where he leads high-impact training, consulting, and staffing services.',
       imageUrl: '/images/speakers/Mr-Kojo-Amissah.jpg',
       category: 'Panel Moderator'
@@ -244,7 +254,7 @@ const speakersByCategory = {
     {
       id: 11,
       name: 'Mary Bennett',
-      title: 'Learning and Organizational Transition Manager, Pecan Energies',
+      title: 'Organizational Development | Learning Specialist',
       bio: 'Mary Bennett is a globally experienced professional specializing in Organizational Development, Learning & Development, and Human Resource Management.',
       imageUrl: '/images/speakers/Mary-Bennett.jpg',
       category: 'Panel Moderator'
@@ -254,7 +264,7 @@ const speakersByCategory = {
     {
       id: 25,
       name: 'Emmaline Datey',
-      title: 'CEO, ICS Africa',
+      title: 'Maxwell Leadership Certified Coach | HR Strategist | CEO, ICS Africa',
       bio: 'Emmaline Datey is a Public Speaker, Brands Influencer, HR Strategist, Leadership and Personal Development Coach with up to 15 years&apos; of Human Resource general practice.',
       imageUrl: '/images/speakers/emmaline-datey.jpg',
       category: 'Speed Coach'
@@ -270,7 +280,7 @@ const speakersByCategory = {
     {
       id: 14,
       name: 'Dr. George Ayee',
-      title: 'Organisation Change Enabling Expert',
+      title: 'Organizational Development & Change Management Expert | International Speaker',
       bio: 'George Ayee is an organizational development/effectiveness, change enablement and business transformation consultant, transformational speaker, and corporate trainer.',
       imageUrl: '/images/speakers/dr-george-ayeee.jpg',
       category: 'Speed Coach'
@@ -282,7 +292,8 @@ const speakersByCategory = {
       bio: 'Grace is a Pastor, Certified Trainer, Speaker, Executive Coach and Entrepreneur licensed as an independent Executive Program Director with The John Maxwell Leadership Team.',
       imageUrl: '/images/speakers/biophoto.jpg',
       category: 'Speed Coach'
-    }
+    },
+   
   ]
 };
 
