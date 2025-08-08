@@ -505,7 +505,7 @@ living with congenital heart disease.
 She loves reading, gardening and photography. 
 Her Motto: It is not about what is in it for me but how I can add value.`,
     imageUrl: '/images/speakers/biophoto.jpg',
-    category: 'coming soon'
+    category: 'Panel Manel'
   },
   {
     id: 32,
