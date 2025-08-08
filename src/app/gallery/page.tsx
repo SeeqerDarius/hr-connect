@@ -4,8 +4,9 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, EffectCoverflow } from 'swiper/modules';
-import { FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaTimes } from 'react-icons/fa';
 import Link from 'next/link';
+import { useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
@@ -16,6 +17,11 @@ const galleryGroups = {
     '/images/2025-conference/IMG-20250808-WA0065.jpg',
     '/images/2025-conference/IMG-20250808-WA0066.jpg',
     '/images/2025-conference/IMG-20250808-WA0067.jpg',
+    '/images/2025-conference/IMG-20250808-WA0098.jpg',
+    '/images/2025-conference/IMG-20250808-WA0099.jpg',
+    '/images/2025-conference/IMG-20250808-WA0100.jpg',
+    '/images/2025-conference/IMG-20250808-WA0101.jpg',
+    '/images/2025-conference/IMG-20250808-WA0102.jpg',
     '/images/2025-conference/IMG-20250808-WA0068.jpg',
     '/images/2025-conference/IMG-20250808-WA0069.jpg',
     '/images/2025-conference/IMG-20250808-WA0070.jpg',
@@ -33,8 +39,16 @@ const galleryGroups = {
     '/images/2025-conference/IMG-20250808-WA0081.jpg',
     '/images/2025-conference/IMG-20250808-WA0082.jpg',
     '/images/2025-conference/IMG-20250808-WA0083.jpg',
+    '/images/2025-conference/IMG-20250808-WA0095.jpg',
+    '/images/2025-conference/IMG-20250808-WA0096.jpg',
+    '/images/2025-conference/IMG-20250808-WA0097.jpg',
+    '/images/2025-conference/IMG-20250808-WA0103.jpg',
+    '/images/2025-conference/IMG-20250808-WA0104.jpg',
+    '/images/2025-conference/IMG-20250808-WA0105.jpg',
   ],
   'Other Events': [
+    '/images/IMG-20250808-WA0083.jpg',
+    '/images/IMG-20250808-WA0082.jpg',
     '/images/conference-key-note-speaker.jpg',
     '/images/conference-session-0.jpg',
     '/images/conference-session-1.jpg',
@@ -72,12 +86,51 @@ const galleryGroups = {
 };
 
 export default function GalleryPage() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const handleImageClick = (imageUrl: string) => {
-    window.open(imageUrl, '_blank');
+    setSelectedImage(imageUrl);
+    setIsModalOpen(true);
+    document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedImage(null);
+    document.body.style.overflow = 'auto'; // Re-enable scrolling
   };
 
   return (
     <main className="bg-[#0A1C63] text-white min-h-screen">
+      {/* Image Modal */}
+      {isModalOpen && selectedImage && (
+        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+          <button 
+            onClick={closeModal}
+            className="absolute top-6 right-6 text-white hover:text-[#FF8C00] transition-colors"
+            aria-label="Close modal"
+          >
+            <FaTimes className="text-3xl" />
+          </button>
+          <div className="relative w-full h-full max-w-6xl max-h-[90vh]">
+            <Image
+              src={selectedImage}
+              alt="Enlarged gallery image"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+          <button 
+            onClick={closeModal}
+            className="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-[#FF8C00] text-white px-6 py-2 rounded-full hover:bg-[#FF6A00] transition-colors"
+          >
+            Close
+          </button>
+        </div>
+      )}
+
       {/* Hero Section */}
       <section className="relative h-64 md:h-96 overflow-hidden">
         <div className="absolute inset-0 bg-black/40 z-10 flex items-center justify-center">
@@ -136,7 +189,8 @@ export default function GalleryPage() {
             <SwiperSlide key={index} className="w-64 md:w-96">
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="relative h-64 md:h-80 rounded-xl overflow-hidden shadow-xl"
+                className="relative h-64 md:h-80 rounded-xl overflow-hidden shadow-xl cursor-pointer"
+                onClick={() => handleImageClick(image)}
               >
                 <Image
                   src={image}
