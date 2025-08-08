@@ -2,14 +2,9 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, EffectCoverflow } from 'swiper/modules';
 import { FaPhone, FaEnvelope, FaTimes } from 'react-icons/fa';
 import Link from 'next/link';
 import { useState } from 'react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-coverflow';
 
 // Group images by session
 const galleryGroups = {
@@ -92,13 +87,13 @@ export default function GalleryPage() {
   const handleImageClick = (imageUrl: string) => {
     setSelectedImage(imageUrl);
     setIsModalOpen(true);
-    document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+    document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedImage(null);
-    document.body.style.overflow = 'auto'; // Re-enable scrolling
+    document.body.style.overflow = 'auto';
   };
 
   return (
@@ -155,97 +150,49 @@ export default function GalleryPage() {
         />
       </section>
 
-      {/* Featured Gallery Slider */}
-      <section className="py-16 px-6 max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mb-12 text-center"
-        >
-          <h2 className="text-3xl font-bold mb-2 text-white">Featured Moments</h2>
-          <div className="w-20 h-1 bg-[#FF8C00] mx-auto"></div>
-        </motion.div>
+      {/* Gallery Sections */}
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        {Object.entries(galleryGroups).map(([groupName, images]) => (
+          <section key={groupName} className="mb-16">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="mb-8"
+            >
+              <h2 className="text-3xl font-bold mb-2 text-white">{groupName}</h2>
+              <div className="w-20 h-1 bg-[#FF8C00]"></div>
+            </motion.div>
 
-        <Swiper
-          effect={'coverflow'}
-          grabCursor={true}
-          centeredSlides={true}
-          slidesPerView={'auto'}
-          coverflowEffect={{
-            rotate: 20,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
-          pagination={true}
-          modules={[EffectCoverflow, Pagination, Autoplay]}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
-          className="mySwiper"
-        >
-          {Object.values(galleryGroups).flat().map((image, index) => (
-            <SwiperSlide key={index} className="w-64 md:w-96">
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="relative h-64 md:h-80 rounded-xl overflow-hidden shadow-xl cursor-pointer"
-                onClick={() => handleImageClick(image)}
-              >
-                <Image
-                  src={image}
-                  alt={`Gallery image ${index + 1}`}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </motion.div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </section>
-
-      {/* Full Gallery Grid - Grouped */}
-      {Object.entries(galleryGroups).map(([groupName, images]) => (
-        <section key={groupName} className="py-16 px-6 max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mb-12 text-center"
-          >
-            <h2 className="text-3xl font-bold mb-2 text-white">{groupName}</h2>
-            <div className="w-20 h-1 bg-[#FF8C00] mx-auto"></div>
-          </motion.div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {images.map((image, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.03 }}
-                className="relative h-64 rounded-lg overflow-hidden shadow-lg group cursor-pointer"
-                onClick={() => handleImageClick(image)}
-              >
-                <Image
-                  src={image}
-                  alt={`${groupName} image ${index + 1}`}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-110"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <span className="text-white text-lg font-medium">View Photo</span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </section>
-      ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {images.map((image, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
+                  viewport={{ once: true }}
+                  whileHover={{ scale: 1.03 }}
+                  className="relative h-64 rounded-lg overflow-hidden shadow-lg group cursor-pointer"
+                  onClick={() => handleImageClick(image)}
+                >
+                  <Image
+                    src={image}
+                    alt={`${groupName} image ${index + 1}`}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-110"
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="text-white text-lg font-medium">View Photo</span>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
 
       {/* CTA Section */}
       <section className="py-20 px-6 bg-gradient-to-r from-[#0A1C63] to-[#1E3A8A] text-center">
@@ -269,7 +216,8 @@ export default function GalleryPage() {
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-4">About Us</h3>
             <p className="mb-6">
-              The HR Network is an association and community of high-performing and credible people management professionals who are focused on accelerating business results through strategic human capital best practices.</p>
+              The HR Network is an association and community of high-performing and credible people management professionals who are focused on accelerating business results through strategic human capital best practices.
+            </p>
           </div>
 
           <div>
@@ -302,6 +250,7 @@ export default function GalleryPage() {
         </div>
 
         <div className="max-w-6xl mx-auto pt-8 mt-8 border-t border-white/20 text-center">
+          <p>&copy; {new Date().getFullYear()} HR Network Africa. All rights reserved.</p>
         </div>
       </footer>
     </main>
