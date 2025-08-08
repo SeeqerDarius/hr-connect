@@ -60,6 +60,12 @@ const sponsorCategories: SponsorCategory[] = [
         description: "We continue to recruit people who are both competent..."
       },
       {
+        name: "Telecel",
+        logo: "/images/sponsors/telecel.jpg",
+        url: "https://telecel.com.gh/",
+        description: "Pay bill, apply for broadband, self service, deals you can't resist. Our devices come with data and voice bundles your wallet will love."
+      },
+      {
         name: "Perbi Cubs",
         logo: "/images/sponsors/PC-turquoise.png",
         url: "#",
