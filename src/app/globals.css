@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Theme color variables */
+:root {
+  --background: #0A1C63;
+  --foreground: #ffffff;
+  --primary: #FF8C00;
+  --accent-pink: #D63384;
+  --accent-teal: #1DA1A3;
+  --accent-yellow: #F39C12;
+  --heading-font: Arial, Helvetica, sans-serif;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #060E2A;
+    --foreground: #f3f3f3;
+  }
+}
+
+/* Global layout */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--heading-font);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Typography defaults */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+  font-family: var(--heading-font);
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Utility classes for fallback (optional) */
+.bg-primary {
+  background-color: var(--primary);
+}
+.text-primary {
+  color: var(--primary);
+}
