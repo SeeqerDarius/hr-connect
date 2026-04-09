@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
@@ -139,7 +140,7 @@ export default function Home() {
             >
               <div className="mb-0">
                 <Image 
-                  src="/images/logo/logo.png" 
+                  src="/images/logo/logo26.png" 
                   alt="HR Connect Conference Logo"
                   width={400}
                   height={200}
@@ -149,7 +150,7 @@ export default function Home() {
               </div>
               
               <span className="inline-block bg-[#FF8C00] text-white px-4 py-1 rounded-full text-sm font-bold mb-6"> 
-                CONCLUDED • AUGUST 8, 2025
+                 UPCOMING • JULY 30–31, 2026
               </span>
             </motion.div>
 
@@ -159,7 +160,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
             >
-              Thank You for Making <span className="text-[#FF8C00]">HR Connect 2025</span> a Success!
+              Join Us for <span className="text-[#FF8C00]">HR Connect 2026</span>
             </motion.h1>
 
             <motion.p
@@ -168,7 +169,8 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
             >
-              We&apos;re grateful to the 100+ HR professionals who joined us at Movenpick Hotel, Accra for an unforgettable day of learning, networking, and innovation.
+              Get ready for two powerful days of learning, networking, and innovation with HR leaders across Africa.
+              Join us on July 30–31, 2026 at Movenpick Hotel, Accra.
             </motion.p>
 
             <motion.div
@@ -178,16 +180,16 @@ export default function Home() {
               transition={{ delay: 0.8 }}
             >
               <Link
-                href="/gallery"
+                href="/register"
                 className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg shadow-xl transition-all duration-300 hover:scale-105"
               >
-                View Event Gallery
+              Register Now
               </Link>
               <Link
                 href="/speakers"
                 className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg shadow-xl transition-all duration-300 hover:scale-105"
               >
-                Speaker Presentations
+                View Speakers
               </Link>
             </motion.div>
           </div>
@@ -205,7 +207,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold mb-6">
-              <span className="text-[#FF8C00]">Highlights</span> from HR Connect 2025
+              <span className="text-[#FF8C00]">Highlights</span> from HR Connect 2025 (Last Year)
             </h2>
             <p className="max-w-2xl mx-auto text-lg">
               Relive the key moments and achievements from our successful conference
@@ -245,7 +247,7 @@ export default function Home() {
               Our <span className="text-[#FF8C00]">Speakers</span>
             </h2>
             <p className="text-lg text-gray-200 max-w-3xl mx-auto">
-              Thank you to our incredible speakers who shared their expertise and insights
+              Meet Some of Our Past & Featured Speakers
             </p>
           </motion.div>
 
@@ -304,7 +306,7 @@ export default function Home() {
               <span className="text-[#FF8C00]">Event</span> Gallery
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              A visual journey through the memorable moments of HR Connect 2025
+              See highlights from our previous conference
             </p>
           </motion.div>
 
@@ -404,7 +406,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold mb-6">
-              Stay Tuned for <span className="text-[#FF8C00]">HR Connect 2026</span>
+              Register early and don&apos;t miss Africa&apos;s leading HR conference experience. <span className="text-[#FF8C00]">HR Connect 2026</span>
             </h2>
             <p className="max-w-2xl mx-auto text-lg mb-8">
               Subscribe to our newsletter to be the first to know about next year&apos;s event, speakers, and registration details.
