@@ -14,7 +14,7 @@ export default function RegisterForm() {
 
   const ticketValue = ticketMap[ticketType || ''] || '';
 
-  const googleFormUrl = 'https://forms.gle/KreM45RBNYqT8d5A7';
+  const googleFormUrl = 'https://preregistration.online/7235';
 
   return (
     <div className="bg-[#0A1C63] max-w-xl mx-auto p-6 rounded shadow space-y-4 text-left text-white">

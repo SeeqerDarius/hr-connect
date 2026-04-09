@@ -36,7 +36,7 @@ export default function Header() {
             className="h-10 w-auto"
           />
           <span className="text-xl font-bold text-[#FF8C00] hidden sm:inline-block">
-            HR Connect <span className="text-white">2025</span>
+            HR Connect <span className="text-white">2026</span>
           </span>
         </Link>
 
