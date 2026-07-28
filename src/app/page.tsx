@@ -170,7 +170,7 @@ export default function Home() {
               transition={{ delay: 0.6 }}
             >
               Get ready for two powerful days of learning, networking, and innovation with HR leaders across Africa.
-              Join us on July 30–31, 2026 at Movenpick Hotel, Accra.
+              Join us on July 30–31, 2026 at The Labadi Beach Hotel, Accra.
             </motion.p>
 
             <motion.div
