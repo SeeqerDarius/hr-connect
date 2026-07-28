@@ -12,10 +12,10 @@ export default function Header() {
 
   const navItems = [
     { label: 'Home', href: '/' },
-    { label: 'Speakers', href: '/speakers' },
-    { label: 'Agenda', href: '/agenda' },
+    //{ label: 'Speakers', href: '/speakers' },
+    //{ label: 'Agenda', href: '/agenda' },
     //{ label: 'About Us', href: '/about' },
-    {label: 'Committee', href: '/planning-committee' },
+    //{label: 'Committee', href: '/planning-committee' },
     //{ label: 'Venue', href: '/venue' },
     { label: 'Gallery', href: '/gallery' },
     //{ label: 'Past Events', href: '/past-events' },
